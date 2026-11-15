@@ -1,8 +1,12 @@
 node_modules/
 .DS_Store
-# generated per-project output
+# generated output (keep the folders, ignore the files)
+out/*
+!out/.gitkeep
 frames/
 work/
-out/
 *.wav
 *.mp4
+# local python env / caches
+.venv/
+__pycache__/
