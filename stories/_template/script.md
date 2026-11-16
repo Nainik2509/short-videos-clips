@@ -16,6 +16,12 @@
 | 6 Answer | 35–42 | The answer to the question. | | |
 | 7 Next | last 3 | One line that pulls to the next part. | | |
 
+## Sources and fact check (facts and history stories: required)
+1. <source 1: title, publisher/site, link>
+2. <source 2, independent of the first>
+- [ ] Every number, date and name matches both sources (or is marked "माना जाता है" / "reportedly")
+- [ ] Nothing here is a rumour presented as fact
+
 ## Voice rules
 Short sentences. A calm storyteller. No "aaj hum...". Mark pauses with "..." before the twist.
 Read it aloud once: if you run out of breath, the sentence is too long.
