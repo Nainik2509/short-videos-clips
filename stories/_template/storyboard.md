@@ -1,8 +1,8 @@
-# Storyboard — <story title>
+# Storyboard: {{title}}
 
-Render stills first: `npm run storyboard -- <CompId> <frame> ...` and check `out/storyboard/`.
-Checklist per scene: faces calm for deities · captions inside the safe zone · nothing important under app buttons.
+Generate the sheet with `npm run storyboard -- {{slug}}` and check `out/{{slug}}-storyboard.jpg`.
+Per scene: every character fully in frame · no text over faces · captions inside the safe zone · same style in every scene.
 
-| # | Scene | Frames (start–end) | Palette | Characters + action | Scenery | Camera | Stills checked |
-|---|-------|--------------------|---------|---------------------|---------|--------|----------------|
-| 1 |       | 0–                 | dusk    |                     |         |        | ☐              |
+| # | Scene id | Starts at | Palette | Characters + action | Notes from review | OK |
+|---|----------|-----------|---------|---------------------|-------------------|----|
+| 1 | question |           |         |                     |                   | ☐  |

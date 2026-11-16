@@ -1,18 +1,33 @@
 import React from 'react';
 import {AbsoluteFill, useCurrentFrame, useVideoConfig} from 'remotion';
+import {languages, type Language} from './languages';
 import {SAFE, WIDTH} from './theme';
 
 export type Word = {word: string; start: number; end: number};
 export type TimingsFile = {audio: string; language: string; duration: number; words: Word[]};
 
-/** Shows the words being spoken, a few at a time, always inside the safe zone. */
-export const Captions: React.FC<{words: Word[]; wordsPerLine?: number}> = ({words, wordsPerLine = 4}) => {
+/** Text style shared by captions, the hook line and the badge, so they always match. */
+export const textStyle = (language: Language, size?: number): React.CSSProperties => ({
+  fontFamily: languages[language].font,
+  fontWeight: 800,
+  fontSize: size ?? languages[language].captionSize,
+  lineHeight: 1.2,
+  color: '#fff',
+  WebkitTextStroke: '10px #1a1030',
+  paintOrder: 'stroke fill',
+  textShadow: '0 6px 18px rgba(0,0,0,0.45)',
+  textAlign: 'center',
+});
+
+/** Shows the words being spoken, 3–4 at a time, the spoken word in yellow. Always inside the safe zone. */
+export const Captions: React.FC<{words: Word[]; language?: Language; size?: number}> = ({words, language = 'english', size}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const t = frame / fps;
+  const per = languages[language].wordsPerLine;
 
   const groups: Word[][] = [];
-  for (let i = 0; i < words.length; i += wordsPerLine) groups.push(words.slice(i, i + wordsPerLine));
+  for (let i = 0; i < words.length; i += per) groups.push(words.slice(i, i + per));
   const group = groups.find((g, i) => {
     const end = g[g.length - 1].end + 0.2;
     const nextStart = groups[i + 1]?.[0].start ?? Infinity;
@@ -28,15 +43,7 @@ export const Captions: React.FC<{words: Word[]; wordsPerLine?: number}> = ({word
           left: SAFE.left,
           width: WIDTH - SAFE.left - SAFE.right,
           bottom: SAFE.bottom, // text sits on the safe-zone floor and grows upward
-          textAlign: 'center',
-          fontFamily: 'system-ui, -apple-system, "Segoe UI", sans-serif',
-          fontWeight: 800,
-          fontSize: 76,
-          lineHeight: 1.15,
-          color: '#fff',
-          WebkitTextStroke: '10px #1a1030',
-          paintOrder: 'stroke fill',
-          textShadow: '0 6px 18px rgba(0,0,0,0.45)',
+          ...textStyle(language, size),
         }}
       >
         {group.map((w, i) => (
