@@ -7,4 +7,4 @@
 
 #अजीबसच #सेलिंगस्टोन्स #DeathValley #Shorts
 
-<!-- Switch on Instagram's "AI-generated" label. If this is a folk version, say so: "jaise dadi sunati thi". -->
+<!-- If this is a folk version, say so: "jaise dadi sunati thi". -->

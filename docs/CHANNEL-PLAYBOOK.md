@@ -55,7 +55,7 @@ A Brand Account channel, separate from the existing SlayArcade channel.
 
 - **Format:** vertical 1080×1920, 30 fps (this studio's default). Keep faces and key action inside the safe zone.
 - **Title:** the question itself, in the language of the audience, up to ~70 characters so it is not cut off. Example: "लक्ष्मण 14 साल सोए क्यों नहीं?". No clickbait the video does not deliver.
-- **Description:** line 1 = the question; 2 lines of story; series name + part; source line for facts; music credit; "AI-assisted animation" note.
+- **Description (English + Hindi):** line 1 = the question in English and Hindi; 2 lines of story; series name + part; source line for facts; music credit.
 - **Hashtags:** 3–5, relevant. YouTube shows the first three above the title and ignores a post that uses more than 15. `#Shorts` is optional.
 - **Playlist:** add every Short to its series playlist at upload.
 - **Pinned comment:** a question to the audience or the teaser for the next part.
@@ -71,8 +71,7 @@ A Brand Account channel, separate from the existing SlayArcade channel.
 - **Facts must be true.** Every facts Short needs 2 independent reliable sources noted in its `script.md` ("Sources"). Never present rumours as confirmed; say "माना जाता है" when it is a belief.
   Do not invent history or science. A wrong fact in a facts channel costs trust.
 - **Mythology with care.** Follow a well-known retelling; label a folk version as folk. Deities are always shown with calm, respectful faces (the studio enforces it with the `sacred` look). No jokes at a deity's expense.
-- **Disclose AI honestly.** In upload settings, answer the "altered or synthetic content" question truthfully. Clearly unrealistic cartoons usually do not need the label,
-  but a realistic cloned voice or realistic scenes do. When unsure, disclose. Add "AI-assisted animation" in the description.
+- **Answer content-label questions accurately.** In upload settings, answer the platform's "altered or synthetic content" question truthfully for each video, and check the platform's current guidance when unsure.
 - **Music and sounds:** only tracks you have the rights to, or YouTube's own Audio Library. Keep the credit in the description.
 - **Children:** if a video is directed at children, mark it as made for kids and keep content age-appropriate.
 - **Monetisation thresholds change.** Check *YouTube Studio → Earn* for the current requirements (they combine subscribers with public Shorts views or watch hours).

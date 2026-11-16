@@ -119,4 +119,4 @@ const probe = spawnSync('ffprobe', ['-v', 'error', '-show_entries', 'stream=code
 console.log(`\n${probe.stdout.trim()}`);
 console.log(`final: out/${slug}-final.mp4\nqc:    out/${slug}-qc.jpg\ncover: out/${slug}-cover.jpg`);
 console.log(`caption: write it in stories/${slug}/caption.md`);
-console.log('Before posting: watch on your phone with sound and without; question on screen in the first second; names spelled right; Instagram AI label on.');
+console.log('Before posting: watch on your phone with sound and without; question on screen in the first second; names spelled right; content-label questions answered accurately.');

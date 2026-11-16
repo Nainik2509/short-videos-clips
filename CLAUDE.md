@@ -32,7 +32,7 @@ Human guides: [docs/KAHANI-GUIDE.md](docs/KAHANI-GUIDE.md) (stories), [docs/EDIT
    at the end, then one line that sets up the next part. 45–90 s, calm storyteller voice.
 7. **Be faithful and honest.** Follow a well-known retelling; call a folk version a folk version in
    the caption. Do not copy another page's characters, drawings, voice or script. Use music we have the
-   rights to. Remind the user to switch on Instagram's AI label.
+   rights to. Answer each platform's content-label questions accurately.
 8. Never ask for or paste API keys into chat; a voice service key goes in a `.env` file the user edits.
 
 ## Languages
@@ -87,7 +87,7 @@ work/<name>/  edit.json (settings), cut.mp4, timings.json for an edit (git-ignor
 3. **Script, in 7 beats**: question (0–3 s), setting (3–8), problem (8–15), turn (15–25), choice (25–35),
    answer (35–42), next (last 3 s). Write it into `script.md` and the spoken lines into `voice.txt` (one scene's line per line).
    Show the user the script + scene list and **wait for OK**.
-4. **Voice**: the user records `voice/<slug>.mp3` (own voice, AI voice with emotion tags, or none: then music and big captions only).
+4. **Voice**: the user records `voice/<slug>.mp3` (own voice, a generated voice with emotion tags, or none: then music and big captions only).
 5. **Timings**: `npm run timings -- voice/<slug>.mp3 --script stories/<slug>/voice.txt --language hi --out stories/<slug>/timings.json`
 6. **Scenes**: fill `story.json` (see below). Each scene's `line` must equal its line in `voice.txt`; the scene starts on that line's first word.
 7. **Storyboard**: `npm run storyboard -- <slug>`; show `out/<slug>-storyboard.jpg`; apply the user's notes; repeat.
@@ -171,7 +171,8 @@ Pick topics from `channel/backlog.md` and update their status. Follow `docs/CHAN
   pinned comment, checklist). Fill its placeholders (story lines, sources, music credit).
 - **Never create the channel, post, upload or comment for the user** unless they ask for that exact action in this chat; the channel is theirs
   (their Google account). Prepare everything, then hand over.
-- Disclose AI honestly (YouTube's altered/synthetic question and "AI-assisted animation" in the description); decide "made for kids" with the user.
+- Answer each platform's content questions accurately (altered/synthetic content, made for kids); decide "made for kids" with the user. Public descriptions are about the story, its sources and the music.
+- **Everything public is bilingual: English first, then the story's language** (channel About text, video descriptions, transcript, pinned comment), because the channel is for a global audience. Titles stay in the story's language; add an English line at the top of the description. Upload two subtitle tracks per video: the story's language (`captions-<lang>.srt`) and English (`captions-en.srt`), with the same cue timings.
 
 ### Channel branding
 Channel: **Doodle Story Tales**, `@DoodleStoryTalesOfficial`. The brand is code: the mark, banner (with Pinku, Gudiya and Dadi from the rig) and the animated

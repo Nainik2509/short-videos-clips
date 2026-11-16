@@ -13,7 +13,7 @@ Keep them in separate **playlists** and give each its own **opening pattern**.
 | Style | `flat` for history and science, `glowLine` for dark mysteries |
 | Hook | A "Why?/How?/What happened?" question, then the reveal in the last 5 s |
 | Rules | 2 reliable sources per topic written in `script.md`; say "माना जाता है" for beliefs; never invent. No people shown unrealistically: use the generic cast |
-| Voice | AI voice or your own; short sentences, a pause before the twist |
+| Voice | Recorded or generated voice; short sentences, a pause before the twist |
 | Scenes | 4–5 scenes, one picture each: place, object, problem, twist, answer |
 
 Script shape (35–50 words): hook question → what happened (2 sentences) → the twist → one closing line.

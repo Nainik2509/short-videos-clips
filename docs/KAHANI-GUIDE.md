@@ -25,7 +25,7 @@ Chrome, and this studio folder. Open Claude Code **inside this folder** so it re
    > New reel: "Hanuman ji aur Sanjeevani", paper cut-out style, Hinglish, 45 seconds. Same rules as always.
 
    Claude creates the story folder (`npm run new-story`), writes the **script in 7 beats** and the scene list, and **waits for your OK**.
-4. **Voice.** Record `voice/<slug>.mp3` on your phone in a quiet room (say each line twice, keep the better take), or use an AI voice
+4. **Voice.** Record `voice/<slug>.mp3` on your phone in a quiet room (say each line twice, keep the better take), or use a generated voice
    (ask Claude to rewrite the script with tags like `[softly]` and `[pause]`), or no voice at all (music and big captions only).
    Never paste an API key into the chat: put it in a `.env` file yourself.
 5. **Timings.** Tell Claude: "here is my voice-over, make the word timings and cut the scenes to it". Claude runs
@@ -35,7 +35,7 @@ Chrome, and this studio folder. Open Claude Code **inside this folder** so it re
 7. **Finish.** Claude runs `npm run finish -- <slug>` and gives you `out/<slug>-final.mp4`, `out/<slug>-qc.jpg` and `out/<slug>-cover.jpg`.
    Add music with `--music music/your-track.mp3` (about 8 dB under the voice, ducks while the voice speaks, fades out in the last second).
 8. **Before you post:** watch it once on your phone with sound and without; the question is on screen in the first second; names and places
-   are spelled right; Instagram's **AI label** is on. Ask Claude to write `caption.md` (question first, 2 lines of story, series + part, 3–5 hashtags).
+   are spelled right; content-label questions are answered accurately. Ask Claude to write `caption.md` (question first, 2 lines of story, series + part, 3–5 hashtags).
 9. **Series:** same name, same look, same opening ("Part 4"), same posting time, an open ending, pin part 1.
 
 ## The 7 beats of the script
@@ -113,7 +113,7 @@ Ask: "Plan a 10-part series called [NAME] in [STYLE] style. For each part: the f
 - **Calm, kind faces for deities.** No funny distortions, no jokes at their expense. The deity look in this studio locks the face to a calm expression.
 - Do not copy other pages: the epics belong to everyone, but another creator's characters, drawings, voice and script are theirs. Make your own look.
 - Use music you have the rights to, or Instagram's own music library.
-- Switch on the AI label. Read the comments; if someone points out a mistake, thank them and fix it in the next part.
+- Answer each platform's content-label questions accurately. Read the comments; if someone points out a mistake, thank them and fix it in the next part.
 
 ## If something goes wrong
 
@@ -135,9 +135,9 @@ If a reel gets messy: start a new chat in this folder and say "start this story 
 
 ## FAQ
 
-- **Free?** The tools are free (Remotion is free for individuals and small teams up to 3 people; a bigger company needs a licence). Claude Code needs a paid Claude plan. AI voices have free tiers with limits.
+- **Free?** The tools are free (Remotion is free for individuals and small teams up to 3 people; a bigger company needs a licence). Claude Code needs a paid Claude plan. Voice services have free tiers with limits.
 - **Drawing or coding needed?** No. You choose the story and judge the result.
 - **Mac or Windows?** Both. Not a phone: make it on a computer, post from your phone.
 - **How long is one reel?** First one 1–2 hours with setup; after that about 30–60 minutes, mostly rendering.
-- **My own AI images or clips?** Yes: put them in the story folder and ask Claude to use them. Code keeps a whole series looking the same.
+- **My own images or clips?** Yes: put them in the story folder and ask Claude to use them. Code keeps a whole series looking the same.
 - **YouTube videos?** Same steps, set it to 1920×1080 and add chapters (a different composition size; ask Claude to add it).

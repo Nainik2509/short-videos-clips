@@ -8,6 +8,16 @@
 
 राज़ था तीन-छह मिलीमीटर पतली बर्फ़, जो टूटकर हल्की हवा से सरकती है और पत्थरों को धकेलती है।
 
+# Transcript (English)
+
+Why did rocks in Death Valley's desert move by themselves?
+
+For decades nobody saw them move, only long tracks in the ground.
+
+Scientists fitted the rocks with GPS.
+
+The secret: a thin sheet of ice, three to six millimetres thick, which breaks up and glides in a light wind, pushing the rocks along.
+
 ---
 
 स्रोत:
