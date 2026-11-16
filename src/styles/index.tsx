@@ -1,5 +1,5 @@
 import React, {useId} from 'react';
-import {AbsoluteFill, useCurrentFrame} from 'remotion';
+import {AbsoluteFill} from 'remotion';
 import type {Palette} from '../lib/palettes';
 import type {CharacterLook} from '../rig';
 import {HEIGHT, WIDTH} from '../lib/theme';
@@ -9,7 +9,7 @@ import {HEIGHT, WIDTH} from '../lib/theme';
  * overlay, and how many drawings per second the animation uses. Pick one in story.json ("style").
  * These are presets: refine any of them here and every story using that style updates.
  */
-export type StyleName = 'flat' | 'paperCutout' | 'shadowPuppet' | 'madhubani' | 'stainedGlass' | 'warli' | 'glowLine' | 'stickTales';
+export type StyleName = 'flat' | 'paperCutout' | 'madhubani' | 'glowLine' | 'stickTales';
 
 export type StyleSpec = {
   label: string;
@@ -26,7 +26,6 @@ export type StyleSpec = {
 };
 
 const same = <T,>(x: T) => x;
-const fill = (inset = 0): React.CSSProperties => ({position: 'absolute', inset, pointerEvents: 'none'});
 
 // ---------- overlays ----------
 
@@ -45,28 +44,6 @@ const PaperGrain: React.FC = () => {
   );
 };
 
-/** Warm lamp behind a cloth screen: flickering glow plus dark vignette. */
-const LampGlow: React.FC = () => {
-  const f = useCurrentFrame();
-  const flicker = 0.9 + 0.1 * Math.sin(f * 0.7) * Math.sin(f * 0.23);
-  return (
-    <AbsoluteFill style={{pointerEvents: 'none'}}>
-      <div style={{...fill(), background: `radial-gradient(ellipse at 50% 55%, rgba(255,190,90,${0.28 * flicker}) 0%, rgba(0,0,0,0) 55%, rgba(20,6,0,0.7) 100%)`}} />
-    </AbsoluteFill>
-  );
-};
-
-const TriangleRow: React.FC<{y: number; color: string; size?: number}> = ({y, color, size = 30}) => {
-  const n = Math.ceil(WIDTH / size);
-  return (
-    <svg width={WIDTH} height={HEIGHT} style={fill()}>
-      {Array.from({length: n}, (_, i) => (
-        <path key={i} d={`M ${i * size} ${y + size} L ${i * size + size / 2} ${y} L ${(i + 1) * size} ${y + size} Z`} fill={color} />
-      ))}
-    </svg>
-  );
-};
-
 const MadhubaniBorder: React.FC = () => (
   <AbsoluteFill style={{pointerEvents: 'none'}}>
     <svg width={WIDTH} height={HEIGHT}>
@@ -77,62 +54,7 @@ const MadhubaniBorder: React.FC = () => (
   </AbsoluteFill>
 );
 
-const WarliBorder: React.FC = () => (
-  <AbsoluteFill style={{pointerEvents: 'none'}}>
-    <TriangleRow y={70} color="#f4ead8" />
-    <TriangleRow y={HEIGHT - 100} color="#f4ead8" />
-  </AbsoluteFill>
-);
-
-/** Arched window with a dark wooden frame, lead lines and a sweep of sunlight. */
-const StainedGlassFrame: React.FC = () => {
-  const f = useCurrentFrame();
-  const id = useId().replace(/:/g, '');
-  const sweep = ((f * 5) % (WIDTH * 2.4)) - WIDTH * 0.7;
-  const x0 = 60;
-  const x1 = WIDTH - 60;
-  const arcTop = 160;
-  const r = (x1 - x0) / 2;
-  const arch = `M ${x0} ${HEIGHT - 60} L ${x0} ${arcTop + r} A ${r} ${r} 0 0 1 ${x1} ${arcTop + r} L ${x1} ${HEIGHT - 60} Z`;
-  return (
-    <AbsoluteFill style={{pointerEvents: 'none'}}>
-      <svg width={WIDTH} height={HEIGHT}>
-        <defs>
-          <pattern id={`${id}-lead`} width={90} height={90} patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <path d="M 0 0 H 90 M 0 0 V 90" stroke="#0b0a14" strokeWidth={7} opacity={0.75} />
-          </pattern>
-          <linearGradient id={`${id}-sun`} x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0" stopColor="#fff2b0" stopOpacity={0} />
-            <stop offset="0.5" stopColor="#fff2b0" stopOpacity={0.35} />
-            <stop offset="1" stopColor="#fff2b0" stopOpacity={0} />
-          </linearGradient>
-          <clipPath id={`${id}-clip`}>
-            <path d={arch} />
-          </clipPath>
-        </defs>
-        <path d={`M 0 0 H ${WIDTH} V ${HEIGHT} H 0 Z ${arch}`} fill="#2a1608" fillRule="evenodd" />
-        <path d={arch} fill="none" stroke="#d9a63a" strokeWidth={14} />
-        <g clipPath={`url(#${id}-clip)`}>
-          <rect width={WIDTH} height={HEIGHT} fill={`url(#${id}-lead)`} />
-          <rect x={sweep} y={0} width={260} height={HEIGHT} fill={`url(#${id}-sun)`} transform={`skewX(-18)`} />
-        </g>
-      </svg>
-    </AbsoluteFill>
-  );
-};
-
 // ---------- looks ----------
-
-const warliLook = (l: CharacterLook): CharacterLook => ({
-  ...l,
-  skin: '#f4ead8',
-  hair: '#f4ead8',
-  top: '#f4ead8',
-  bottom: '#f4ead8',
-  accent: '#f4ead8',
-  shoe: '#f4ead8',
-  ink: '#6b2a10',
-});
 
 const glowLook = (l: CharacterLook): CharacterLook => ({
   ...l,
@@ -162,27 +84,6 @@ export const styles: Record<StyleName, StyleSpec> = {
     charFilter: 'drop-shadow(0px 10px 8px rgba(0,0,0,0.38))',
     Overlay: PaperGrain,
   },
-  shadowPuppet: {
-    label: 'Shadow puppet',
-    note: 'Leather puppets on a lamp-lit cloth screen (Tholu Bommalata): amber glow, dark outlines, 10 drawings a second.',
-    drawingsPerSec: 10,
-    palette: (p) => ({
-      ...p,
-      skyTop: '#2b1200',
-      skyMid: '#8a3c0a',
-      skyBottom: '#f5a623',
-      stars: 0,
-      hills: ['#6b2c07', '#4a1d04', '#2a1002'],
-      cloud: '#ffb347',
-      leaf: ['#2a1002', '#3b1805'],
-      trunk: '#140700',
-      ink: '#1a0a00',
-      glow: '#ffd36b',
-    }),
-    look: (l) => ({...l, ink: '#1a0a00'}),
-    filter: 'sepia(0.35) saturate(1.3) contrast(1.05)',
-    Overlay: LampGlow,
-  },
   madhubani: {
     label: 'Madhubani',
     note: 'Bihar folk painting: thick black outlines, flat red/yellow/green/blue, patterned border, nothing shaded.',
@@ -202,47 +103,6 @@ export const styles: Record<StyleName, StyleSpec> = {
     }),
     look: (l) => ({...l, ink: '#111111'}),
     Overlay: MadhubaniBorder,
-  },
-  stainedGlass: {
-    label: 'Stained glass',
-    note: 'A temple window of jewel colours: arch frame, gold trim, lead lines and a sweep of sunlight.',
-    drawingsPerSec: 0,
-    palette: (p) => ({
-      ...p,
-      skyTop: '#1b2a7a',
-      skyMid: '#7a1d63',
-      skyBottom: '#e0a21a',
-      stars: 0,
-      hills: ['#1d7a4a', '#0f5f8f', '#8f1d2f'],
-      cloud: '#e0a21a',
-      leaf: ['#1d7a4a', '#2aa05f'],
-      trunk: '#2a1608',
-      ink: '#0b0a14',
-      glow: '#ffd66b',
-    }),
-    look: (l) => ({...l, ink: '#0b0a14'}),
-    filter: 'saturate(1.25)',
-    Overlay: StainedGlassFrame,
-  },
-  warli: {
-    label: 'Warli',
-    note: 'Maharashtra tribal art: off-white figures on a terracotta wall, triangle borders, slightly rough.',
-    drawingsPerSec: 8,
-    palette: (p) => ({
-      ...p,
-      skyTop: '#b5532a',
-      skyMid: '#b5532a',
-      skyBottom: '#b5532a',
-      stars: 0,
-      hills: ['#a34a24', '#944220', '#843a1c'],
-      cloud: '#c96a3a',
-      leaf: ['#f4ead8', '#e6d8bd'],
-      trunk: '#f4ead8',
-      ink: '#6b2a10',
-      glow: '#f4ead8',
-    }),
-    look: warliLook,
-    Overlay: WarliBorder,
   },
   glowLine: {
     label: 'Glow line art',
@@ -284,5 +144,3 @@ export const styles: Record<StyleName, StyleSpec> = {
     look: (l) => ({...l, ink: '#111111'}),
   },
 };
-
-export const styleNames = Object.keys(styles) as StyleName[];

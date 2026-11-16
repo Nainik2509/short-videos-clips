@@ -49,6 +49,8 @@ export type Backdrop = {
   offset?: number;
   /** explainer scenes: no hills, trees or clouds, just the sky colour (Stick Tales) */
   bare?: boolean;
+  /** y of the ground line in bare scenes (default 1500); raise it so captions sit on the ground, below the pictures */
+  floor?: number;
 };
 
 export type SceneSpec = {

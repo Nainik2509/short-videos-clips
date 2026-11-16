@@ -1,0 +1,484 @@
+{
+ "slug": "why-called-shampoo",
+ "title": "Why is it called shampoo?",
+ "hook": "Why is it called shampoo?",
+ "language": "english",
+ "style": "stickTales",
+ "series": "Doodle Whys",
+ "part": 2,
+ "heroScene": 0,
+ "scenes": [
+  {
+   "id": "question",
+   "line": "Why is it called shampoo?",
+   "duration": 3,
+   "backdrop": {
+    "palette": "day",
+    "bare": true,
+    "clouds": 0,
+    "floor": 1260
+   },
+   "cast": [
+    {
+     "look": "sticky",
+     "x": 270,
+     "scale": 0.85,
+     "action": "idle",
+     "mood": "smile",
+     "facing": 1
+    }
+   ],
+   "stage": [
+    {
+     "type": "card",
+     "x": 540,
+     "y": 700,
+     "w": 780,
+     "lines": [
+      {
+       "text": "SHAMPOO?",
+       "size": 120,
+       "color": "#e4572e"
+      }
+     ],
+     "at": 0.2
+    },
+    {
+     "type": "bottle",
+     "x": 780,
+     "y": 1150,
+     "scale": 1.0,
+     "at": 0.8
+    }
+   ]
+  },
+  {
+   "id": "champo",
+   "line": "Because it is a Hindi word. It comes from \"champo\", which means to press or massage.",
+   "duration": 6,
+   "backdrop": {
+    "palette": "day",
+    "bare": true,
+    "clouds": 0,
+    "floor": 1260
+   },
+   "cast": [
+    {
+     "look": "sticky",
+     "x": 250,
+     "scale": 0.8,
+     "action": "wave",
+     "mood": "smile",
+     "facing": 1
+    }
+   ],
+   "stage": [
+    {
+     "type": "card",
+     "x": 540,
+     "y": 690,
+     "w": 880,
+     "lines": [
+      {
+       "text": "champo",
+       "size": 150,
+       "color": "#e8357f"
+      },
+      {
+       "text": "= to press, to massage",
+       "size": 62
+      }
+     ],
+     "at": 0.5
+    }
+   ],
+   "front": [
+    {
+     "type": "label",
+     "text": "A Hindi word",
+     "x": 540,
+     "y": 430,
+     "size": 58,
+     "at": 0,
+     "color": "#ffd45e"
+    }
+   ]
+  },
+  {
+   "id": "india",
+   "line": "In India, champo was a relaxing head massage with oil.",
+   "duration": 4,
+   "backdrop": {
+    "palette": "day",
+    "bare": true,
+    "clouds": 0,
+    "floor": 1260
+   },
+   "cast": [
+    {
+     "look": "sticky",
+     "x": 170,
+     "scale": 0.75,
+     "action": "idle",
+     "mood": "smile",
+     "facing": 1
+    },
+    {
+     "look": {
+      "skin": "#ffffff",
+      "hair": "#111111",
+      "hairStyle": "none",
+      "top": "#2fa36b",
+      "bottom": "#2f6bff",
+      "accent": "#2fa36b",
+      "shoe": "#111111",
+      "outfit": "tunic",
+      "headwear": "none",
+      "ink": "#111111",
+      "stick": true
+     },
+     "x": 590,
+     "scale": 0.8,
+     "facing": 1,
+     "action": "wave",
+     "mood": "smile"
+    },
+    {
+     "look": {
+      "skin": "#ffffff",
+      "hair": "#111111",
+      "hairStyle": "none",
+      "top": "#e84393",
+      "bottom": "#2f6bff",
+      "accent": "#e84393",
+      "shoe": "#111111",
+      "outfit": "tunic",
+      "headwear": "none",
+      "ink": "#111111",
+      "stick": true
+     },
+     "x": 665,
+     "scale": 0.8,
+     "facing": -1,
+     "action": "idle",
+     "mood": "smile"
+    }
+   ],
+   "stage": [
+    {
+     "type": "drops",
+     "x": 665,
+     "y": 760,
+     "at": 0.6
+    }
+   ],
+   "front": [
+    {
+     "type": "label",
+     "text": "India",
+     "x": 540,
+     "y": 520,
+     "size": 64,
+     "at": 0,
+     "color": "#ffd45e"
+    },
+    {
+     "type": "label",
+     "text": "Head massage with oil",
+     "x": 540,
+     "y": 700,
+     "size": 50,
+     "at": 0.4,
+     "color": "#ffffff"
+    }
+   ]
+  },
+  {
+   "id": "england",
+   "line": "In the 1700s, the word reached English, and it still meant massage.",
+   "duration": 5,
+   "backdrop": {
+    "palette": "day",
+    "bare": true,
+    "clouds": 0,
+    "floor": 1260
+   },
+   "cast": [
+    {
+     "look": "sticky",
+     "x": 110,
+     "scale": 0.6,
+     "action": "idle",
+     "mood": "smile",
+     "facing": 1
+    }
+   ],
+   "stage": [
+    {
+     "type": "hop",
+     "x1": 300,
+     "y1": 820,
+     "x2": 820,
+     "y2": 820,
+     "text": "champo",
+     "over": 3,
+     "at": 0.3
+    }
+   ],
+   "front": [
+    {
+     "type": "label",
+     "text": "India",
+     "x": 300,
+     "y": 950,
+     "size": 48,
+     "at": 0.3,
+     "color": "#ffd45e"
+    },
+    {
+     "type": "label",
+     "text": "England",
+     "x": 820,
+     "y": 950,
+     "size": 48,
+     "at": 0.3,
+     "color": "#ffffff"
+    },
+    {
+     "type": "label",
+     "text": "1700s",
+     "x": 540,
+     "y": 560,
+     "size": 64,
+     "at": 0,
+     "color": "#ffd45e"
+    }
+   ]
+  },
+  {
+   "id": "mahomed",
+   "line": "In 1814, an Indian man named Sake Dean Mahomed opened a bathhouse in Brighton, England, offering shampooing.",
+   "duration": 8,
+   "backdrop": {
+    "palette": "day",
+    "bare": true,
+    "clouds": 0,
+    "floor": 1260
+   },
+   "cast": [
+    {
+     "look": {
+      "skin": "#ffffff",
+      "hair": "#111111",
+      "hairStyle": "none",
+      "top": "#8e44ad",
+      "bottom": "#2f6bff",
+      "accent": "#8e44ad",
+      "shoe": "#111111",
+      "outfit": "tunic",
+      "headwear": "none",
+      "ink": "#111111",
+      "stick": true
+     },
+     "x": 340,
+     "scale": 0.85,
+     "facing": 1,
+     "action": "wave",
+     "mood": "smile"
+    }
+   ],
+   "stage": [
+    {
+     "type": "house",
+     "x": 770,
+     "y": 1165,
+     "scale": 1.05,
+     "sign": "SHAMPOOING",
+     "at": 1.2
+    }
+   ],
+   "front": [
+    {
+     "type": "label",
+     "text": "Brighton, England · 1814",
+     "x": 540,
+     "y": 640,
+     "size": 50,
+     "at": 0.2,
+     "color": "#ffd45e"
+    },
+    {
+     "type": "label",
+     "text": "Sake Dean Mahomed",
+     "x": 340,
+     "y": 780,
+     "size": 44,
+     "at": 0.6,
+     "color": "#ffffff"
+    }
+   ]
+  },
+  {
+   "id": "kings",
+   "line": "It was so popular that two British kings made him their Shampooing Surgeon.",
+   "duration": 5,
+   "backdrop": {
+    "palette": "day",
+    "bare": true,
+    "clouds": 0,
+    "floor": 1260
+   },
+   "cast": [],
+   "stage": [
+    {
+     "type": "crown",
+     "x": 390,
+     "y": 760,
+     "scale": 1.05,
+     "tilt": -8,
+     "at": 0.3
+    },
+    {
+     "type": "crown",
+     "x": 700,
+     "y": 760,
+     "scale": 1.05,
+     "tilt": 8,
+     "at": 0.9
+    }
+   ],
+   "front": [
+    {
+     "type": "label",
+     "text": "Shampooing Surgeon",
+     "x": 540,
+     "y": 950,
+     "size": 68,
+     "at": 1.4,
+     "color": "#ff7ab6"
+    },
+    {
+     "type": "label",
+     "text": "to King George IV and King William IV",
+     "x": 540,
+     "y": 1035,
+     "size": 38,
+     "at": 2.0,
+     "color": "#ffffff"
+    }
+   ]
+  },
+  {
+   "id": "timeline",
+   "line": "Only around the 1860s did shampoo start to mean washing your hair.",
+   "duration": 5,
+   "backdrop": {
+    "palette": "day",
+    "bare": true,
+    "clouds": 0,
+    "floor": 1260
+   },
+   "cast": [],
+   "stage": [
+    {
+     "type": "card",
+     "x": 540,
+     "y": 700,
+     "w": 660,
+     "lines": [
+      {
+       "text": "Massage",
+       "size": 90,
+       "color": "#2f6bff"
+      }
+     ],
+     "at": 0.2
+    },
+    {
+     "type": "card",
+     "x": 540,
+     "y": 1090,
+     "w": 800,
+     "lines": [
+      {
+       "text": "Washing hair",
+       "size": 90,
+       "color": "#e4572e"
+      }
+     ],
+     "at": 2.4
+    }
+   ],
+   "front": [
+    {
+     "type": "arrows",
+     "x": 540,
+     "y": 900,
+     "angle": 90,
+     "count": 1,
+     "size": 1,
+     "at": 1.6
+    },
+    {
+     "type": "label",
+     "text": "around the 1860s",
+     "x": 290,
+     "y": 900,
+     "size": 42,
+     "at": 2.0,
+     "color": "#ffffff"
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "line": "So every wash, you are saying a Hindi word. Next: another Hindi word hiding in English.",
+   "duration": 6,
+   "backdrop": {
+    "palette": "day",
+    "bare": true,
+    "clouds": 0,
+    "floor": 1260
+   },
+   "cast": [
+    {
+     "look": "sticky",
+     "x": 250,
+     "scale": 0.9,
+     "action": "wave",
+     "mood": "smile",
+     "facing": 1
+    }
+   ],
+   "stage": [
+    {
+     "type": "bottle",
+     "x": 780,
+     "y": 1150,
+     "scale": 1.0,
+     "at": 0.3
+    }
+   ],
+   "front": [
+    {
+     "type": "label",
+     "text": "A Hindi word!",
+     "x": 540,
+     "y": 560,
+     "size": 86,
+     "at": 0.2,
+     "color": "#ff7ab6"
+    },
+    {
+     "type": "label",
+     "text": "Next: another Hindi word",
+     "x": 540,
+     "y": 710,
+     "size": 52,
+     "at": 2.4,
+     "color": "#ffffff"
+    }
+   ]
+  }
+ ]
+}

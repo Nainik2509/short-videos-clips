@@ -64,7 +64,7 @@ src/
   lib/        theme (size, fps, SAFE), palettes, languages, Captions, SvgLayer
   rig/        Character (SVG, in parts) + looks (colours, outfits, presets)
   scenery/    Sky, Moon, HillLayer(+trees), Clouds, Diya/DiyaTrail, Sparks, Petals, terrain
-  styles/     8 style presets (flat, paperCutout, shadowPuppet, madhubani, stainedGlass, warli, glowLine, stickTales)
+  styles/     5 style presets (flat, paperCutout, madhubani, glowLine, stickTales)
   story/      StoryReel (the generic reel), timeline (scenes follow the voice), types, entry (validation)
   edit/       EditReel (your own footage + hook, captions, music)
   brand/      ClayMark (soft-3D storybook + spark mark, aurora background, clay lighting filters), BrandComps (LogoStill = composition `LogoMark`, LogoSting 4 s animated logo, ChannelBanner)
@@ -129,7 +129,7 @@ Live preview of any story: `npm run studio`.
 walk / wave blends plus automatic blink and breathing. New character = `{...looks.boy, top: '#2a9d8f'}` (fields: skin, hair, `hairStyle`,
 top, bottom, accent, `outfit` kurta/dress/dhoti/tunic, `headwear` none/crown/turban, `sleeves`, `bindi`, `halo`, `sacred`).
 Presets: boy, girl, elder, warrior, deity, sticky (Stick Tales stick figure, `stick: true`, drawn by `src/rig/StickFigure.tsx`). Need a new pose or outfit? Add it to the rig; never draw one-off characters in a story.
-Styles recolour looks automatically (e.g. Warli turns everyone off-white), so keep looks in `story.json` style-free.
+Styles recolour looks automatically (e.g. glowLine turns everyone black with a coloured glow), so keep looks in `story.json` style-free.
 
 ## Editing your own footage
 

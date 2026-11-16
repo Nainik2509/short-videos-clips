@@ -13,11 +13,4 @@ export const SAFE = {
   right: 140,
 } as const;
 
-export const SAFE_RECT = {
-  x: SAFE.left,
-  y: SAFE.top,
-  width: WIDTH - SAFE.left - SAFE.right,
-  height: HEIGHT - SAFE.top - SAFE.bottom,
-} as const;
-
 export const mod = (n: number, m: number) => ((n % m) + m) % m;
