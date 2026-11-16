@@ -27,7 +27,7 @@ Human guides: [docs/KAHANI-GUIDE.md](docs/KAHANI-GUIDE.md) (stories), [docs/EDIT
    the deity" in mind for every story involving deities.
 4. **Captions stay inside the safe zone.** Use `<Captions>` (it sits on the safe-zone floor). `SAFE` in
    `src/lib/theme.ts`: 220 px top, 440 px bottom, 80 px left, 140 px right. Storyboard stills draw the guide.
-5. Everything is 1080×1920 @ 30 fps. Never register another size.
+5. Every video is 1080×1920 @ 30 fps. Never register another video size. The only exceptions are the channel-art *stills* in `src/brand` (LogoMark 800×800, ChannelBanner 2560×1440).
 6. **Open with a question.** The first line is a question or a surprise, never a greeting. Answer it
    at the end, then one line that sets up the next part. 45–90 s, calm storyteller voice.
 7. **Be faithful and honest.** Follow a well-known retelling; call a folk version a folk version in
@@ -65,8 +65,10 @@ src/
   styles/     7 style presets (flat, paperCutout, shadowPuppet, madhubani, stainedGlass, warli, glowLine)
   story/      StoryReel (the generic reel), timeline (scenes follow the voice), types, entry (validation)
   compositions/  RigTest (3 s demo)
+  brand/      LogoMark (the storybook + spark mark), LogoSting (4 s animated logo), ChannelBanner
 tools/        new_story.py, timings.py, storyboard.mjs, finish.mjs
 docs/         KAHANI-GUIDE.md, EDIT-YOUR-FOOTAGE.md, CHANNEL-PLAYBOOK.md
+brand/        logo-icon.png (profile picture), channel-banner.png, logo-sting.mp4 (animated logo), made by `npm run brand`
 channel/      series.md (Facts, Kahani, Cartoon), backlog.md (topics + status), calendar.md (weekly rhythm, first 30 days)
 raw-footage/  your original clips (never modified or deleted by Claude; git-ignored)
 references/   downloaded reference videos + STYLE.md (git-ignored)
@@ -170,6 +172,12 @@ Pick topics from `channel/backlog.md` and update their status. Follow `docs/CHAN
   (their Google account). Prepare everything, then hand over.
 - Disclose AI honestly (YouTube's altered/synthetic question and "AI-assisted animation" in the description); decide "made for kids" with the user.
 
+### Channel branding
+Channel: **Doodle Story Tales**, `@DoodleStoryTalesOfficial`. The brand is code: the mark, banner (with Pinku, Gudiya and Dadi from the rig) and the animated
+sting are in `src/brand`; change a colour or a character there and run `npm run brand`. Palette: Midnight Ink `#17124A`, Saffron `#FF8A1F`,
+Marigold `#FFC93C`, Teal `#2EC4B6`, Paper `#FFF4DE`; wordmark in a rounded bold face. Use `brand/logo-sting.mp4` (1080×1920, 4 s) at the start or end of
+a Short if wanted. Banner name and tagline stay inside YouTube's central safe area (about 1546×423 of 2560×1440).
+
 ## Fixing problems
 
 | Problem | Do |
@@ -194,6 +202,7 @@ npm run finish -- <slug> [--music music/x.mp3]  # render + mix + final.mp4 + qc.
 npm run edit -- raw-footage/<clip>.mp4 --hook "..."   # cut dead air + hook + captions + music -> exports/
 npm run refs -- <link-or-file> ...              # download/analyse reference videos into references/
 npm run youtube -- <slug>                       # YouTube title, description, hashtags, checklist -> stories/<slug>/youtube.md
+npm run brand [-- logo|banner|sting]            # re-render brand/: profile picture, banner, animated logo sting
 npm run studio                                  # live preview
 npm run render:test                             # 3 s rig-on-hills test
 npm run typecheck
