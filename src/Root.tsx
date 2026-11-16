@@ -1,7 +1,6 @@
 import React from 'react';
 import {Composition} from 'remotion';
 import {stories} from '../stories/registry';
-import {RigTest} from './compositions/RigTest';
 import {ChannelBanner, LogoSting, LogoStill} from './brand/BrandComps';
 import {EditReel, defaultEditSpec, type EditReelProps} from './edit/EditReel';
 import {FPS, HEIGHT, WIDTH} from './lib/theme';
@@ -15,7 +14,6 @@ import {StoryReel, resolveTimeline, type StoryReelProps} from './story';
  */
 export const Root: React.FC = () => (
   <>
-    <Composition id="RigTest" component={RigTest} durationInFrames={90} fps={FPS} width={WIDTH} height={HEIGHT} defaultProps={{guides: false}} />
     <Composition
       id="EditReel"
       component={EditReel}

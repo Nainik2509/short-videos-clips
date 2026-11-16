@@ -48,6 +48,8 @@ Human guides: [docs/KAHANI-GUIDE.md](docs/KAHANI-GUIDE.md) (stories), [docs/EDIT
 
 Captions use the **script's own words** (spelled the way the user wrote them) timed by the voice:
 `npm run timings -- ... --script stories/<slug>/voice.txt`. Always do this for Hinglish and Hindi.
+With one script line per voice.txt line, the tool finds the real pauses in the recording and snaps every line start to its exact moment (scene cuts land on
+the first word, verified to within about 2 frames); words inside a line follow the voiced time (about 0.1 s average error). Captions never mix two sentences.
 Always write Hindi names the same way (Hanuman, Lakshman, Sanjeevani): keep a spelling list in the story's `script.md`.
 
 ## Layout
@@ -64,7 +66,7 @@ src/
   scenery/    Sky, Moon, HillLayer(+trees), Clouds, Diya/DiyaTrail, Sparks, Petals, terrain
   styles/     7 style presets (flat, paperCutout, shadowPuppet, madhubani, stainedGlass, warli, glowLine)
   story/      StoryReel (the generic reel), timeline (scenes follow the voice), types, entry (validation)
-  compositions/  RigTest (3 s demo)
+  edit/       EditReel (your own footage + hook, captions, music)
   brand/      LogoMark (the storybook + spark mark), LogoSting (4 s animated logo), ChannelBanner
 tools/        new_story.py, timings.py, storyboard.mjs, finish.mjs
 docs/         KAHANI-GUIDE.md, EDIT-YOUR-FOOTAGE.md, CHANNEL-PLAYBOOK.md
@@ -74,8 +76,7 @@ raw-footage/  your original clips (never modified or deleted by Claude; git-igno
 references/   downloaded reference videos + STYLE.md (git-ignored)
 exports/      finished edits: <name>-final.mp4, -qc.jpg (git-ignored)
 work/<name>/  edit.json (settings), cut.mp4, timings.json for an edit (git-ignored)
-archive/      the earlier three.js cartoon kit, kept for reference (not used)
-.claude/skills/  the cartoon-3d-short skill (a different, three.js style)
+.claude/skills/  the cartoon-3d-short skill (a different, three.js style; not set up in this repo yet)
 ```
 
 ## How a reel is made (always in this order)
@@ -113,8 +114,8 @@ Live preview of any story: `npm run studio`.
 }
 ```
 
-- **backdrop**: `palette` (dusk/night/dawn/day), `sun`, `moon`, `clouds`, `trees` `[back, middle, front]`, `diyas`, `sparks`, `petals`,
-  `scrollSpeed`, `offset`. A walking character sets the ground speed automatically so feet do not slide.
+- **backdrop**: `palette` (dusk/night/dawn/day/playaNight/playaDawn), `sun`, `moon`, `clouds`, `trees` `[back, middle, front]`, `diyas`, `sparks`, `petals`,
+  `rocks` (`x`, `toX`, `size`, `trailFrom`, `gps`: a rock that slides and leaves a trail), `ice` (floating ice panels, `x`, `toX`), `scrollSpeed`, `offset`. A walking character sets the ground speed automatically so feet do not slide.
 - **cast**: `look` (preset name or a full look object), `x`, `toX` (moves during the scene), `scale`, `facing` (1 or -1),
   `action` (idle / walk / wave / walkWave), `mood` (calm / smile), `blinkOffset`.
 - **scene**: `id`, `line`, `start` (seconds; overrides `line`), `duration` (only used before timings exist), `push` (end zoom, default 1.05).
@@ -197,14 +198,13 @@ a Short if wanted. Banner name and tagline stay inside YouTube's central safe ar
 npm run new-story -- <slug> --title "..." --hook "..." --language hinglish --style paperCutout
 npm run timings -- voice/<slug>.mp3 --script stories/<slug>/voice.txt --language hi --out stories/<slug>/timings.json
 npm run storyboard -- <slug>                    # one still per scene -> out/<slug>-storyboard.jpg
-npm run storyboard -- RigTest 0 45 89           # stills of chosen frames of any composition
+npm run storyboard -- <CompositionId> 0 45 89   # stills of chosen frames of any composition
 npm run finish -- <slug> [--music music/x.mp3]  # render + mix + final.mp4 + qc.jpg + cover.jpg
 npm run edit -- raw-footage/<clip>.mp4 --hook "..."   # cut dead air + hook + captions + music -> exports/
 npm run refs -- <link-or-file> ...              # download/analyse reference videos into references/
 npm run youtube -- <slug>                       # YouTube title, description, hashtags, checklist -> stories/<slug>/youtube.md
 npm run brand [-- logo|banner|sting]            # re-render brand/: profile picture, banner, animated logo sting
 npm run studio                                  # live preview
-npm run render:test                             # 3 s rig-on-hills test
 npm run typecheck
 ```
 

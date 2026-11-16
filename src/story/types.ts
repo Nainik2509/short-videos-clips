@@ -16,6 +16,20 @@ export type CastMember = {
   blinkOffset?: number;
 };
 
+/** A rock that can slide across the ground and leave a trail (sailing-stones style stories). */
+export type RockSpec = {
+  x: number;
+  toX?: number;
+  size?: number;
+  /** screen x where its trail starts; the trail grows with the rock */
+  trailFrom?: number;
+  /** show a glowing GPS beacon on top */
+  gps?: boolean;
+};
+
+/** A thin floating ice panel (centre x, optionally moving to toX). */
+export type IceSpec = {x: number; toX?: number};
+
 export type Backdrop = {
   palette: PaletteName;
   sun?: {x: number; y: number; r?: number};
@@ -26,6 +40,8 @@ export type Backdrop = {
   diyas?: boolean;
   sparks?: boolean;
   petals?: boolean;
+  rocks?: RockSpec[];
+  ice?: IceSpec[];
   /** ground scroll in px/second. Leave out: a walking character sets it so their feet match the ground. */
   scrollSpeed?: number;
   /** shifts which part of the hills this scene shows */

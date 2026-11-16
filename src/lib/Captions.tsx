@@ -26,8 +26,20 @@ export const Captions: React.FC<{words: Word[]; language?: Language; size?: numb
   const t = frame / fps;
   const per = languages[language].wordsPerLine;
 
+  // A caption group never mixes two sentences or crosses a real pause, so the next line's words
+  // do not appear while the previous line is still being spoken.
   const groups: Word[][] = [];
-  for (let i = 0; i < words.length; i += per) groups.push(words.slice(i, i + per));
+  let current: Word[] = [];
+  words.forEach((w, i) => {
+    current.push(w);
+    const next = words[i + 1];
+    const endsSentence = /[?!.।]$/.test(w.word);
+    const longPause = !!next && next.start - w.end > 0.35;
+    if (current.length >= per || endsSentence || longPause || !next) {
+      groups.push(current);
+      current = [];
+    }
+  });
   const group = groups.find((g, i) => {
     const end = g[g.length - 1].end + 0.2;
     const nextStart = groups[i + 1]?.[0].start ?? Infinity;

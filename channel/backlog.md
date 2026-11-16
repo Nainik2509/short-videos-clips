@@ -26,7 +26,7 @@ Details here are only a starting point: confirm every fact from sources before s
 | 16 | रोमन कंक्रीट | 2000 साल पुरानी इमारतें आज भी क्यों खड़ी हैं? | ☐ | |
 | 17 | वेस्ना वुलोविच | 10,000 मीटर से गिरकर कैसे बची? | ☐ | |
 | 18 | रैंडी गार्डनर (1964) | 11 दिन न सोने पर क्या हुआ? | ☐ | |
-| 19 | डेथ वैली के सेलिंग स्टोन्स | पत्थर अपने आप क्यों चलते थे? | ☐ | |
+| 19 | डेथ वैली के सेलिंग स्टोन्स | पत्थर अपने आप क्यों चलते थे? | ⬆ scheduled: public 17 Nov 2026, 19:00 IST (https://youtube.com/shorts/80XUSzJPNTw) | Norris et al. 2014 (PLoS ONE); Scripps/UCSD news |
 | 20 | मैकेनिकल टर्क | शतरंज की "मशीन" के अंदर कौन छुपा था? | ☐ | |
 
 More ideas for later (confirm first): अमर जेलीफ़िश (Turritopsis dohrnii), अंटार्कटिका का Blood Falls, Kawah Ijen के सल्फ़र मज़दूर, Darvaza गैस क्रेटर.
