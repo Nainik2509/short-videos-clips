@@ -71,6 +71,7 @@ Two working examples are included: `demo-hinglish` (paper cut-out) and `demo-hin
 | `npm run timings -- <voice> --script <voice.txt> --out <timings.json>` | Voice-over → every word with start/end time (captions use your script's words) |
 | `npm run storyboard -- <slug>` | One still per scene, tiled into a sheet; the check before any full render |
 | `npm run finish -- <slug> [--music file]` | Render, mix voice + music, export final, QC sheet and cover |
+| `npm run brand` | Render the channel logo, banner and animated logo sting into `brand/` |
 | `npm run youtube -- <slug>` | YouTube title, description, hashtags and pre-publish checklist |
 | `npm run edit -- raw-footage/<clip> ...` | Your footage: cut dead air, hook, captions, music, export |
 | `npm run refs -- <link>` | Download and analyse reference videos |
@@ -86,7 +87,8 @@ stories/registry.ts  stories shown in Remotion      stories/_template/  what new
 voice/ music/ sfx/   audio inputs (git-ignored)     out/  renders and sheets (git-ignored)
 raw-footage/ references/ exports/   your clips, reference videos, finished edits (git-ignored)
 src/  lib (size, safe zone, languages, captions) · rig (character) · scenery · styles · story (the reel engine)
-tools/  new_story.py · timings.py · storyboard.mjs · finish.mjs · edit.mjs · refs.mjs · youtube-pack.mjs
+brand/  logo, banner, animated sting (made by npm run brand)
+tools/  new_story.py · timings.py · storyboard.mjs · finish.mjs · edit.mjs · refs.mjs · youtube-pack.mjs · brand.mjs
 channel/  series, backlog, calendar        docs/   KAHANI-GUIDE · EDIT-YOUR-FOOTAGE · CHANNEL-PLAYBOOK          archive/  the earlier three.js kit (reference only)
 ```
 

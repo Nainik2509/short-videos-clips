@@ -14,17 +14,25 @@ Weekly rhythm and the first 30 days: [channel/calendar.md](../channel/calendar.m
 **What I can and cannot do:** this studio prepares everything (scripts, videos, titles, descriptions, hashtags). Creating the
 channel, choosing the handle, uploading and answering YouTube's questions are done by you in your own Google account.
 
+## The channel (created 2026-11-16)
+
+**Doodle Story Tales** · handle `@DoodleStoryTalesOfficial` · https://www.youtube.com/@DoodleStoryTalesOfficial
+A Brand Account channel, separate from the existing SlayArcade channel.
+**Done:** profile picture and banner (`brand/`, made with `npm run brand`), about text, upload defaults (Private, description footer), and the three playlists
+(*Ajeeb Sach (Facts)*, *Dadi ki Kahaniyan (Kahani)*, *Pinku aur Dadi (Cartoon)*).
+**Still yours:** contact email, links, the made-for-kids decision, and two-step verification on the Google account.
+
 ## 1. Set up the channel (about 30 minutes, you do this)
 
-- [ ] Create a **new Brand Account channel** from your Google account (so it is separate from your current channel and can have managers later).
+- [x] Create a **new Brand Account channel** (done: Doodle Story Tales).
 - [ ] **Name and handle.** Short, easy to say aloud, works in Hindi and English, not tied to one series. Check the handle is free and no one has a near-identical name.
       Ideas to test (availability not checked): *Kahani Kitab*, *Rahasya Rang*, *Kyun Kaise Kahani*, *Chhota Rahasya*, *Pinku ki Duniya*, *Dadi Dost*.
-- [ ] **Profile picture:** one recognisable character face on a plain colour (your rig makes a clean one). **Banner:** channel name + one line + posting days.
+- [x] **Profile picture and banner** (done: storybook + spark mark; banner with the cast, `Roz ek nayi kahani`).
 - [ ] **About:** 2 lines saying what viewers get ("Roz ek chhoti kahani aur ek ajeeb sach") + business email + language. Add `#` keywords naturally.
-- [ ] **Settings:** country India, default language Hindi (or Hinglish audience: Hindi), default upload visibility **Private** until you review.
+- [x] Default upload visibility **Private** (done). [ ] Country India and default language Hindi (Studio → Settings → Channel / Upload defaults → Advanced).
 - [ ] **Audience setting (made for kids):** decide honestly per video. Cartoons are not automatically "made for kids". A general-audience family kahani is usually
       "not made for kids"; content directed at children must be marked, which limits comments and some features. Read YouTube's current guidance and be consistent.
-- [ ] **Series playlists** created in advance: *Facts*, *Kahani*, *Cartoon*, plus one per long series (e.g. "Ramayan ki kahaniyan").
+- [x] **Series playlists** created (Facts, Kahani, Cartoon). Add one per long series later (e.g. "Ramayan ki kahaniyan").
 - [ ] Turn on **two-step verification** on the Google account. Never share the password; add helpers as channel managers instead.
 
 ## 2. Positioning that makes people subscribe

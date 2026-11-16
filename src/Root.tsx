@@ -2,6 +2,7 @@ import React from 'react';
 import {Composition} from 'remotion';
 import {stories} from '../stories/registry';
 import {RigTest} from './compositions/RigTest';
+import {ChannelBanner, LogoSting, LogoStill} from './brand/BrandComps';
 import {EditReel, defaultEditSpec, type EditReelProps} from './edit/EditReel';
 import {FPS, HEIGHT, WIDTH} from './lib/theme';
 import {StoryReel, resolveTimeline, type StoryReelProps} from './story';
@@ -25,6 +26,10 @@ export const Root: React.FC = () => (
       defaultProps={{spec: defaultEditSpec, timings: null, guides: false} satisfies EditReelProps}
       calculateMetadata={({props}) => ({durationInFrames: Math.max(1, Math.round(props.spec.durationSeconds * FPS))})}
     />
+    {/* Brand art. The banner and logo are still images (the only non-1080x1920 sizes); the sting is a normal vertical video. */}
+    <Composition id="LogoMark" component={LogoStill} durationInFrames={1} fps={FPS} width={800} height={800} />
+    <Composition id="ChannelBanner" component={ChannelBanner} durationInFrames={1} fps={FPS} width={2560} height={1440} />
+    <Composition id="LogoSting" component={LogoSting} durationInFrames={120} fps={FPS} width={WIDTH} height={HEIGHT} />
     {stories.map(({story, timings}) => (
       <Composition
         key={story.slug}
