@@ -5,19 +5,26 @@
   "description": "Vertical (1080x1920, 30fps) animated story studio built on Remotion.",
   "scripts": {
     "studio": "remotion studio src/index.ts",
-    "render:test": "remotion render src/index.ts RigTest out/rig-test.mp4",
-    "storyboard": "bash tools/storyboard.sh",
+    "new-story": "python3 tools/new_story.py",
     "timings": "\"$HOME/.venvs/whisper/bin/python\" tools/timings.py",
+    "storyboard": "node tools/storyboard.mjs",
+    "finish": "node tools/finish.mjs",
+    "edit": "node tools/edit.mjs",
+    "refs": "node tools/refs.mjs",
+    "render:test": "remotion render src/index.ts RigTest out/rig-test.mp4",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@remotion/bundler": "4.0.543",
     "@remotion/cli": "4.0.543",
+    "@remotion/renderer": "4.0.543",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "remotion": "4.0.543"
   },
   "devDependencies": {
     "@types/react": "^19.0.0",
+    "hyperframes": "^0.9.56",
     "typescript": "^5.6.0"
   }
 }

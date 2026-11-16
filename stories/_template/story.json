@@ -1,0 +1,62 @@
+{
+  "slug": "{{slug}}",
+  "title": "{{title}}",
+  "hook": "{{hook}}",
+  "language": "{{language}}",
+  "style": "{{style}}",
+  "series": "{{series}}",
+  "part": {{part}},
+  "heroScene": 1,
+  "scenes": [
+    {
+      "id": "question",
+      "line": "TODO spoken line 1",
+      "duration": 4,
+      "backdrop": {"palette": "dusk", "moon": {"x": 800, "y": 520, "r": 80, "phase": 0.35}},
+      "cast": [{"look": "boy", "x": 540, "action": "idle", "mood": "smile"}]
+    },
+    {
+      "id": "setting",
+      "line": "TODO spoken line 2",
+      "duration": 6,
+      "backdrop": {"palette": "dusk", "diyas": true},
+      "cast": [{"look": "boy", "x": 320, "toX": 560, "action": "walk"}]
+    },
+    {
+      "id": "problem",
+      "line": "TODO spoken line 3",
+      "duration": 6,
+      "backdrop": {"palette": "night", "petals": true},
+      "cast": [{"look": "boy", "x": 540, "action": "idle"}]
+    },
+    {
+      "id": "turn",
+      "line": "TODO spoken line 4",
+      "duration": 6,
+      "backdrop": {"palette": "night", "diyas": true, "sparks": true},
+      "cast": [{"look": "boy", "x": 480, "action": "wave", "mood": "smile"}, {"look": "elder", "x": 700, "facing": -1}]
+    },
+    {
+      "id": "choice",
+      "line": "TODO spoken line 5",
+      "duration": 6,
+      "backdrop": {"palette": "dawn", "sun": {"x": 820, "y": 560, "r": 90}},
+      "cast": [{"look": "boy", "x": 380, "toX": 620, "action": "walk"}]
+    },
+    {
+      "id": "answer",
+      "line": "TODO spoken line 6",
+      "duration": 6,
+      "backdrop": {"palette": "day", "sun": {"x": 800, "y": 500, "r": 90}},
+      "cast": [{"look": "boy", "x": 540, "action": "wave", "mood": "smile"}],
+      "push": 1.1
+    },
+    {
+      "id": "next",
+      "line": "TODO spoken line 7",
+      "duration": 5,
+      "backdrop": {"palette": "dusk", "moon": {"x": 800, "y": 520, "r": 80}, "sparks": true},
+      "cast": [{"look": "boy", "x": 540, "action": "wave", "mood": "smile"}]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "audio": "voice/demo-hinglish.wav",
+  "language": "en",
+  "duration": 13.933,
+  "words": [
+    {
+      "word": "Dadi",
+      "start": 0.0,
+      "end": 0.224
+    },
+    {
+      "word": "roz",
+      "start": 0.224,
+      "end": 0.532
+    },
+    {
+      "word": "sham",
+      "start": 0.532,
+      "end": 0.86
+    },
+    {
+      "word": "ko",
+      "start": 0.86,
+      "end": 1.128
+    },
+    {
+      "word": "diya",
+      "start": 1.128,
+      "end": 1.24
+    },
+    {
+      "word": "kyun",
+      "start": 1.24,
+      "end": 1.448
+    },
+    {
+      "word": "jalati",
+      "start": 1.448,
+      "end": 1.716
+    },
+    {
+      "word": "thi?",
+      "start": 1.716,
+      "end": 2.02
+    },
+    {
+      "word": "Raat",
+      "start": 2.02,
+      "end": 2.756
+    },
+    {
+      "word": "gehri",
+      "start": 2.756,
+      "end": 3.06
+    },
+    {
+      "word": "thi,",
+      "start": 3.06,
+      "end": 3.412
+    },
+    {
+      "word": "aur",
+      "start": 3.412,
+      "end": 3.972
+    },
+    {
+      "word": "Pinku",
+      "start": 3.972,
+      "end": 4.172
+    },
+    {
+      "word": "ko",
+      "start": 4.172,
+      "end": 4.444
+    },
+    {
+      "word": "raasta",
+      "start": 4.444,
+      "end": 4.62
+    },
+    {
+      "word": "dikhai",
+      "start": 4.62,
+      "end": 5.292
+    },
+    {
+      "word": "nahi",
+      "start": 5.292,
+      "end": 5.556
+    },
+    {
+      "word": "de",
+      "start": 5.556,
+      "end": 5.708
+    },
+    {
+      "word": "raha",
+      "start": 5.708,
+      "end": 5.932
+    },
+    {
+      "word": "tha.",
+      "start": 5.932,
+      "end": 6.66
+    },
+    {
+      "word": "Dadi",
+      "start": 6.66,
+      "end": 6.836
+    },
+    {
+      "word": "ne",
+      "start": 6.836,
+      "end": 6.988
+    },
+    {
+      "word": "ek",
+      "start": 6.988,
+      "end": 7.148
+    },
+    {
+      "word": "chhota",
+      "start": 7.148,
+      "end": 7.368
+    },
+    {
+      "word": "diya",
+      "start": 7.368,
+      "end": 7.72
+    },
+    {
+      "word": "jalaya,",
+      "start": 7.72,
+      "end": 7.976
+    },
+    {
+      "word": "aur",
+      "start": 7.976,
+      "end": 8.292
+    },
+    {
+      "word": "sab",
+      "start": 8.292,
+      "end": 8.84
+    },
+    {
+      "word": "roshan",
+      "start": 8.84,
+      "end": 9.04
+    },
+    {
+      "word": "ho",
+      "start": 9.04,
+      "end": 9.6
+    },
+    {
+      "word": "gaya.",
+      "start": 9.6,
+      "end": 10.016
+    },
+    {
+      "word": "Kal",
+      "start": 10.016,
+      "end": 10.816
+    },
+    {
+      "word": "batati",
+      "start": 10.816,
+      "end": 11.176
+    },
+    {
+      "word": "hoon,",
+      "start": 11.176,
+      "end": 11.764
+    },
+    {
+      "word": "Pinku",
+      "start": 11.764,
+      "end": 12.02
+    },
+    {
+      "word": "ne",
+      "start": 12.02,
+      "end": 12.148
+    },
+    {
+      "word": "agla",
+      "start": 12.148,
+      "end": 12.444
+    },
+    {
+      "word": "diya",
+      "start": 12.444,
+      "end": 12.772
+    },
+    {
+      "word": "kahan",
+      "start": 12.772,
+      "end": 13.132
+    },
+    {
+      "word": "rakha.",
+      "start": 13.132,
+      "end": 13.66
+    }
+  ]
+}

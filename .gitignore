@@ -7,6 +7,22 @@ frames/
 work/
 *.wav
 *.mp4
+# voice-overs, music and sound effects stay on your computer
+voice/*
+music/*
+sfx/*
+!voice/.gitkeep
+!music/.gitkeep
+!sfx/.gitkeep
 # local python env / caches
 .venv/
 __pycache__/
+# edit workflow: your footage, downloaded references, exports and working files stay on your computer
+raw-footage/*
+references/*
+exports/*
+!raw-footage/.gitkeep
+!references/.gitkeep
+!references/STYLE.template.md
+!exports/.gitkeep
+public/footage/

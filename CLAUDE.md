@@ -1,104 +1,189 @@
 # Animated Story Studio
 
-Vertical animated story shorts (**1080×1920, 30 fps**) built with Remotion + TypeScript.
-Characters and scenery are drawn in SVG code, so every frame is deterministic and re-colourable.
+Vertical animated story reels (**1080×1920, 30 fps**) built with Remotion + TypeScript, in
+**Hinglish, Hindi, English or any other language**, for kahani (mythology, folk tales, moral stories)
+and any other animated reel (facts, explainers, daily series). Characters and scenery are SVG drawn in
+code, so every frame is deterministic and every part of a series looks the same.
+
+Two ways to make a reel, same studio:
+1. **Animated story** from a script and a voice-over (below).
+2. **Edit your own footage**: drop a clip in `raw-footage/`, Claude cuts the dead air, adds a hook, captions and music
+   (see "Editing your own footage").
+
+Human guides: [docs/KAHANI-GUIDE.md](docs/KAHANI-GUIDE.md) (stories), [docs/EDIT-YOUR-FOOTAGE.md](docs/EDIT-YOUR-FOOTAGE.md) (footage).
 
 ## The rules (read first)
 
-1. **Script first.** No code, no storyboard, no render until the story has a written script in
-   `stories/<slug>/script.md` and the user has approved it.
-2. **Storyboard before any full render.** Render stills (`npm run storyboard`) for every scene,
-   look at them, and fix problems before running a full video render. Only then render the video.
-3. **Deities are shown with calm, respectful faces.** Always use a look with `sacred: true`
-   (it locks the face to a calm, half-lidded, softly closed-mouth expression). Never make them
-   comic, angry, scared, silly, or put them in funny poses. No jokes at their expense. Dress them
-   in full, dignified clothing with a halo/crown. Narration about them stays reverent.
-4. **Captions stay inside the safe zone.** Use `<Captions>` (it already sits on the safe-zone floor).
-   Safe zone = `SAFE` in `src/lib/theme.ts`: 220 px from the top, 440 px from the bottom,
-   80 px left, 140 px right. Check with `<SafeZoneGuide />` (the storyboard command turns it on).
-5. Everything is 1080×1920 @ 30 fps. Do not register compositions with other sizes.
+1. **Script first.** No scenes, no storyboard, no render until `stories/<slug>/script.md` is written
+   and the user has approved it.
+2. **Storyboard before any full render.** `npm run storyboard -- <slug>` makes one still per scene
+   (`out/<slug>-storyboard.jpg`). Look at it, fix the user's notes, then render. `npm run finish`
+   refuses to run without an up-to-date storyboard.
+3. **Deities are shown with calm, respectful faces.** Always use a look with `sacred: true` (it locks
+   the face to a calm, half-lidded, softly closed mouth). Never funny, angry, scared or silly; no jokes
+   at their expense; dignified full dress with halo/crown. Narration about them stays reverent.
+   Put "Respectful, devotional portrayal: calm faces, traditional clothes and colours, no humour about
+   the deity" in mind for every story involving deities.
+4. **Captions stay inside the safe zone.** Use `<Captions>` (it sits on the safe-zone floor). `SAFE` in
+   `src/lib/theme.ts`: 220 px top, 440 px bottom, 80 px left, 140 px right. Storyboard stills draw the guide.
+5. Everything is 1080×1920 @ 30 fps. Never register another size.
+6. **Open with a question.** The first line is a question or a surprise, never a greeting. Answer it
+   at the end, then one line that sets up the next part. 45–90 s, calm storyteller voice.
+7. **Be faithful and honest.** Follow a well-known retelling; call a folk version a folk version in
+   the caption. Do not copy another page's characters, drawings, voice or script. Use music we have the
+   rights to. Remind the user to switch on Instagram's AI label.
+8. Never ask for or paste API keys into chat; a voice service key goes in a `.env` file the user edits.
+
+## Languages
+
+`language` in `story.json` picks the caption font and size (`src/lib/languages.ts`):
+
+| language | script | captions | `--language` for timings |
+|---|---|---|---|
+| `hinglish` | Hindi in English letters | 4 words at a time | `hi` |
+| `hindi` | Devanagari | 3 words at a time | `hi` |
+| `english` | English | 4 words at a time | `en` |
+| `other` | Marathi, Gujarati, Tamil, Bengali... | 3 words at a time | (omit: auto-detect) |
+
+Captions use the **script's own words** (spelled the way the user wrote them) timed by the voice:
+`npm run timings -- ... --script stories/<slug>/voice.txt`. Always do this for Hinglish and Hindi.
+Always write Hindi names the same way (Hanuman, Lakshman, Sanjeevani): keep a spelling list in the story's `script.md`.
 
 ## Layout
 
 ```
-stories/<slug>/      one folder per story: script.md, storyboard.md, timings.json, Story.tsx
-voice/               voice-over recordings (<slug>.mp3 / .wav)
-music/               background music
-sfx/                 sound effects
-out/                 renders and storyboard stills (git-ignored)
+stories/<slug>/    story.json (the reel), script.md, voice.txt, storyboard.md, caption.md, timings.json
+stories/registry.ts  every story that shows up in Remotion (npm run new-story edits it)
+stories/_template/   what `npm run new-story` copies
+voice/ music/ sfx/   audio inputs, named <slug>.mp3 (git-ignored)
+out/                 renders, storyboard sheets, finals (git-ignored)
 src/
-  Root.tsx           registers compositions
-  lib/               theme.ts (size, fps, SAFE zone), palettes.tsx, Captions.tsx
-  rig/               Character.tsx (the SVG character), looks.ts (colours/outfits/presets)
-  scenery/           Sky, Moon, HillLayer (+trees), Clouds, Diya/DiyaTrail, Sparks, Petals, terrain.ts
-  compositions/      RigTest.tsx (the 3 s demo)
-tools/
-  timings.py         voice-over -> word timings JSON (faster-whisper)
-  storyboard.sh      render stills of chosen frames, with the safe-zone guide on
-archive/             the previous three.js cartoon kit and skill copy (kept for reference, not used)
-.claude/skills/      the cartoon-3d-short skill (a different, three.js style)
+  lib/        theme (size, fps, SAFE), palettes, languages, Captions, SvgLayer
+  rig/        Character (SVG, in parts) + looks (colours, outfits, presets)
+  scenery/    Sky, Moon, HillLayer(+trees), Clouds, Diya/DiyaTrail, Sparks, Petals, terrain
+  styles/     7 style presets (flat, paperCutout, shadowPuppet, madhubani, stainedGlass, warli, glowLine)
+  story/      StoryReel (the generic reel), timeline (scenes follow the voice), types, entry (validation)
+  compositions/  RigTest (3 s demo)
+tools/        new_story.py, timings.py, storyboard.mjs, finish.mjs
+docs/         KAHANI-GUIDE.md, EDIT-YOUR-FOOTAGE.md
+raw-footage/  your original clips (never modified or deleted by Claude; git-ignored)
+references/   downloaded reference videos + STYLE.md (git-ignored)
+exports/      finished edits: <name>-final.mp4, -qc.jpg (git-ignored)
+work/<name>/  edit.json (settings), cut.mp4, timings.json for an edit (git-ignored)
+archive/      the earlier three.js cartoon kit, kept for reference (not used)
+.claude/skills/  the cartoon-3d-short skill (a different, three.js style)
 ```
 
-## How a story is made (always in this order)
+## How a reel is made (always in this order)
 
-1. **Script** – write `stories/<slug>/script.md`: title, 55–70 s of narration split into short scenes,
-   one line per scene saying what is on screen. Get approval.
-2. **Voice-over** – the user records it into `voice/<slug>.mp3`.
-3. **Word timings** – `npm run timings -- voice/<slug>.mp3 --out stories/<slug>/timings.json`
-   (uses faster-whisper from `~/.venvs/whisper`; add `--language hi` for Hindi, `--prompt "names..."` to fix spellings).
-4. **Storyboard** – write `stories/<slug>/storyboard.md` (scene → start/end frame → characters, backdrop, camera).
-   Build `stories/<slug>/Story.tsx`, register it in `src/Root.tsx`, then
-   `npm run storyboard -- <CompId> <frame> <frame> ...` and view `out/storyboard/*.png`.
-5. **Full render** – only after the stills are approved:
-   `npx remotion render src/index.ts <CompId> out/<slug>.mp4`
-6. Mix voice, music (about half the voice level) and sfx, then check the captions and safe zone on the final video.
+1. **Pick the story + one style.** Question first line. One style per series (see `src/styles`).
+2. **Create the folder:**
+   `npm run new-story -- <slug> --title "..." --hook "<the question>" --language hinglish --style paperCutout --series "..." --part 1`
+3. **Script, in 7 beats**: question (0–3 s), setting (3–8), problem (8–15), turn (15–25), choice (25–35),
+   answer (35–42), next (last 3 s). Write it into `script.md` and the spoken lines into `voice.txt` (one scene's line per line).
+   Show the user the script + scene list and **wait for OK**.
+4. **Voice**: the user records `voice/<slug>.mp3` (own voice, AI voice with emotion tags, or none: then music and big captions only).
+5. **Timings**: `npm run timings -- voice/<slug>.mp3 --script stories/<slug>/voice.txt --language hi --out stories/<slug>/timings.json`
+6. **Scenes**: fill `story.json` (see below). Each scene's `line` must equal its line in `voice.txt`; the scene starts on that line's first word.
+7. **Storyboard**: `npm run storyboard -- <slug>`; show `out/<slug>-storyboard.jpg`; apply the user's notes; repeat.
+8. **Finish** (only after the storyboard is approved):
+   `npm run finish -- <slug> [--music music/track.mp3]` → `out/<slug>-final.mp4` (H.264 ~16 Mbps, AAC, about -14 LUFS, peaks under -1 dB),
+   `out/<slug>-qc.jpg` (contact sheet, a frame every 2.5 s), `out/<slug>-cover.jpg` (the question over the hero frame).
+9. Write `caption.md`: the question as line 1, 2 lines of story, series name + part, 3–5 hashtags. Check the QC sheet.
+10. **Series**: same name, same style, same characters; the part number in the first second; last line opens the next part.
 
-Convert seconds to frames with `Math.round(seconds * FPS)`. Scene lengths come from `timings.json`, so the
-picture follows the voice.
+Live preview of any story: `npm run studio`.
+
+## story.json
+
+```json
+{
+  "slug": "dadi-ka-diya", "title": "...", "hook": "Dadi roz sham ko diya kyun jalati thi?",
+  "language": "hinglish", "style": "paperCutout", "series": "Dadi ki kahaniyan", "part": 1, "heroScene": 2,
+  "scenes": [
+    {"id": "question", "line": "Dadi roz sham ko diya kyun jalati thi?", "duration": 4,
+     "backdrop": {"palette": "dusk", "moon": {"x": 800, "y": 520, "r": 80, "phase": 0.35}},
+     "cast": [{"look": "elder", "x": 380, "action": "idle", "mood": "smile"},
+              {"look": "boy", "x": 690, "facing": -1}]}
+  ]
+}
+```
+
+- **backdrop**: `palette` (dusk/night/dawn/day), `sun`, `moon`, `clouds`, `trees` `[back, middle, front]`, `diyas`, `sparks`, `petals`,
+  `scrollSpeed`, `offset`. A walking character sets the ground speed automatically so feet do not slide.
+- **cast**: `look` (preset name or a full look object), `x`, `toX` (moves during the scene), `scale`, `facing` (1 or -1),
+  `action` (idle / walk / wave / walkWave), `mood` (calm / smile), `blinkOffset`.
+- **scene**: `id`, `line`, `start` (seconds; overrides `line`), `duration` (only used before timings exist), `push` (end zoom, default 1.05).
+- Good scenes have: depth (3 hill layers), life (blink/breathe), one light source, particles, a slow camera push, one hero moment.
+- Validation errors name the file and the field; fix and re-run.
 
 ## The character rig (`src/rig`)
 
-```tsx
-<Character look={looks.girl} x={540} y={1380} scale={1.1} walk={1} wave={0} stepRate={1.1} mood="calm" />
-```
+`<Character look x y scale facing walk wave stepRate mood blinkOffset />`: head, body (breathing), arms, legs, cloth, hair, headwear;
+walk / wave blends plus automatic blink and breathing. New character = `{...looks.boy, top: '#2a9d8f'}` (fields: skin, hair, `hairStyle`,
+top, bottom, accent, `outfit` kurta/dress/dhoti/tunic, `headwear` none/crown/turban, `sleeves`, `bindi`, `halo`, `sacred`).
+Presets: boy, girl, elder, warrior, deity. Need a new pose or outfit? Add it to the rig; never draw one-off characters in a story.
+Styles recolour looks automatically (e.g. Warli turns everyone off-white), so keep looks in `story.json` style-free.
 
-- Drawn in parts: head, body (torso, breathing), arms (upper/fore/hand), legs (thigh/shin/shoe), cloth, hair, headwear.
-- Animations: `walk` (0–1 blend, `stepRate` = walk cycles per second), `wave` (0–1 blend), plus automatic **blink** and **breathe**.
-  Give two characters different `blinkOffset`s so they don't blink together.
-- `facing={-1}` mirrors the character. Feet sit at (x, y), the figure is ~470 units tall at scale 1.
-- **Re-colour / re-dress** by changing the `look` (`src/rig/looks.ts`): skin, hair, `hairStyle`
-  (short/long/bun/none), `top`, `bottom`, `accent`, `outfit` (kurta/dress/dhoti/tunic), `headwear`
-  (none/crown/turban), `sleeves`, `bindi`, `halo`. Presets: `boy, girl, elder, warrior, deity`.
-  New character = `{...looks.boy, top: '#2a9d8f', hair: '#6b3a1f'}`.
-- Syncing ground to feet: `walkSpeedPxPerSec(stepRate, scale)` gives the speed to scroll the world at.
-- Need a new pose or outfit? Add it to `Character.tsx`/`looks.ts`; don't draw one-off characters inside a story.
+## Editing your own footage
 
-## Scene parts (`src/scenery`)
+The 5 tools: **Remotion** (`src/edit/EditReel.tsx`, builds video and graphics from code), **Hyperframes** (HeyGen's HTML-to-video
+tool, installed: `npx hyperframes`; use it when a graphic is easier as HTML/CSS), **FFmpeg** (cuts and exports), **Whisper**
+(`tools/timings.py`, captions), **yt-dlp** (`npm run refs`, pulls reference videos).
 
-Wrap a scene in `<PaletteProvider palette={palettes.dusk}>` (`dusk`, `night`, `dawn`, `day`), then stack, back to front:
+1. **Learn the style.** The user gives 3–5 links of videos they love: `npm run refs -- <link> <link> ...` downloads each into
+   `references/<id>/` with a contact sheet (`frames.jpg`) and a transcript. Look at them, fill in `references/STYLE.md`, then write the
+   resulting style (hook type, pacing, caption look, music mood) into this file under "My edit style". **Inspired by, not a copy:**
+   borrow patterns only, never another creator's script, footage, characters, voice or layout.
+2. **Film and drop the file** into `raw-footage/`. Never edit, move or delete originals there.
+3. **Edit:** `npm run edit -- raw-footage/<clip>.mp4 --hook "<first-line hook>" --language hi|en|hinglish --music music/<track>.mp3`
+   cuts the dead air (silences over 0.5 s, with a 0.12 s breath kept), transcribes the cut, renders hook + captions + ducking music,
+   masters sound to about -14 LUFS (peaks under -1.5 dBFS), and writes `exports/<name>-final.mp4` and `exports/<name>-qc.jpg`.
+4. **Review and fix.** Show the user the QC sheet/video. Notes become settings in `work/<name>/edit.json` (or flags), then run the
+   same command again: the cut and transcript are reused, only the render repeats (about 10 s).
+   "Make the hook bigger" → `--hook-size 120`. "Captions too big" → `--caption-size 56`. "Music too loud" → `--music-volume 0.1`.
+   "Cuts feel too tight" → `--min-silence 0.8`. "No captions" → `--no-captions`. Changed the cut settings or footage? Add `--force`.
+   Hinglish footage: Whisper writes Hindi speech in Devanagari; for Roman captions pass `--script` with the exact words.
+5. Same safe-zone rule as stories: captions and hook stay inside the safe zone. Ask the user to watch it once on their phone.
 
-`Sky` (gradient, stars, optional `sun`) → `Moon` → `Clouds` → `HillLayer layer={0}` → `layer={1}` → `layer={2}`
-(each takes `scroll` and optional `trees`) → `DiyaTrail` → `Character` → `Sparks` → `Petals`.
+### My edit style
+_Not set yet. Add the 3–5 reference links, run `npm run refs`, and fill in `references/STYLE.md`; then summarise it here._
 
-Hills scroll at different speeds (0.15 / 0.4 / 1.0 × camera) for parallax; clouds drift at their own speeds.
-Layer 2 is the ground: `groundY(screenX, scroll)` returns the hill height so characters stand on it.
-Place single `Diya`s or `Tree`s anywhere. Use `src/compositions/RigTest.tsx` as a working example. Each part draws into a full-frame `SvgLayer` (`src/lib/SvgLayer.tsx`), so parts stack in render order.
+## Fixing problems
+
+| Problem | Do |
+|---|---|
+| Character looks wrong | Ask for 2 reference images, adjust `looks`/the rig |
+| Scenes look different | One rig, one palette, one style for the whole series |
+| Scene feels flat | 3 hill layers, a light source (moon/diya/sun), particles (sparks/petals) |
+| Characters float or slide | Feet follow `groundY`; walking scenes auto-match scroll speed. Do not set `scrollSpeed` on walking scenes |
+| Captions out of sync | Re-run timings with `--model medium` and `--script` |
+| Hindi words spelled wrong | Fix `voice.txt` (captions use it) and re-run timings |
+| Render fails | Paste the last 20 lines; try `npm run storyboard` first (renders single frames) |
+| Render slow | Close other apps; storyboard stills first, full render last |
 
 ## Commands
 
 ```bash
-npm run studio                          # live preview in the browser
-npm run storyboard -- RigTest 0 45 89   # stills -> out/storyboard/
-npm run render:test                     # 3 s rig-on-hills test -> out/rig-test.mp4
-npm run timings -- voice/x.mp3 --out stories/x/timings.json
+npm run new-story -- <slug> --title "..." --hook "..." --language hinglish --style paperCutout
+npm run timings -- voice/<slug>.mp3 --script stories/<slug>/voice.txt --language hi --out stories/<slug>/timings.json
+npm run storyboard -- <slug>                    # one still per scene -> out/<slug>-storyboard.jpg
+npm run storyboard -- RigTest 0 45 89           # stills of chosen frames of any composition
+npm run finish -- <slug> [--music music/x.mp3]  # render + mix + final.mp4 + qc.jpg + cover.jpg
+npm run edit -- raw-footage/<clip>.mp4 --hook "..."   # cut dead air + hook + captions + music -> exports/
+npm run refs -- <link-or-file> ...              # download/analyse reference videos into references/
+npm run studio                                  # live preview
+npm run render:test                             # 3 s rig-on-hills test
 npm run typecheck
 ```
 
-Python for timings lives in `~/.venvs/whisper` (Python 3.12, `tools/requirements.txt`; `av` is pinned to 16.x because
-newer PyAV breaks faster-whisper 1.2.1).
+Python for timings lives in `~/.venvs/whisper` (Python 3.12, `tools/requirements.txt`; `av` is pinned to 16.x because newer
+PyAV breaks faster-whisper 1.2.1). Whisper models: `tiny/base/small` (default)/`medium`; bigger is slower and more exact.
 
 ## Conventions
 
 - Animate from `useCurrentFrame()` only (no `Math.random()`, no CSS animations); use Remotion's `random(seed)` for variety.
-- Keep story-specific code in `stories/<slug>/`; shared things go in `src/rig` or `src/scenery`.
-- Keep important faces/subjects inside the safe zone; the ground and sky may extend to the edges.
+- Story-specific data lives in `stories/<slug>/`; shared things go in `src/rig`, `src/scenery`, `src/styles`.
+- A new style is one entry in `src/styles/index.tsx` (palette, look mapper, overlay, drawings per second).
+- Keep important faces and subjects inside the safe zone; the ground and sky may extend to the edges.
+- `npm run typecheck` must pass (it also flags unused code).
