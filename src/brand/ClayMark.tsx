@@ -13,10 +13,10 @@ import {Easing, interpolate} from 'remotion';
 export const INK = '#0E0A33';
 export const CREAM = '#FFF4DE';
 export const MARIGOLD = '#FFC93C';
-export const SAFFRON = '#FF8A1F';
+const SAFFRON = '#FF8A1F';
 export const TEAL = '#2EC4B6';
 export const PINK = '#FF5FA8';
-export const VIOLET = '#6C4BFF';
+const VIOLET = '#6C4BFF';
 
 export const clamp01 = (n: number) => Math.min(1, Math.max(0, n));
 export const ramp = (frame: number, from: number, to: number) =>

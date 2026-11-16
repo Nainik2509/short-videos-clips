@@ -103,6 +103,7 @@ run('ffmpeg', [
   '-c:v', 'copy', '-t', seconds.toFixed(3), '-movflags', '+faststart', final,
 ]);
 fs.rmSync(path.join(ROOT, `out/${slug}-mastered.wav`), {force: true});
+fs.rmSync(silent); // the picture-only render is an intermediate; keep out/ to finals, covers and sheets
 
 // 3. contact sheet to check the whole reel at a glance
 const frames = Math.ceil(seconds / 2.5);

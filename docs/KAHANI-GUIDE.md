@@ -69,12 +69,10 @@ so spelling is always yours. Other reels (facts, explainers, moral stories, any 
 | Style | Look | Good for |
 |---|---|---|
 | `paperCutout` | Layered paper, soft shadows, light grain, 12 drawings/s | Mythology, friendly stories |
-| `shadowPuppet` | Amber lamp-lit cloth screen, dark outlines, 10 drawings/s | Night scenes, mythology |
 | `madhubani` | Bihar folk painting: black outlines, flat colours, patterned border | Folk tales |
-| `stainedGlass` | Temple window: arch, gold trim, lead lines, sweeping sunlight | Devotional, premium |
-| `warli` | Off-white figures on terracotta, triangle borders | Folk tales, tribal art |
-| `glowLine` | Glowing outlines on black | Dramatic, modern |
+| `glowLine` | Glowing outlines on black | Dramatic, night mythology, modern |
 | `flat` | Clean colours, bold outlines (the default) | Anything |
+| `stickTales` | Flat teal, thick black outlines, stick figures | English explainers (Doodle Whys) |
 
 A style of your own: drag 2–3 images you like into the chat and say "add a style for this look" (one entry in `src/styles/index.tsx`).
 The styles are close approximations of each tradition; tell Claude what to refine ("thicker outlines", "more red").

@@ -1,0 +1,512 @@
+{
+  "audio": "voice/why-called-shampoo.mp3",
+  "language": "en",
+  "duration": 42.684,
+  "words": [
+    {
+      "word": "Why",
+      "start": 0.0,
+      "end": 0.244
+    },
+    {
+      "word": "is",
+      "start": 0.244,
+      "end": 0.407
+    },
+    {
+      "word": "it",
+      "start": 0.407,
+      "end": 0.57
+    },
+    {
+      "word": "called",
+      "start": 0.57,
+      "end": 1.059
+    },
+    {
+      "word": "shampoo?",
+      "start": 1.059,
+      "end": 1.677
+    },
+    {
+      "word": "Because",
+      "start": 2.195,
+      "end": 2.716
+    },
+    {
+      "word": "it",
+      "start": 2.716,
+      "end": 2.865
+    },
+    {
+      "word": "is",
+      "start": 2.865,
+      "end": 3.013
+    },
+    {
+      "word": "a",
+      "start": 3.013,
+      "end": 3.088
+    },
+    {
+      "word": "Hindi",
+      "start": 3.088,
+      "end": 3.46
+    },
+    {
+      "word": "word.",
+      "start": 3.46,
+      "end": 4.079
+    },
+    {
+      "word": "It",
+      "start": 4.079,
+      "end": 4.228
+    },
+    {
+      "word": "comes",
+      "start": 4.228,
+      "end": 4.6
+    },
+    {
+      "word": "from",
+      "start": 4.6,
+      "end": 4.897
+    },
+    {
+      "word": "\"champo\",",
+      "start": 4.897,
+      "end": 5.748
+    },
+    {
+      "word": "which",
+      "start": 5.748,
+      "end": 6.12
+    },
+    {
+      "word": "means",
+      "start": 6.12,
+      "end": 6.492
+    },
+    {
+      "word": "to",
+      "start": 6.492,
+      "end": 6.641
+    },
+    {
+      "word": "press",
+      "start": 6.641,
+      "end": 7.013
+    },
+    {
+      "word": "or",
+      "start": 7.013,
+      "end": 7.162
+    },
+    {
+      "word": "massage.",
+      "start": 7.162,
+      "end": 7.728
+    },
+    {
+      "word": "In",
+      "start": 8.241,
+      "end": 8.4
+    },
+    {
+      "word": "India,",
+      "start": 8.4,
+      "end": 8.845
+    },
+    {
+      "word": "champo",
+      "start": 8.845,
+      "end": 9.322
+    },
+    {
+      "word": "was",
+      "start": 9.322,
+      "end": 9.561
+    },
+    {
+      "word": "a",
+      "start": 9.561,
+      "end": 9.64
+    },
+    {
+      "word": "relaxing",
+      "start": 9.64,
+      "end": 10.276
+    },
+    {
+      "word": "head",
+      "start": 10.276,
+      "end": 10.594
+    },
+    {
+      "word": "massage",
+      "start": 10.594,
+      "end": 11.151
+    },
+    {
+      "word": "with",
+      "start": 11.151,
+      "end": 11.469
+    },
+    {
+      "word": "oil.",
+      "start": 11.469,
+      "end": 11.755
+    },
+    {
+      "word": "In",
+      "start": 12.258,
+      "end": 12.412
+    },
+    {
+      "word": "the",
+      "start": 12.412,
+      "end": 12.642
+    },
+    {
+      "word": "1700s,",
+      "start": 12.642,
+      "end": 13.073
+    },
+    {
+      "word": "the",
+      "start": 13.073,
+      "end": 13.304
+    },
+    {
+      "word": "word",
+      "start": 13.304,
+      "end": 13.612
+    },
+    {
+      "word": "reached",
+      "start": 13.612,
+      "end": 14.15
+    },
+    {
+      "word": "English,",
+      "start": 14.15,
+      "end": 14.735
+    },
+    {
+      "word": "and",
+      "start": 14.735,
+      "end": 14.965
+    },
+    {
+      "word": "it",
+      "start": 14.965,
+      "end": 15.119
+    },
+    {
+      "word": "still",
+      "start": 15.119,
+      "end": 15.504
+    },
+    {
+      "word": "meant",
+      "start": 15.504,
+      "end": 15.889
+    },
+    {
+      "word": "massage.",
+      "start": 15.889,
+      "end": 16.473
+    },
+    {
+      "word": "In",
+      "start": 17.009,
+      "end": 17.179
+    },
+    {
+      "word": "1814,",
+      "start": 17.179,
+      "end": 17.57
+    },
+    {
+      "word": "an",
+      "start": 17.57,
+      "end": 17.741
+    },
+    {
+      "word": "Indian",
+      "start": 17.741,
+      "end": 18.251
+    },
+    {
+      "word": "man",
+      "start": 18.251,
+      "end": 18.506
+    },
+    {
+      "word": "named",
+      "start": 18.506,
+      "end": 18.932
+    },
+    {
+      "word": "Sake",
+      "start": 18.932,
+      "end": 19.272
+    },
+    {
+      "word": "Dean",
+      "start": 19.272,
+      "end": 19.612
+    },
+    {
+      "word": "Mahomed",
+      "start": 19.612,
+      "end": 20.208
+    },
+    {
+      "word": "opened",
+      "start": 20.208,
+      "end": 20.718
+    },
+    {
+      "word": "a",
+      "start": 20.718,
+      "end": 20.803
+    },
+    {
+      "word": "bathhouse",
+      "start": 20.803,
+      "end": 21.569
+    },
+    {
+      "word": "in",
+      "start": 21.569,
+      "end": 21.739
+    },
+    {
+      "word": "Brighton,",
+      "start": 21.739,
+      "end": 22.471
+    },
+    {
+      "word": "England,",
+      "start": 22.471,
+      "end": 23.117
+    },
+    {
+      "word": "offering",
+      "start": 23.117,
+      "end": 24.129
+    },
+    {
+      "word": "shampooing.",
+      "start": 24.129,
+      "end": 25.031
+    },
+    {
+      "word": "It",
+      "start": 25.568,
+      "end": 25.713
+    },
+    {
+      "word": "was",
+      "start": 25.713,
+      "end": 25.93
+    },
+    {
+      "word": "so",
+      "start": 25.93,
+      "end": 26.075
+    },
+    {
+      "word": "popular",
+      "start": 26.075,
+      "end": 26.582
+    },
+    {
+      "word": "that",
+      "start": 26.582,
+      "end": 26.871
+    },
+    {
+      "word": "two",
+      "start": 26.871,
+      "end": 27.089
+    },
+    {
+      "word": "British",
+      "start": 27.089,
+      "end": 27.596
+    },
+    {
+      "word": "kings",
+      "start": 27.596,
+      "end": 27.958
+    },
+    {
+      "word": "made",
+      "start": 27.958,
+      "end": 28.247
+    },
+    {
+      "word": "him",
+      "start": 28.247,
+      "end": 28.465
+    },
+    {
+      "word": "their",
+      "start": 28.465,
+      "end": 28.827
+    },
+    {
+      "word": "Shampooing",
+      "start": 28.827,
+      "end": 29.551
+    },
+    {
+      "word": "Surgeon.",
+      "start": 29.551,
+      "end": 30.101
+    },
+    {
+      "word": "Only",
+      "start": 30.639,
+      "end": 30.962
+    },
+    {
+      "word": "around",
+      "start": 30.962,
+      "end": 31.448
+    },
+    {
+      "word": "the",
+      "start": 31.448,
+      "end": 31.69
+    },
+    {
+      "word": "1860s",
+      "start": 31.69,
+      "end": 32.094
+    },
+    {
+      "word": "did",
+      "start": 32.094,
+      "end": 32.337
+    },
+    {
+      "word": "shampoo",
+      "start": 32.337,
+      "end": 32.903
+    },
+    {
+      "word": "start",
+      "start": 32.903,
+      "end": 33.307
+    },
+    {
+      "word": "to",
+      "start": 33.307,
+      "end": 33.469
+    },
+    {
+      "word": "mean",
+      "start": 33.469,
+      "end": 33.792
+    },
+    {
+      "word": "washing",
+      "start": 33.792,
+      "end": 34.359
+    },
+    {
+      "word": "your",
+      "start": 34.359,
+      "end": 34.682
+    },
+    {
+      "word": "hair.",
+      "start": 34.682,
+      "end": 35.054
+    },
+    {
+      "word": "So",
+      "start": 35.52,
+      "end": 35.698
+    },
+    {
+      "word": "every",
+      "start": 35.698,
+      "end": 36.145
+    },
+    {
+      "word": "wash,",
+      "start": 36.145,
+      "end": 36.556
+    },
+    {
+      "word": "you",
+      "start": 36.556,
+      "end": 36.824
+    },
+    {
+      "word": "are",
+      "start": 36.824,
+      "end": 37.092
+    },
+    {
+      "word": "saying",
+      "start": 37.092,
+      "end": 37.628
+    },
+    {
+      "word": "a",
+      "start": 37.628,
+      "end": 37.717
+    },
+    {
+      "word": "Hindi",
+      "start": 37.717,
+      "end": 38.163
+    },
+    {
+      "word": "word.",
+      "start": 38.163,
+      "end": 39.153
+    },
+    {
+      "word": "Next:",
+      "start": 39.153,
+      "end": 39.564
+    },
+    {
+      "word": "another",
+      "start": 39.564,
+      "end": 40.487
+    },
+    {
+      "word": "Hindi",
+      "start": 40.487,
+      "end": 40.933
+    },
+    {
+      "word": "word",
+      "start": 40.933,
+      "end": 41.291
+    },
+    {
+      "word": "hiding",
+      "start": 41.291,
+      "end": 41.827
+    },
+    {
+      "word": "in",
+      "start": 41.827,
+      "end": 42.005
+    },
+    {
+      "word": "English.",
+      "start": 42.005,
+      "end": 42.684
+    }
+  ]
+}

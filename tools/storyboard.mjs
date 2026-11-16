@@ -43,6 +43,8 @@ if (perScene) {
     '-v', 'error', '-y', '-framerate', '1', '-pattern_type', 'glob', '-i', path.join(outDir, `${id}-s*.png`),
     '-vf', `scale=360:-1,tile=${cols}x${rows}:padding=10:color=0x111111`, '-frames:v', '1', '-update', '1', sheet,
   ]);
+  for (const f of files) fs.rmSync(f); // the sheet holds them all; do not leave per-scene stills behind
+  if (!fs.readdirSync(outDir).length) fs.rmdirSync(outDir);
   console.log(`\nstoryboard sheet: ${path.relative(ROOT, sheet)}  (one picture per scene, in order)`);
   console.log('Check it, give your notes, fix them, and only then run: npm run finish -- ' + id);
 }

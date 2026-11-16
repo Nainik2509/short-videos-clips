@@ -69,8 +69,8 @@ const SceneView: React.FC<{spec: SceneSpec; index: number; frames: number; lead:
           )}
           {backdrop.bare && (
             <SvgLayer>
-              <rect x={0} y={BARE_FLOOR} width={WIDTH} height={1920 - BARE_FLOOR} fill={palette.hills[2]} />
-              <rect x={0} y={BARE_FLOOR - 4} width={WIDTH} height={8} fill={palette.ink} />
+              <rect x={0} y={backdrop.floor ?? BARE_FLOOR} width={WIDTH} height={1920 - (backdrop.floor ?? BARE_FLOOR)} fill={palette.hills[2]} />
+              <rect x={0} y={(backdrop.floor ?? BARE_FLOOR) - 4} width={WIDTH} height={8} fill={palette.ink} />
             </SvgLayer>
           )}
           {spec.stage && (
@@ -109,7 +109,7 @@ const SceneView: React.FC<{spec: SceneSpec; index: number; frames: number; lead:
                   key={i}
                   look={look}
                   x={x}
-                  y={backdrop.bare ? BARE_FLOOR : groundY(x, scroll)}
+                  y={backdrop.bare ? backdrop.floor ?? BARE_FLOOR : groundY(x, scroll)}
                   scale={c.scale ?? DEFAULT_SCALE}
                   facing={c.facing ?? 1}
                   walk={walks(c) ? 1 : 0}

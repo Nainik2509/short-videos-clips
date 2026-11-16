@@ -26,7 +26,7 @@ The `channel/backlog.md` list is written for this series.
 | Promise | A story with one question, told the way a grandmother tells it |
 | Length | 40–60 s, 7 beats (question, setting, problem, turn, choice, answer, next) |
 | Language | Hinglish or Hindi, calm storyteller |
-| Style | One per sub-series: `paperCutout` (friendly), `madhubani` or `warli` (folk), `stainedGlass` (devotional), `shadowPuppet` (night mythology) |
+| Style | One per sub-series: `paperCutout` (friendly, devotional), `madhubani` (folk), `glowLine` (night mythology) |
 | Rules | Well-known retelling; folk versions labelled; **deities always calm and respectful** (`sacred` looks); end with the next part |
 | Numbering | Always "Part N" in the first second (the studio adds it from `series` + `part`) |
 

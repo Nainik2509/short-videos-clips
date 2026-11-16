@@ -37,14 +37,14 @@ More ideas for later (confirm first): अमर जेलीफ़िश (Turrit
 |---|---|---|---|---|
 | 1 | Lakshman ji ki neend | Lakshman 14 saal soye kyun nahi? | paperCutout | ☐ |
 | 2 | Shabari ke ber | Ram ji ne jhoothe ber kyun khaaye? | madhubani | ☐ |
-| 3 | Hanuman ji aur Sanjeevani | Hanuman ji ne poora parvat kyun utha liya? | stainedGlass | ☐ |
-| 4 | Kumbhakaran ki neend | Kumbhakaran 6 mahine kyun sota tha? | shadowPuppet | ☐ |
-| 5 | Ekalavya | Ekalavya ne angootha kyun diya? | warli | ☐ |
+| 3 | Hanuman ji aur Sanjeevani | Hanuman ji ne poora parvat kyun utha liya? | paperCutout | ☐ |
+| 4 | Kumbhakaran ki neend | Kumbhakaran 6 mahine kyun sota tha? | glowLine | ☐ |
+| 5 | Ekalavya | Ekalavya ne angootha kyun diya? | madhubani | ☐ |
 | 6 | Bhishma ki pratigya | Bhishma ne kabhi shaadi kyun nahi ki? | paperCutout | ☐ |
 | 7 | Birbal ki khichdi | Khichdi itni door se kaise pakti? | madhubani | ☐ |
 | 8 | Bandar aur magarmach (Panchatantra) | Bandar ne kaha "mera dil ped par hai". Kyun? | paperCutout | ☐ |
-| 9 | Sher aur khargosh (Panchatantra) | Ek chhote khargosh ne sher ko kaise haraya? | warli | ☐ |
-| 10 | Raja Harishchandra | Ek raja ne sach ke liye sab kuch kyun diya? | stainedGlass | ☐ |
+| 9 | Sher aur khargosh (Panchatantra) | Ek chhote khargosh ne sher ko kaise haraya? | madhubani | ☐ |
+| 10 | Raja Harishchandra | Ek raja ne sach ke liye sab kuch kyun diya? | paperCutout | ☐ |
 
 ## Cartoon: "Pinku aur Dadi" (original ideas)
 

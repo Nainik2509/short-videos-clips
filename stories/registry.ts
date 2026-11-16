@@ -1,5 +1,7 @@
 import {entry, type StoryEntry} from '../src/story/entry';
 // <stories:imports>
+import whyCalledShampoo from './why-called-shampoo/story.json';
+import whyCalledShampooTimings from './why-called-shampoo/timings.json';
 import airplaneWindowHole from './airplane-window-hole/story.json';
 import airplaneWindowHoleTimings from './airplane-window-hole/timings.json';
 import dancingPlague1518 from './dancing-plague-1518/story.json';
@@ -21,6 +23,7 @@ import sailingStonesTimings from './sailing-stones/timings.json';
  */
 export const stories: StoryEntry[] = [
   // <stories:list>
+  entry(whyCalledShampoo, whyCalledShampooTimings),
   entry(airplaneWindowHole, airplaneWindowHoleTimings),
   entry(dancingPlague1518, dancingPlague1518Timings),
   entry(moonFollowsUs, moonFollowsUsTimings),

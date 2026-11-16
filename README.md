@@ -16,7 +16,7 @@ Remotion + TypeScript, so a series always looks the same, and a new reel is most
 | Languages | Hinglish, Hindi (Devanagari), English, other Indian languages |
 | Character rig | One SVG character that walks, waves, blinks and breathes; re-colour and re-dress it for anyone |
 | Scene parts | Sky, stars, sun, moon, 3 hill layers, clouds, trees, diyas, sparks, petals |
-| 7 styles | Paper cut-out, shadow puppet, Madhubani, stained glass, Warli, glow line, flat |
+| 5 styles | Flat, paper cut-out, Madhubani, glow line, Stick Tales |
 | Export | `final.mp4` (H.264, about -14 LUFS), contact sheet to check it, cover image |
 
 ## Edit your own footage too
