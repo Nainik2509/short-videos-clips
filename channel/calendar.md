@@ -9,8 +9,8 @@
 | Wed | Cartoon | Pinku aur Dadi episode |
 | Thu | Facts | |
 | Fri | Kahani | |
-| Sat | (rest, or bonus Cartoon) | Review analytics, write next week's scripts |
-| Sun | (rest) | Prepare 3 scripts ahead |
+| Sat | **Stick Tales** (English) | 25–45 s; post at 21:30 IST for UK/US reach (see `channel/next-reels.md`) |
+| Sun | Stick Tales (optional bonus) or rest | Review analytics, prepare 3 scripts ahead |
 
 Post at the **same time every day** (pick one slot and keep it for 30 days before testing another).
 Always keep **5+ finished Shorts** scheduled ahead so a busy week never breaks the rhythm.

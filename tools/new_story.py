@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / "stories" / "_template"
 REGISTRY = ROOT / "stories" / "registry.ts"
 LANGUAGES = ["hinglish", "hindi", "english", "other"]
-STYLES = ["flat", "paperCutout", "shadowPuppet", "madhubani", "stainedGlass", "warli", "glowLine"]
+STYLES = ["flat", "paperCutout", "shadowPuppet", "madhubani", "stainedGlass", "warli", "glowLine", "stickTales"]
 
 
 def camel(slug: str) -> str:

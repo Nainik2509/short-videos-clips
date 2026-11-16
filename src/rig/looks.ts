@@ -5,7 +5,7 @@
  */
 export type Outfit = 'kurta' | 'dress' | 'dhoti' | 'tunic';
 export type HairStyle = 'short' | 'long' | 'bun' | 'none';
-export type Headwear = 'none' | 'crown' | 'turban';
+export type Headwear = 'none' | 'crown' | 'turban' | 'beanie';
 export type Sleeves = 'none' | 'short' | 'long';
 
 export type CharacterLook = {
@@ -30,6 +30,8 @@ export type CharacterLook = {
   /** Deities and sacred figures: forces a calm, respectful face (no other mood is allowed). */
   sacred?: boolean;
   ink?: string;
+  /** Stick Tales: draw a stick figure (round head, line limbs) instead of the bean body. skin = head, top = vest, accent = beanie. */
+  stick?: boolean;
 };
 
 export const looks = {
@@ -92,6 +94,20 @@ export const looks = {
     bindi: '#e8453c',
     halo: '#ffe9a8',
     sacred: true,
+  },
+  /** Stick Tales narrator: blue beanie, orange vest. Colours are fixed for the whole series. */
+  sticky: {
+    skin: '#ffffff',
+    hair: '#111111',
+    hairStyle: 'none',
+    top: '#ff8a1f',
+    bottom: '#2f6bff',
+    accent: '#2f6bff',
+    shoe: '#111111',
+    outfit: 'tunic',
+    headwear: 'beanie',
+    ink: '#111111',
+    stick: true,
   },
 } satisfies Record<string, CharacterLook>;
 

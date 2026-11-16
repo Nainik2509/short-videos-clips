@@ -1,0 +1,327 @@
+{
+  "audio": "voice/moon-follows-us.mp3",
+  "language": "en",
+  "duration": 25.208,
+  "words": [
+    {
+      "word": "Why",
+      "start": 0.0,
+      "end": 0.179
+    },
+    {
+      "word": "does",
+      "start": 0.179,
+      "end": 0.419
+    },
+    {
+      "word": "the",
+      "start": 0.419,
+      "end": 0.598
+    },
+    {
+      "word": "moon",
+      "start": 0.598,
+      "end": 0.837
+    },
+    {
+      "word": "follow",
+      "start": 0.837,
+      "end": 1.196
+    },
+    {
+      "word": "us",
+      "start": 1.196,
+      "end": 1.316
+    },
+    {
+      "word": "when",
+      "start": 1.316,
+      "end": 1.555
+    },
+    {
+      "word": "we",
+      "start": 1.555,
+      "end": 1.675
+    },
+    {
+      "word": "walk?",
+      "start": 1.675,
+      "end": 1.95
+    },
+    {
+      "word": "Pinku",
+      "start": 3.474,
+      "end": 3.756
+    },
+    {
+      "word": "and",
+      "start": 3.756,
+      "end": 3.926
+    },
+    {
+      "word": "Dadi",
+      "start": 3.926,
+      "end": 4.152
+    },
+    {
+      "word": "were",
+      "start": 4.152,
+      "end": 4.378
+    },
+    {
+      "word": "walking",
+      "start": 4.378,
+      "end": 4.773
+    },
+    {
+      "word": "home",
+      "start": 4.773,
+      "end": 4.999
+    },
+    {
+      "word": "one",
+      "start": 4.999,
+      "end": 5.168
+    },
+    {
+      "word": "night,",
+      "start": 5.168,
+      "end": 5.484
+    },
+    {
+      "word": "and",
+      "start": 5.484,
+      "end": 5.654
+    },
+    {
+      "word": "the",
+      "start": 5.654,
+      "end": 5.823
+    },
+    {
+      "word": "moon",
+      "start": 5.823,
+      "end": 6.049
+    },
+    {
+      "word": "walked",
+      "start": 6.049,
+      "end": 6.388
+    },
+    {
+      "word": "with",
+      "start": 6.388,
+      "end": 6.614
+    },
+    {
+      "word": "them.",
+      "start": 6.614,
+      "end": 6.873
+    },
+    {
+      "word": "Dadi",
+      "start": 7.957,
+      "end": 8.21
+    },
+    {
+      "word": "pointed",
+      "start": 8.21,
+      "end": 8.654
+    },
+    {
+      "word": "at",
+      "start": 8.654,
+      "end": 8.78
+    },
+    {
+      "word": "the",
+      "start": 8.78,
+      "end": 8.97
+    },
+    {
+      "word": "trees.",
+      "start": 8.97,
+      "end": 9.325
+    },
+    {
+      "word": "They",
+      "start": 9.325,
+      "end": 10.237
+    },
+    {
+      "word": "rushed",
+      "start": 10.237,
+      "end": 10.616
+    },
+    {
+      "word": "past,",
+      "start": 10.616,
+      "end": 10.908
+    },
+    {
+      "word": "one",
+      "start": 10.908,
+      "end": 11.098
+    },
+    {
+      "word": "after",
+      "start": 11.098,
+      "end": 11.414
+    },
+    {
+      "word": "another.",
+      "start": 11.414,
+      "end": 11.896
+    },
+    {
+      "word": "But",
+      "start": 13.021,
+      "end": 13.282
+    },
+    {
+      "word": "the",
+      "start": 13.282,
+      "end": 13.542
+    },
+    {
+      "word": "moon",
+      "start": 13.542,
+      "end": 13.89
+    },
+    {
+      "word": "is",
+      "start": 13.89,
+      "end": 14.063
+    },
+    {
+      "word": "about",
+      "start": 14.063,
+      "end": 14.498
+    },
+    {
+      "word": "384,000",
+      "start": 14.498,
+      "end": 15.071
+    },
+    {
+      "word": "kilometres",
+      "start": 15.071,
+      "end": 15.939
+    },
+    {
+      "word": "away,",
+      "start": 15.939,
+      "end": 16.339
+    },
+    {
+      "word": "so",
+      "start": 16.339,
+      "end": 16.513
+    },
+    {
+      "word": "it",
+      "start": 16.513,
+      "end": 17.002
+    },
+    {
+      "word": "hardly",
+      "start": 17.002,
+      "end": 17.523
+    },
+    {
+      "word": "seems",
+      "start": 17.523,
+      "end": 17.957
+    },
+    {
+      "word": "to",
+      "start": 17.957,
+      "end": 18.131
+    },
+    {
+      "word": "move.",
+      "start": 18.131,
+      "end": 18.531
+    },
+    {
+      "word": "That",
+      "start": 19.625,
+      "end": 19.867
+    },
+    {
+      "word": "is",
+      "start": 19.867,
+      "end": 19.988
+    },
+    {
+      "word": "why",
+      "start": 19.988,
+      "end": 20.169
+    },
+    {
+      "word": "it",
+      "start": 20.169,
+      "end": 20.29
+    },
+    {
+      "word": "looks",
+      "start": 20.29,
+      "end": 20.592
+    },
+    {
+      "word": "like",
+      "start": 20.592,
+      "end": 20.834
+    },
+    {
+      "word": "it",
+      "start": 20.834,
+      "end": 20.954
+    },
+    {
+      "word": "is",
+      "start": 20.954,
+      "end": 21.075
+    },
+    {
+      "word": "walking",
+      "start": 21.075,
+      "end": 21.498
+    },
+    {
+      "word": "with",
+      "start": 21.498,
+      "end": 21.74
+    },
+    {
+      "word": "you.",
+      "start": 21.74,
+      "end": 22.538
+    },
+    {
+      "word": "Tomorrow:",
+      "start": 22.538,
+      "end": 23.55
+    },
+    {
+      "word": "why",
+      "start": 23.55,
+      "end": 23.731
+    },
+    {
+      "word": "do",
+      "start": 23.731,
+      "end": 23.852
+    },
+    {
+      "word": "stars",
+      "start": 23.852,
+      "end": 24.154
+    },
+    {
+      "word": "twinkle?",
+      "start": 24.154,
+      "end": 24.613
+    }
+  ]
+}

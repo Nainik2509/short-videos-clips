@@ -1,12 +1,13 @@
 # New YouTube Shorts channel: playbook and best practices
 
-A second channel, separate from your existing one, for three kinds of animated Shorts made in this studio:
+A second channel, separate from your existing one, for four kinds of animated Shorts made in this studio:
 
 | Series | What it is | Made with |
 |---|---|---|
 | **Facts** (Hindi mystery and unusual facts) | 15–25 s curiosity stories: strange history, inventions, science, real incidents | `story.json` + voice-over (style `flat` or `glowLine`) |
 | **Kahani** (mythology, folk tales, moral stories) | 45–60 s animated stories, Hinglish or Hindi, one question per reel | `story.json` + voice-over (style `paperCutout`, `madhubani`, ...) |
 | **Cartoon** (recurring characters, short comic and moral reels) | 20–40 s episodes with a fixed cast | `story.json` + rig characters |
+| **Stick Tales** (English stick-figure true stories and "why" explainers) | 25–45 s, English only, own cast (Sticky) | `story.json` (`language: english`); see `.claude/skills/stick-tales-short` |
 
 Details of each series: [channel/series.md](../channel/series.md). Topics ready to go: [channel/backlog.md](../channel/backlog.md).
 Weekly rhythm and the first 30 days: [channel/calendar.md](../channel/calendar.md).
@@ -18,8 +19,10 @@ channel, choosing the handle, uploading and answering YouTube's questions are do
 
 **Doodle Story Tales** · handle `@DoodleStoryTalesOfficial` · https://www.youtube.com/@DoodleStoryTalesOfficial
 A Brand Account channel, separate from the existing SlayArcade channel.
-**Done:** profile picture and banner (`brand/`, made with `npm run brand`), about text, upload defaults (Private, description footer), and the three playlists
+**Done:** profile picture and banner (`brand/`, made with `npm run brand`; re-made 2026-11-16 with the whole cast and the three language chips), about text, upload defaults (Private, description footer), and the three playlists
 (*Ajeeb Sach (Facts)*, *Dadi ki Kahaniyan (Kahani)*, *Pinku aur Dadi (Cartoon)*).
+**To add (yours, in YouTube Studio):** a fourth playlist **Stick Tales (English)**, an English-first line in the channel About text ("New: English Stick Tales, true stories and why-questions in 40 seconds"), and set each Stick Tales upload's video language to English. Stick Tales Shorts have English-only descriptions and a single `captions-en.srt`; the "English first, then story language" rule only matters for the Hindi series.
+**Global-reach pack (2026-11-16):** new About text, keywords, language lanes, playlist names, per-video recipe and Studio settings are in [channel/settings.md](../channel/settings.md); applied in Studio on 2026-11-16 (banner, picture, About text, four playlists, keywords, country, upload defaults).
 **Still yours:** contact email, links, the made-for-kids decision, and two-step verification on the Google account.
 
 ## 1. Set up the channel (about 30 minutes, you do this)
@@ -27,8 +30,8 @@ A Brand Account channel, separate from the existing SlayArcade channel.
 - [x] Create a **new Brand Account channel** (done: Doodle Story Tales).
 - [ ] **Name and handle.** Short, easy to say aloud, works in Hindi and English, not tied to one series. Check the handle is free and no one has a near-identical name.
       Ideas to test (availability not checked): *Kahani Kitab*, *Rahasya Rang*, *Kyun Kaise Kahani*, *Chhota Rahasya*, *Pinku ki Duniya*, *Dadi Dost*.
-- [x] **Profile picture and banner** (done: storybook + spark mark; banner with the cast, `Roz ek nayi kahani`).
-- [ ] **About:** 2 lines saying what viewers get ("Roz ek chhoti kahani aur ek ajeeb sach") + business email + language. Add `#` keywords naturally.
+- [x] **Profile picture and banner** (done: storybook + spark mark; banner with the cast, `Stories · Facts · Cartoons · Daily` and English / हिन्दी / Hinglish chips).
+- [ ] **About:** paste the text from `channel/settings.md` (English first, then हिन्दी and Hinglish), plus business email and keywords.
 - [x] Default upload visibility **Private** (done). [ ] Country India and default language Hindi (Studio → Settings → Channel / Upload defaults → Advanced).
 - [ ] **Audience setting (made for kids):** decide honestly per video. Cartoons are not automatically "made for kids". A general-audience family kahani is usually
       "not made for kids"; content directed at children must be marked, which limits comments and some features. Read YouTube's current guidance and be consistent.

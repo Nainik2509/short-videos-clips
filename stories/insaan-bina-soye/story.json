@@ -1,0 +1,171 @@
+{
+  "slug": "insaan-bina-soye",
+  "title": "11 दिन बिना सोए",
+  "hook": "क्या कोई इंसान 11 दिन तक बिना सोए रह सकता है?",
+  "language": "hindi",
+  "style": "glowLine",
+  "series": "अजीब सच",
+  "part": 2,
+  "heroScene": 2,
+  "scenes": [
+    {
+      "id": "question",
+      "line": "क्या कोई इंसान 11 दिन तक बिना सोए रह सकता है?",
+      "duration": 5,
+      "backdrop": {
+        "palette": "night",
+        "moon": {
+          "x": 800,
+          "y": 500,
+          "r": 80,
+          "phase": 0.35
+        }
+      },
+      "cast": [
+        {
+          "look": {
+            "skin": "#f0c8a0",
+            "hair": "#6a4a2a",
+            "hairStyle": "short",
+            "top": "#2a9d8f",
+            "bottom": "#3a4a6a",
+            "accent": "#ffd166",
+            "shoe": "#2a2a3a",
+            "outfit": "tunic",
+            "headwear": "none"
+          },
+          "x": 540,
+          "mood": "calm"
+        }
+      ],
+      "push": 1.1
+    },
+    {
+      "id": "record",
+      "line": "1964 में सैन डिएगो के रैंडी गार्डनर 264 घंटे जागते रहे।",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "sun": {
+          "x": 800,
+          "y": 480,
+          "r": 90
+        }
+      },
+      "cast": [
+        {
+          "look": {
+            "skin": "#f0c8a0",
+            "hair": "#6a4a2a",
+            "hairStyle": "short",
+            "top": "#2a9d8f",
+            "bottom": "#3a4a6a",
+            "accent": "#ffd166",
+            "shoe": "#2a2a3a",
+            "outfit": "tunic",
+            "headwear": "none"
+          },
+          "x": 540,
+          "mood": "calm"
+        }
+      ],
+      "push": 1.08
+    },
+    {
+      "id": "doctor",
+      "line": "स्टैनफ़ोर्ड के नींद-वैज्ञानिक डॉक्टर विलियम डिमेंट उन पर नज़र रखते रहे।",
+      "duration": 5,
+      "backdrop": {
+        "palette": "night",
+        "moon": {
+          "x": 280,
+          "y": 520,
+          "r": 70,
+          "phase": 0.5
+        }
+      },
+      "cast": [
+        {
+          "look": {
+            "skin": "#d9a07a",
+            "hair": "#cfcfd8",
+            "hairStyle": "short",
+            "top": "#f4f4f4",
+            "bottom": "#5d6b82",
+            "accent": "#2f6fbf",
+            "shoe": "#3a3a3a",
+            "outfit": "tunic",
+            "headwear": "none"
+          },
+          "x": 340,
+          "mood": "calm"
+        },
+        {
+          "look": {
+            "skin": "#f0c8a0",
+            "hair": "#6a4a2a",
+            "hairStyle": "short",
+            "top": "#2a9d8f",
+            "bottom": "#3a4a6a",
+            "accent": "#ffd166",
+            "shoe": "#2a2a3a",
+            "outfit": "tunic",
+            "headwear": "none"
+          },
+          "x": 700,
+          "facing": -1,
+          "mood": "calm"
+        }
+      ],
+      "push": 1.1
+    },
+    {
+      "id": "end",
+      "line": "दो हफ़्ते बाद रिकॉर्ड टूटा, और गिनीज़ ने इसे रोक दिया, क्योंकि यह ख़तरनाक है।",
+      "duration": 5,
+      "backdrop": {
+        "palette": "dawn",
+        "sun": {
+          "x": 800,
+          "y": 520,
+          "r": 90
+        }
+      },
+      "cast": [
+        {
+          "look": {
+            "skin": "#d9a07a",
+            "hair": "#cfcfd8",
+            "hairStyle": "short",
+            "top": "#f4f4f4",
+            "bottom": "#5d6b82",
+            "accent": "#2f6fbf",
+            "shoe": "#3a3a3a",
+            "outfit": "tunic",
+            "headwear": "none"
+          },
+          "x": 380,
+          "mood": "smile"
+        },
+        {
+          "look": {
+            "skin": "#f0c8a0",
+            "hair": "#6a4a2a",
+            "hairStyle": "short",
+            "top": "#2a9d8f",
+            "bottom": "#3a4a6a",
+            "accent": "#ffd166",
+            "shoe": "#2a2a3a",
+            "outfit": "tunic",
+            "headwear": "none"
+          },
+          "x": 680,
+          "facing": -1,
+          "mood": "smile",
+          "action": "wave"
+        }
+      ],
+      "push": 1.08
+    }
+  ]
+}

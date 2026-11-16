@@ -1,0 +1,143 @@
+{
+  "slug": "dadi-ka-diya",
+  "title": "Dadi ka diya",
+  "hook": "Dadi roz sham ko diya kyun jalati thi?",
+  "language": "hinglish",
+  "style": "paperCutout",
+  "series": "Pinku aur Dadi",
+  "part": 1,
+  "heroScene": 2,
+  "scenes": [
+    {
+      "id": "question",
+      "line": "Dadi roz sham ko diya kyun jalati thi?",
+      "duration": 5,
+      "backdrop": {
+        "palette": "dusk",
+        "moon": {
+          "x": 800,
+          "y": 520,
+          "r": 80,
+          "phase": 0.35
+        }
+      },
+      "cast": [
+        {
+          "look": "elder",
+          "x": 380,
+          "mood": "smile"
+        },
+        {
+          "look": "boy",
+          "x": 690,
+          "facing": -1,
+          "mood": "smile"
+        }
+      ],
+      "push": 1.08
+    },
+    {
+      "id": "dark",
+      "line": "Raat gehri thi, aur Pinku ko raasta dikhai nahi de raha tha.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "night"
+      },
+      "cast": [
+        {
+          "look": "elder",
+          "x": 300,
+          "toX": 420,
+          "action": "walk"
+        },
+        {
+          "look": "boy",
+          "x": 560,
+          "toX": 680,
+          "action": "walk"
+        }
+      ]
+    },
+    {
+      "id": "diya",
+      "line": "Dadi ne ek chhota diya jalaya, aur sab roshan ho gaya.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "night",
+        "diyas": true,
+        "sparks": true
+      },
+      "cast": [
+        {
+          "look": "elder",
+          "x": 420,
+          "mood": "smile"
+        },
+        {
+          "look": "boy",
+          "x": 680,
+          "facing": -1,
+          "action": "wave",
+          "mood": "smile"
+        }
+      ],
+      "push": 1.08
+    },
+    {
+      "id": "lesson",
+      "line": "Dadi boli: andhere mein ek chhota diya bhi sabka raasta dikha deta hai.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "night",
+        "diyas": true,
+        "moon": {
+          "x": 260,
+          "y": 520,
+          "r": 70,
+          "phase": 0.5
+        }
+      },
+      "cast": [
+        {
+          "look": "elder",
+          "x": 440,
+          "mood": "smile"
+        },
+        {
+          "look": "boy",
+          "x": 660,
+          "facing": -1,
+          "mood": "smile"
+        }
+      ],
+      "push": 1.1
+    },
+    {
+      "id": "next",
+      "line": "Kal batati hoon, Pinku ne agla diya kahan rakha.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "dawn",
+        "sun": {
+          "x": 800,
+          "y": 520,
+          "r": 90
+        }
+      },
+      "cast": [
+        {
+          "look": "elder",
+          "x": 420,
+          "toX": 520,
+          "action": "walk"
+        },
+        {
+          "look": "boy",
+          "x": 690,
+          "toX": 790,
+          "action": "walkWave"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "slug": "dancing-plague-1518",
+  "title": "The dancing plague of 1518",
+  "hook": "Why did hundreds of people dance until they collapsed?",
+  "language": "english",
+  "style": "flat",
+  "series": "Strange but True",
+  "part": 3,
+  "heroScene": 2,
+  "scenes": [
+    {
+      "id": "question",
+      "line": "Why did hundreds of people dance until they collapsed?",
+      "duration": 5,
+      "backdrop": {
+        "palette": "dusk",
+        "moon": {
+          "x": 260,
+          "y": 520,
+          "r": 70,
+          "phase": 0.4
+        }
+      },
+      "cast": [
+        {
+          "look": {
+            "skin": "#f0c8a0",
+            "hair": "#7a4a2a",
+            "hairStyle": "long",
+            "top": "#b04a4a",
+            "bottom": "#b04a4a",
+            "accent": "#e8d8a8",
+            "shoe": "#4a2a2a",
+            "outfit": "dress",
+            "headwear": "none"
+          },
+          "x": 300,
+          "toX": 300,
+          "action": "walkWave",
+          "mood": "smile"
+        },
+        {
+          "look": {
+            "skin": "#f0c8a0",
+            "hair": "#5a3a22",
+            "hairStyle": "short",
+            "top": "#8a5a44",
+            "bottom": "#4a3a2a",
+            "accent": "#d9b36a",
+            "shoe": "#3a2a1a",
+            "outfit": "tunic",
+            "headwear": "none"
+          },
+          "x": 520,
+          "toX": 520,
+          "action": "walkWave",
+          "mood": "smile"
+        },
+        {
+          "look": {
+            "skin": "#e8b894",
+            "hair": "#2a1a12",
+            "hairStyle": "bun",
+            "top": "#4a6a9a",
+            "bottom": "#4a6a9a",
+            "accent": "#e8d8a8",
+            "shoe": "#3a2a2a",
+            "outfit": "dress",
+            "headwear": "none"
+          },
+          "x": 740,
+          "toX": 740,
+          "action": "walkWave",
+          "mood": "smile"
+        }
+      ],
+      "push": 1.06
+    },
+    {
+      "id": "woman",
+      "line": "In July 1518, a woman began dancing in a street in Strasbourg, and could not stop.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "dusk",
+        "diyas": true
+      },
+      "cast": [
+        {
+          "look": {
+            "skin": "#f0c8a0",
+            "hair": "#7a4a2a",
+            "hairStyle": "long",
+            "top": "#b04a4a",
+            "bottom": "#b04a4a",
+            "accent": "#e8d8a8",
+            "shoe": "#4a2a2a",
+            "outfit": "dress",
+            "headwear": "none"
+          },
+          "x": 540,
+          "toX": 540,
+          "action": "walkWave",
+          "mood": "smile"
+        }
+      ],
+      "push": 1.1
+    },
+    {
+      "id": "crowd",
+      "line": "Within a month, hundreds had joined her, and some collapsed from exhaustion.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "dusk"
+      },
+      "cast": [
+        {
+          "look": {
+            "skin": "#f0c8a0",
+            "hair": "#7a4a2a",
+            "hairStyle": "long",
+            "top": "#b04a4a",
+            "bottom": "#b04a4a",
+            "accent": "#e8d8a8",
+            "shoe": "#4a2a2a",
+            "outfit": "dress",
+            "headwear": "none"
+          },
+          "x": 240,
+          "toX": 240,
+          "action": "walkWave",
+          "mood": "smile"
+        },
+        {
+          "look": {
+            "skin": "#f0c8a0",
+            "hair": "#5a3a22",
+            "hairStyle": "short",
+            "top": "#8a5a44",
+            "bottom": "#4a3a2a",
+            "accent": "#d9b36a",
+            "shoe": "#3a2a1a",
+            "outfit": "tunic",
+            "headwear": "none"
+          },
+          "x": 420,
+          "toX": 420,
+          "action": "walkWave",
+          "mood": "smile"
+        },
+        {
+          "look": {
+            "skin": "#e8b894",
+            "hair": "#d8d4de",
+            "hairStyle": "bun",
+            "top": "#6a7a5a",
+            "bottom": "#6a7a5a",
+            "accent": "#d9b36a",
+            "shoe": "#3a2a1a",
+            "outfit": "dress",
+            "headwear": "none"
+          },
+          "x": 600,
+          "toX": 600,
+          "action": "walkWave",
+          "mood": "smile"
+        },
+        {
+          "look": {
+            "skin": "#e8b894",
+            "hair": "#2a1a12",
+            "hairStyle": "bun",
+            "top": "#4a6a9a",
+            "bottom": "#4a6a9a",
+            "accent": "#e8d8a8",
+            "shoe": "#3a2a2a",
+            "outfit": "dress",
+            "headwear": "none"
+          },
+          "x": 780,
+          "toX": 780,
+          "action": "walkWave",
+          "mood": "smile"
+        }
+      ],
+      "push": 1.05
+    },
+    {
+      "id": "why",
+      "line": "Nobody knows for sure why it happened, and historians still argue about it.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "night",
+        "moon": {
+          "x": 800,
+          "y": 500,
+          "r": 80,
+          "phase": 0.3
+        }
+      },
+      "cast": [
+        {
+          "look": {
+            "skin": "#f0c8a0",
+            "hair": "#5a3a22",
+            "hairStyle": "short",
+            "top": "#8a5a44",
+            "bottom": "#4a3a2a",
+            "accent": "#d9b36a",
+            "shoe": "#3a2a1a",
+            "outfit": "tunic",
+            "headwear": "none"
+          },
+          "x": 400,
+          "mood": "calm"
+        },
+        {
+          "look": {
+            "skin": "#f0c8a0",
+            "hair": "#7a4a2a",
+            "hairStyle": "long",
+            "top": "#b04a4a",
+            "bottom": "#b04a4a",
+            "accent": "#e8d8a8",
+            "shoe": "#4a2a2a",
+            "outfit": "dress",
+            "headwear": "none"
+          },
+          "x": 640,
+          "facing": -1,
+          "mood": "calm"
+        }
+      ],
+      "push": 1.1
+    }
+  ]
+}
