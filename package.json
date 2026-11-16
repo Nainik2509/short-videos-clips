@@ -12,7 +12,6 @@
     "youtube": "node tools/youtube-pack.mjs",
     "edit": "node tools/edit.mjs",
     "refs": "node tools/refs.mjs",
-    "render:test": "remotion render src/index.ts RigTest out/rig-test.mp4",
     "typecheck": "tsc --noEmit",
     "brand": "node tools/brand.mjs"
   },

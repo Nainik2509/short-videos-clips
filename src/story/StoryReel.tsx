@@ -6,7 +6,7 @@ import {PaletteProvider, palettes} from '../lib/palettes';
 import {SvgLayer} from '../lib/SvgLayer';
 import {FPS, SAFE, WIDTH} from '../lib/theme';
 import {Character, looks, walkSpeedPxPerSec, type CharacterLook} from '../rig';
-import {Clouds, DiyaTrail, HillLayer, Moon, Petals, Sky, Sparks, groundY} from '../scenery';
+import {Clouds, DiyaTrail, GpsBeacon, HillLayer, IcePanel, Moon, Petals, Rock, RockTrail, Sky, Sparks, groundY} from '../scenery';
 import {styles, type StyleSpec} from '../styles';
 import {resolveTimeline} from './timeline';
 import type {CastMember, SceneSpec, StorySpec} from './types';
@@ -37,6 +37,7 @@ const SceneView: React.FC<{spec: SceneSpec; index: number; frames: number; lead:
   const {backdrop} = spec;
   const cast = spec.cast ?? [];
   const progress = clamp01(sceneFrame / frames);
+  const slide = progress * progress * (3 - 2 * progress); // eased 0..1 for things that slide
 
   // Ground scroll: a walking character sets the speed so their feet match the ground.
   const walker = cast.find(walks);
@@ -61,6 +62,26 @@ const SceneView: React.FC<{spec: SceneSpec; index: number; frames: number; lead:
           <HillLayer layer={1} scroll={scroll} trees={trees[1]} seed={spec.id} />
           <HillLayer layer={2} scroll={scroll} trees={trees[2]} seed={spec.id} />
           {backdrop.diyas && <DiyaTrail scroll={scroll} />}
+          {(backdrop.rocks || backdrop.ice) && (
+            <SvgLayer style={{filter: style.charFilter}}>
+              {(backdrop.ice ?? []).map((ice, i) => {
+                const x = ice.x + ((ice.toX ?? ice.x) - ice.x) * slide;
+                return <IcePanel key={`i${i}`} x={x} y={groundY(x, scroll) + 8} scale={1.25} flip={i % 2 === 1} />;
+              })}
+              {(backdrop.rocks ?? []).map((rock, i) => {
+                const x = rock.x + ((rock.toX ?? rock.x) - rock.x) * slide;
+                const y = groundY(x, scroll);
+                const size = rock.size ?? 1;
+                return (
+                  <g key={`r${i}`}>
+                    {rock.trailFrom !== undefined && <RockTrail fromX={rock.trailFrom} toX={x} scroll={scroll} />}
+                    <Rock x={x} y={y} scale={size} />
+                    {rock.gps && <GpsBeacon x={x} y={y - 92 * size} scale={size} />}
+                  </g>
+                );
+              })}
+            </SvgLayer>
+          )}
           <SvgLayer style={{filter: style.charFilter}}>
             {cast.map((c, i) => {
               const x = c.x + ((c.toX ?? c.x) - c.x) * progress;

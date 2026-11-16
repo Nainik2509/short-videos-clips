@@ -69,6 +69,32 @@ export const palettes = {
     ink: '#1d3326',
     glow: '#fff3b8',
   },
+  playaNight: {
+    name: 'playaNight',
+    skyTop: '#080b30',
+    skyMid: '#18216a',
+    skyBottom: '#3b4a9c',
+    stars: 1,
+    hills: ['#6a5a78', '#54466a', '#3d3258'],
+    cloud: '#4e5aa8',
+    leaf: ['#3d3258', '#54466a'],
+    trunk: '#2a2040',
+    ink: '#0a0818',
+    glow: '#ffe9a8',
+  },
+  playaDawn: {
+    name: 'playaDawn',
+    skyTop: '#4a5fc4',
+    skyMid: '#f08aa8',
+    skyBottom: '#ffd9a0',
+    stars: 0.1,
+    hills: ['#d99a78', '#c27f5e', '#a8654a'],
+    cloud: '#fff1e6',
+    leaf: ['#a8654a', '#c27f5e'],
+    trunk: '#6b3a2a',
+    ink: '#2a1408',
+    glow: '#fff2b0',
+  },
 } satisfies Record<string, Palette>;
 
 export type PaletteName = keyof typeof palettes;

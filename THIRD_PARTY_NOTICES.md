@@ -1,12 +1,15 @@
 # Third-party notices
 
-The archived cartoon kit's own code is (c) 2026 Nainik Mehta (see `LICENSE`). It bundles these MIT-licensed
-libraries unmodified in `archive/cartoon-short-kit/kit/vendor/`. MIT requires their copyright notices to travel with them,
-so the license texts are kept next to the files.
+The studio's own code is (c) 2026 Nainik Mehta (see `LICENSE`). It bundles no third-party source files.
 
-| File | Project | License text |
+It depends on open-source packages that keep their own licences and are installed by `npm install` / `pip install`:
+
+| Package | Used for | Licence |
 |---|---|---|
-| `archive/cartoon-short-kit/kit/vendor/three.module.js` | three.js r160 | `archive/cartoon-short-kit/kit/vendor/LICENSE.three` |
-| `archive/cartoon-short-kit/kit/vendor/toon.ts` | 2D cartoon drawing base (Pen / head / face helpers) | `archive/cartoon-short-kit/kit/vendor/LICENSE.toon` |
+| Remotion (`remotion`, `@remotion/*`) | building video from React code | Remotion licence: free for individuals and teams of up to 3; larger companies need a company licence (remotion.dev/license) |
+| React, React DOM | UI components | MIT |
+| TypeScript | type checking | Apache-2.0 |
+| Hyperframes | HTML to video | see its package licence |
+| faster-whisper, PyAV | word timings (in `~/.venvs/whisper`) | MIT / BSD |
 
-Runtime tools (not bundled): Playwright/Chromium, ffmpeg, numpy, Pillow.
+Runtime tools (not bundled): ffmpeg, yt-dlp, Google Chrome / Chromium.

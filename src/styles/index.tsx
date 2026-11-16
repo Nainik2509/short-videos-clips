@@ -9,7 +9,7 @@ import {HEIGHT, WIDTH} from '../lib/theme';
  * overlay, and how many drawings per second the animation uses. Pick one in story.json ("style").
  * These are presets: refine any of them here and every story using that style updates.
  */
-export type StyleName = 'flat' | 'paperCutout' | 'shadowPuppet' | 'madhubani' | 'stainedGlass' | 'warli' | 'glowLine';
+export type StyleName = 'flat' | 'paperCutout' | 'shadowPuppet' | 'madhubani' | 'stainedGlass' | 'warli' | 'glowLine' | 'stickTales';
 
 export type StyleSpec = {
   label: string;
@@ -263,6 +263,25 @@ export const styles: Record<StyleName, StyleSpec> = {
     }),
     look: glowLook,
     charFilter: 'drop-shadow(0 0 7px rgba(255,214,107,0.9))',
+  },
+  stickTales: {
+    label: 'Stick Tales',
+    note: 'Flat bright teal, thick black outlines, round white heads and line limbs: a clean explainer look (English series).',
+    drawingsPerSec: 0,
+    palette: (p) => ({
+      ...p,
+      skyTop: '#5fd6cc',
+      skyMid: '#5fd6cc',
+      skyBottom: '#7fe0d6',
+      stars: 0,
+      hills: ['#ffd45e', '#ffb347', '#ff8a1f'],
+      cloud: '#ffffff',
+      leaf: ['#2fa36b', '#3cc283'],
+      trunk: '#6b3f1d',
+      ink: '#111111',
+      glow: '#fff4a8',
+    }),
+    look: (l) => ({...l, ink: '#111111'}),
   },
 };
 

@@ -24,6 +24,8 @@ const seriesTag = story.series ? `#${story.series.replace(/[^\p{L}\p{N}]+/gu, ''
 const hashtags = [seriesTag, langTag, '#Kahani', '#Shorts'].filter(Boolean).slice(0, 5).join(' ');
 const videoLanguage = {hindi: 'Hindi', hinglish: 'Hindi', english: 'English', other: '(your language)'}[story.language];
 const next = story.part ? story.part + 1 : null;
+// Every public text is English + the story's language, so the channel reads well worldwide.
+const bilingual = story.language !== 'english';
 
 const text = `# YouTube upload pack: ${story.title}
 
@@ -33,14 +35,13 @@ const text = `# YouTube upload pack: ${story.title}
 ${title}
 
 ## Description
-${story.hook}
+${bilingual ? '<The question in English> | ' : ''}${story.hook}
 
-<Line 1 of the story>
+${bilingual ? '<English: 2 lines of the story>\n\n' : ''}<Line 1 of the story>
 <Line 2 of the story>
 
-${series ? `${series}\n` : ''}${hindi ? 'स्रोत' : 'Sources'}: <for facts: 2 reliable sources>
+${series ? `${series}\n` : ''}${bilingual ? '\nTranscript (English):\n<English transcript, one line per spoken line>\n\n' : ''}${hindi ? 'ट्रांसक्रिप्ट:\n<transcript>\n\n' : ''}${hindi ? 'स्रोत' : 'Sources'}: <for facts: 2 reliable sources>
 ${hindi ? 'संगीत' : 'Music'}: <track name, artist, where it is licensed from>
-AI-assisted animation. ${story.language === 'hindi' || story.language === 'hinglish' ? 'Agar yeh lok-katha ka roop hai, toh jaise dadi sunati thi.' : ''}
 
 ${hashtags}
 
@@ -49,7 +50,7 @@ ${hashtags}
 - Video language: ${videoLanguage}
 - Visibility: Private first, then Scheduled (same time every day)
 - Audience: decide honestly: made for kids or not (a cartoon is not automatically made for kids)
-- Altered or synthetic content question: answer truthfully; clearly unrealistic animation usually does not need the label, a realistic cloned voice or realistic scenes do
+- Content-label questions (altered or synthetic content, made for kids): answer accurately for this video
 - Tags (optional, low impact): ${story.hook.replace(/[?।!.,]/g, '').split(/\s+/).slice(0, 4).join(', ')}
 
 ## Pinned comment

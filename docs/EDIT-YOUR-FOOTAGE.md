@@ -49,11 +49,11 @@ The settings are saved in `work/my-clip/edit.json`. Each fix re-renders in about
 - **Hinglish:** Whisper writes Hindi speech in Devanagari. For Roman letters, put the exact words in a text file and add `--script words.txt`.
 - **No sound in the clip?** Use `--keep-pauses` (nothing to cut by), or use the story pipeline instead.
 - **Safe zone:** hook and captions stay inside it, away from Instagram's buttons and caption bar.
-- **Respect and rights:** use music you have the rights to, switch on the AI label if you used AI voice or graphics, and never copy another creator's work.
+- **Respect and rights:** use music you have the rights to, answer each platform's content-label questions accurately, and never copy another creator's work.
 
 ## Optional skills (not installed)
 
 A video you may be following suggests five free Claude skills. None is installed here; ask Claude to install any you want:
-the Instagram agent skill (grades a hook before you film), a marketing skills pack (e.g. removes "it's not X, it's Y" AI tells),
+the Instagram agent skill (grades a hook before you film), a marketing skills pack (e.g. removes stock phrases like "it's not X, it's Y"),
 Remotion's official skills (Claude writes video as code), Remocn (ready-made Remotion animations), and Anthropic's Skill Creator
 (give it your 3 best posts and ask for a skill in your voice, so every caption sounds like you).

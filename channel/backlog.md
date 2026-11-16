@@ -26,7 +26,7 @@ Details here are only a starting point: confirm every fact from sources before s
 | 16 | रोमन कंक्रीट | 2000 साल पुरानी इमारतें आज भी क्यों खड़ी हैं? | ☐ | |
 | 17 | वेस्ना वुलोविच | 10,000 मीटर से गिरकर कैसे बची? | ☐ | |
 | 18 | रैंडी गार्डनर (1964) | 11 दिन न सोने पर क्या हुआ? | ☐ | |
-| 19 | डेथ वैली के सेलिंग स्टोन्स | पत्थर अपने आप क्यों चलते थे? | ☐ | |
+| 19 | डेथ वैली के सेलिंग स्टोन्स | पत्थर अपने आप क्यों चलते थे? | ⬆ scheduled: public 17 Nov 2026, 19:00 IST (https://youtube.com/shorts/80XUSzJPNTw) | Norris et al. 2014 (PLoS ONE); Scripps/UCSD news |
 | 20 | मैकेनिकल टर्क | शतरंज की "मशीन" के अंदर कौन छुपा था? | ☐ | |
 
 More ideas for later (confirm first): अमर जेलीफ़िश (Turritopsis dohrnii), अंटार्कटिका का Blood Falls, Kawah Ijen के सल्फ़र मज़दूर, Darvaza गैस क्रेटर.
@@ -58,3 +58,22 @@ More ideas for later (confirm first): अमर जेलीफ़िश (Turrit
 | 6 | Pinku ne jhooth bola | Pinku ki naak lambi kyun lagi? | Sach bolna aasan hai | ☐ |
 | 7 | Mela mein Pinku | Pinku mele mein kho gaya. Phir? | Haath mat chhodna | ☐ |
 | 8 | Dadi ki ghadi | Dadi ki ghadi hamesha 5 minute aage kyun? | Samay ki keemat | ☐ |
+
+## Stick Tales (English)
+
+Same rules: a topic needs **2 reliable sources** before scripting. These are starting ideas only; verify every fact and number. They deliberately avoid the topics already on @thesticktales3000.
+
+| # | Topic | Hook | Status | Sources to check |
+|---|---|---|---|---|
+| 1 | Why airplane windows have a tiny hole | Why is there a tiny hole in every airplane window? | ☐ | |
+| 2 | Why the Indian rupee note has a blind-friendly mark | How do blind people tell a ₹500 note from a ₹100? | ☐ | RBI |
+| 3 | The man who invented the barcode on a beach | A drawing in the sand became the barcode | ☐ | |
+| 4 | Why ships have a red bottom | Why are ship bottoms painted red? | ☐ | |
+| 5 | The post-it that was a failed glue | The glue that failed, then made billions | ☐ | |
+| 6 | Why traffic lights are red, yellow, green | Why is "stop" red? | ☐ | |
+| 7 | The Great Stink of London (1858) | The summer a river made Parliament run away | ☐ | |
+| 8 | Why Indian trains have those coloured stripes | What do the stripes on a coach mean? | ☐ | Indian Railways |
+| 9 | The Tulip craze | When one flower cost a house | ☐ | |
+| 10 | What if the Moon disappeared tomorrow? | What would change first? | ☐ | NASA |
+
+Format of a Stick Tales row in `stories/<slug>/script.md`: hook, 6–9 numbered lines (one picture each), "Sources and fact check", spelling list for names.

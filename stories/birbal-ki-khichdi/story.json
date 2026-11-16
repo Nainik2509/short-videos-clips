@@ -1,0 +1,362 @@
+{
+  "slug": "birbal-ki-khichdi",
+  "title": "Birbal ki khichdi",
+  "hook": "Kya door rakhi aag par khichdi pak sakti hai?",
+  "language": "hinglish",
+  "style": "madhubani",
+  "series": "Dadi ki Kahaniyan",
+  "part": 1,
+  "heroScene": 4,
+  "scenes": [
+    {
+      "id": "question",
+      "line": "Kya door rakhi aag par khichdi pak sakti hai?",
+      "duration": 5,
+      "backdrop": {
+        "palette": "dusk",
+        "diyas": true
+      },
+      "cast": [
+        {
+          "look": {
+            "skin": "#b9835f",
+            "hair": "#150f1c",
+            "hairStyle": "none",
+            "top": "#fff4e0",
+            "bottom": "#fff4e0",
+            "accent": "#2f6fbf",
+            "shoe": "#4a3426",
+            "outfit": "kurta",
+            "headwear": "turban"
+          },
+          "x": 540,
+          "mood": "smile"
+        }
+      ],
+      "push": 1.08
+    },
+    {
+      "id": "challenge",
+      "line": "Sardi ki raat thi. Badshah Akbar ne kaha: jo ek raat thande paani mein khada rahega, use inaam milega.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "night",
+        "moon": {
+          "x": 260,
+          "y": 520,
+          "r": 70,
+          "phase": 0.4
+        }
+      },
+      "cast": [
+        {
+          "look": {
+            "skin": "#c98d68",
+            "hair": "#150f1c",
+            "hairStyle": "none",
+            "top": "#7a1f3d",
+            "bottom": "#c9a227",
+            "accent": "#ffd166",
+            "shoe": "#2a2a3a",
+            "outfit": "kurta",
+            "headwear": "crown"
+          },
+          "x": 360,
+          "mood": "calm"
+        },
+        {
+          "look": {
+            "skin": "#b9835f",
+            "hair": "#1d1424",
+            "hairStyle": "short",
+            "top": "#8c6d4f",
+            "bottom": "#d9c8a8",
+            "accent": "#6b4a2f",
+            "shoe": "#4a3426",
+            "outfit": "dhoti",
+            "headwear": "none",
+            "sleeves": "none"
+          },
+          "x": 700,
+          "facing": -1,
+          "mood": "calm"
+        }
+      ],
+      "push": 1.08
+    },
+    {
+      "id": "night",
+      "line": "Ek gareeb aadmi raat bhar paani mein khada raha, aur door jalte ek diye ko dekhta raha.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "night",
+        "diyas": true,
+        "ice": [
+          {
+            "x": 540
+          },
+          {
+            "x": 700
+          }
+        ],
+        "moon": {
+          "x": 800,
+          "y": 500,
+          "r": 80,
+          "phase": 0.35
+        }
+      },
+      "cast": [
+        {
+          "look": {
+            "skin": "#b9835f",
+            "hair": "#1d1424",
+            "hairStyle": "short",
+            "top": "#8c6d4f",
+            "bottom": "#d9c8a8",
+            "accent": "#6b4a2f",
+            "shoe": "#4a3426",
+            "outfit": "dhoti",
+            "headwear": "none",
+            "sleeves": "none"
+          },
+          "x": 540,
+          "mood": "calm"
+        }
+      ],
+      "push": 1.1
+    },
+    {
+      "id": "morning",
+      "line": "Subah Akbar ne kaha: us diye ki garmi ne tumhe bachaya, isliye inaam nahi milega.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "dawn",
+        "sun": {
+          "x": 800,
+          "y": 520,
+          "r": 90
+        }
+      },
+      "cast": [
+        {
+          "look": {
+            "skin": "#c98d68",
+            "hair": "#150f1c",
+            "hairStyle": "none",
+            "top": "#7a1f3d",
+            "bottom": "#c9a227",
+            "accent": "#ffd166",
+            "shoe": "#2a2a3a",
+            "outfit": "kurta",
+            "headwear": "crown"
+          },
+          "x": 380,
+          "mood": "calm"
+        },
+        {
+          "look": {
+            "skin": "#b9835f",
+            "hair": "#1d1424",
+            "hairStyle": "short",
+            "top": "#8c6d4f",
+            "bottom": "#d9c8a8",
+            "accent": "#6b4a2f",
+            "shoe": "#4a3426",
+            "outfit": "dhoti",
+            "headwear": "none",
+            "sleeves": "none"
+          },
+          "x": 690,
+          "facing": -1,
+          "mood": "calm"
+        }
+      ],
+      "push": 1.08
+    },
+    {
+      "id": "handi",
+      "line": "Aadmi Birbal ke paas gaya. Birbal ne ek handi aag se kaafi upar tangi, aur neeche chhoti si aag jalayi.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "sun": {
+          "x": 280,
+          "y": 480,
+          "r": 90
+        },
+        "sparks": true
+      },
+      "cast": [
+        {
+          "look": {
+            "skin": "#b9835f",
+            "hair": "#150f1c",
+            "hairStyle": "none",
+            "top": "#fff4e0",
+            "bottom": "#fff4e0",
+            "accent": "#2f6fbf",
+            "shoe": "#4a3426",
+            "outfit": "kurta",
+            "headwear": "turban"
+          },
+          "x": 540,
+          "mood": "smile",
+          "action": "wave"
+        }
+      ],
+      "push": 1.12
+    },
+    {
+      "id": "laugh",
+      "line": "Der tak khichdi nahi pakki. Akbar hanse: itni door aag se khichdi kaise pakegi?",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "sun": {
+          "x": 820,
+          "y": 480,
+          "r": 90
+        }
+      },
+      "cast": [
+        {
+          "look": {
+            "skin": "#c98d68",
+            "hair": "#150f1c",
+            "hairStyle": "none",
+            "top": "#7a1f3d",
+            "bottom": "#c9a227",
+            "accent": "#ffd166",
+            "shoe": "#2a2a3a",
+            "outfit": "kurta",
+            "headwear": "crown"
+          },
+          "x": 380,
+          "mood": "smile"
+        },
+        {
+          "look": {
+            "skin": "#b9835f",
+            "hair": "#150f1c",
+            "hairStyle": "none",
+            "top": "#fff4e0",
+            "bottom": "#fff4e0",
+            "accent": "#2f6fbf",
+            "shoe": "#4a3426",
+            "outfit": "kurta",
+            "headwear": "turban"
+          },
+          "x": 690,
+          "facing": -1,
+          "mood": "calm"
+        }
+      ],
+      "push": 1.08
+    },
+    {
+      "id": "answer",
+      "line": "Birbal bole: jahanpanah, toh door ke diye se garmi kaise mili?",
+      "duration": 5,
+      "backdrop": {
+        "palette": "dusk",
+        "diyas": true
+      },
+      "cast": [
+        {
+          "look": {
+            "skin": "#b9835f",
+            "hair": "#150f1c",
+            "hairStyle": "none",
+            "top": "#fff4e0",
+            "bottom": "#fff4e0",
+            "accent": "#2f6fbf",
+            "shoe": "#4a3426",
+            "outfit": "kurta",
+            "headwear": "turban"
+          },
+          "x": 400,
+          "mood": "smile"
+        },
+        {
+          "look": {
+            "skin": "#c98d68",
+            "hair": "#150f1c",
+            "hairStyle": "none",
+            "top": "#7a1f3d",
+            "bottom": "#c9a227",
+            "accent": "#ffd166",
+            "shoe": "#2a2a3a",
+            "outfit": "kurta",
+            "headwear": "crown"
+          },
+          "x": 700,
+          "facing": -1,
+          "mood": "calm"
+        }
+      ],
+      "push": 1.1
+    },
+    {
+      "id": "reward",
+      "line": "Akbar samajh gaye, aur gareeb ko inaam diya. Kal sunaiye: Birbal ki ek aur kahani.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "dusk",
+        "diyas": true,
+        "sparks": true
+      },
+      "cast": [
+        {
+          "look": {
+            "skin": "#c98d68",
+            "hair": "#150f1c",
+            "hairStyle": "none",
+            "top": "#7a1f3d",
+            "bottom": "#c9a227",
+            "accent": "#ffd166",
+            "shoe": "#2a2a3a",
+            "outfit": "kurta",
+            "headwear": "crown"
+          },
+          "x": 330,
+          "mood": "smile"
+        },
+        {
+          "look": {
+            "skin": "#b9835f",
+            "hair": "#150f1c",
+            "hairStyle": "none",
+            "top": "#fff4e0",
+            "bottom": "#fff4e0",
+            "accent": "#2f6fbf",
+            "shoe": "#4a3426",
+            "outfit": "kurta",
+            "headwear": "turban"
+          },
+          "x": 540,
+          "mood": "smile"
+        },
+        {
+          "look": {
+            "skin": "#b9835f",
+            "hair": "#1d1424",
+            "hairStyle": "short",
+            "top": "#8c6d4f",
+            "bottom": "#d9c8a8",
+            "accent": "#6b4a2f",
+            "shoe": "#4a3426",
+            "outfit": "dhoti",
+            "headwear": "none",
+            "sleeves": "none"
+          },
+          "x": 750,
+          "facing": -1,
+          "mood": "smile",
+          "action": "wave"
+        }
+      ],
+      "push": 1.06
+    }
+  ]
+}

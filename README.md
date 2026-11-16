@@ -60,8 +60,7 @@ npm run storyboard -- dadi-ka-diya                 # one still per scene -> out/
 npm run finish -- dadi-ka-diya --music music/track.mp3   # final.mp4 + qc.jpg + cover.jpg
 ```
 
-Two working examples are included: `demo-hinglish` (paper cut-out) and `demo-hindi` (Warli, Devanagari).
-`npm run studio` previews any story live.
+A finished example is included: `sailing-stones` (a 22 s Hindi Facts Short). `npm run studio` previews any story live.
 
 ## Commands
 
@@ -76,7 +75,6 @@ Two working examples are included: `demo-hinglish` (paper cut-out) and `demo-hin
 | `npm run edit -- raw-footage/<clip> ...` | Your footage: cut dead air, hook, captions, music, export |
 | `npm run refs -- <link>` | Download and analyse reference videos |
 | `npm run studio` | Live preview |
-| `npm run render:test` | 3-second rig-on-hills test |
 | `npm run typecheck` | TypeScript check (also flags unused code) |
 
 ## Project layout
@@ -89,7 +87,7 @@ raw-footage/ references/ exports/   your clips, reference videos, finished edits
 src/  lib (size, safe zone, languages, captions) · rig (character) · scenery · styles · story (the reel engine)
 brand/  logo, banner, animated sting (made by npm run brand)
 tools/  new_story.py · timings.py · storyboard.mjs · finish.mjs · edit.mjs · refs.mjs · youtube-pack.mjs · brand.mjs
-channel/  series, backlog, calendar        docs/   KAHANI-GUIDE · EDIT-YOUR-FOOTAGE · CHANNEL-PLAYBOOK          archive/  the earlier three.js kit (reference only)
+channel/  series, backlog, calendar        docs/   KAHANI-GUIDE · EDIT-YOUR-FOOTAGE · CHANNEL-PLAYBOOK
 ```
 
 ## Licence

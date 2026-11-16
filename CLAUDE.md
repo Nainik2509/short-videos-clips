@@ -32,7 +32,7 @@ Human guides: [docs/KAHANI-GUIDE.md](docs/KAHANI-GUIDE.md) (stories), [docs/EDIT
    at the end, then one line that sets up the next part. 45–90 s, calm storyteller voice.
 7. **Be faithful and honest.** Follow a well-known retelling; call a folk version a folk version in
    the caption. Do not copy another page's characters, drawings, voice or script. Use music we have the
-   rights to. Remind the user to switch on Instagram's AI label.
+   rights to. Answer each platform's content-label questions accurately.
 8. Never ask for or paste API keys into chat; a voice service key goes in a `.env` file the user edits.
 
 ## Languages
@@ -48,6 +48,8 @@ Human guides: [docs/KAHANI-GUIDE.md](docs/KAHANI-GUIDE.md) (stories), [docs/EDIT
 
 Captions use the **script's own words** (spelled the way the user wrote them) timed by the voice:
 `npm run timings -- ... --script stories/<slug>/voice.txt`. Always do this for Hinglish and Hindi.
+With one script line per voice.txt line, the tool finds the real pauses in the recording and snaps every line start to its exact moment (scene cuts land on
+the first word, verified to within about 2 frames); words inside a line follow the voiced time (about 0.1 s average error). Captions never mix two sentences.
 Always write Hindi names the same way (Hanuman, Lakshman, Sanjeevani): keep a spelling list in the story's `script.md`.
 
 ## Layout
@@ -62,10 +64,10 @@ src/
   lib/        theme (size, fps, SAFE), palettes, languages, Captions, SvgLayer
   rig/        Character (SVG, in parts) + looks (colours, outfits, presets)
   scenery/    Sky, Moon, HillLayer(+trees), Clouds, Diya/DiyaTrail, Sparks, Petals, terrain
-  styles/     7 style presets (flat, paperCutout, shadowPuppet, madhubani, stainedGlass, warli, glowLine)
+  styles/     8 style presets (flat, paperCutout, shadowPuppet, madhubani, stainedGlass, warli, glowLine, stickTales)
   story/      StoryReel (the generic reel), timeline (scenes follow the voice), types, entry (validation)
-  compositions/  RigTest (3 s demo)
-  brand/      LogoMark (the storybook + spark mark), LogoSting (4 s animated logo), ChannelBanner
+  edit/       EditReel (your own footage + hook, captions, music)
+  brand/      ClayMark (soft-3D storybook + spark mark, aurora background, clay lighting filters), BrandComps (LogoStill = composition `LogoMark`, LogoSting 4 s animated logo, ChannelBanner)
 tools/        new_story.py, timings.py, storyboard.mjs, finish.mjs
 docs/         KAHANI-GUIDE.md, EDIT-YOUR-FOOTAGE.md, CHANNEL-PLAYBOOK.md
 brand/        logo-icon.png (profile picture), channel-banner.png, logo-sting.mp4 (animated logo), made by `npm run brand`
@@ -74,8 +76,7 @@ raw-footage/  your original clips (never modified or deleted by Claude; git-igno
 references/   downloaded reference videos + STYLE.md (git-ignored)
 exports/      finished edits: <name>-final.mp4, -qc.jpg (git-ignored)
 work/<name>/  edit.json (settings), cut.mp4, timings.json for an edit (git-ignored)
-archive/      the earlier three.js cartoon kit, kept for reference (not used)
-.claude/skills/  the cartoon-3d-short skill (a different, three.js style)
+.claude/skills/  cartoon-3d-short (three.js style; not set up in this repo yet), stick-tales-short (English stick-figure Shorts)
 ```
 
 ## How a reel is made (always in this order)
@@ -86,7 +87,7 @@ archive/      the earlier three.js cartoon kit, kept for reference (not used)
 3. **Script, in 7 beats**: question (0–3 s), setting (3–8), problem (8–15), turn (15–25), choice (25–35),
    answer (35–42), next (last 3 s). Write it into `script.md` and the spoken lines into `voice.txt` (one scene's line per line).
    Show the user the script + scene list and **wait for OK**.
-4. **Voice**: the user records `voice/<slug>.mp3` (own voice, AI voice with emotion tags, or none: then music and big captions only).
+4. **Voice**: the user records `voice/<slug>.mp3` (own voice, a generated voice with emotion tags, or none: then music and big captions only).
 5. **Timings**: `npm run timings -- voice/<slug>.mp3 --script stories/<slug>/voice.txt --language hi --out stories/<slug>/timings.json`
 6. **Scenes**: fill `story.json` (see below). Each scene's `line` must equal its line in `voice.txt`; the scene starts on that line's first word.
 7. **Storyboard**: `npm run storyboard -- <slug>`; show `out/<slug>-storyboard.jpg`; apply the user's notes; repeat.
@@ -113,8 +114,8 @@ Live preview of any story: `npm run studio`.
 }
 ```
 
-- **backdrop**: `palette` (dusk/night/dawn/day), `sun`, `moon`, `clouds`, `trees` `[back, middle, front]`, `diyas`, `sparks`, `petals`,
-  `scrollSpeed`, `offset`. A walking character sets the ground speed automatically so feet do not slide.
+- **backdrop**: `palette` (dusk/night/dawn/day/playaNight/playaDawn), `sun`, `moon`, `clouds`, `trees` `[back, middle, front]`, `diyas`, `sparks`, `petals`,
+  `rocks` (`x`, `toX`, `size`, `trailFrom`, `gps`: a rock that slides and leaves a trail), `ice` (floating ice panels, `x`, `toX`), `scrollSpeed`, `offset`. A walking character sets the ground speed automatically so feet do not slide.
 - **cast**: `look` (preset name or a full look object), `x`, `toX` (moves during the scene), `scale`, `facing` (1 or -1),
   `action` (idle / walk / wave / walkWave), `mood` (calm / smile), `blinkOffset`.
 - **scene**: `id`, `line`, `start` (seconds; overrides `line`), `duration` (only used before timings exist), `push` (end zoom, default 1.05).
@@ -126,7 +127,7 @@ Live preview of any story: `npm run studio`.
 `<Character look x y scale facing walk wave stepRate mood blinkOffset />`: head, body (breathing), arms, legs, cloth, hair, headwear;
 walk / wave blends plus automatic blink and breathing. New character = `{...looks.boy, top: '#2a9d8f'}` (fields: skin, hair, `hairStyle`,
 top, bottom, accent, `outfit` kurta/dress/dhoti/tunic, `headwear` none/crown/turban, `sleeves`, `bindi`, `halo`, `sacred`).
-Presets: boy, girl, elder, warrior, deity. Need a new pose or outfit? Add it to the rig; never draw one-off characters in a story.
+Presets: boy, girl, elder, warrior, deity, sticky (Stick Tales stick figure, `stick: true`, drawn by `src/rig/StickFigure.tsx`). Need a new pose or outfit? Add it to the rig; never draw one-off characters in a story.
 Styles recolour looks automatically (e.g. Warli turns everyone off-white), so keep looks in `story.json` style-free.
 
 ## Editing your own footage
@@ -153,9 +154,10 @@ tool, installed: `npx hyperframes`; use it when a graphic is easier as HTML/CSS)
 ### My edit style
 _Not set yet. Add the 3–5 reference links, run `npm run refs`, and fill in `references/STYLE.md`; then summarise it here._
 
-## The YouTube Shorts channel (three series)
+## The YouTube Shorts channel (four series)
 
-The new channel runs **Facts** (Hindi, 15–25 s), **Kahani** (Hinglish/Hindi, 40–60 s) and **Cartoon** (recurring cast, 20–40 s).
+The new channel runs **Facts** (Hindi, 15–25 s), **Kahani** (Hinglish/Hindi, 40–60 s), **Cartoon** (recurring cast, 20–40 s) and **Stick Tales** (English, stick-figure true stories and "why" explainers, 25–45 s, inspired by the channel @thesticktales3000: pattern only, never its topics, scripts, footage or mascot).
+For a Stick Tales reel follow `.claude/skills/stick-tales-short/SKILL.md` and the series rules in `channel/series.md`.
 Read `channel/series.md` before making any reel: each series has its own length, style and rules; keep one look per series.
 Pick topics from `channel/backlog.md` and update their status. Follow `docs/CHANNEL-PLAYBOOK.md`.
 
@@ -170,13 +172,15 @@ Pick topics from `channel/backlog.md` and update their status. Follow `docs/CHAN
   pinned comment, checklist). Fill its placeholders (story lines, sources, music credit).
 - **Never create the channel, post, upload or comment for the user** unless they ask for that exact action in this chat; the channel is theirs
   (their Google account). Prepare everything, then hand over.
-- Disclose AI honestly (YouTube's altered/synthetic question and "AI-assisted animation" in the description); decide "made for kids" with the user.
+- Answer each platform's content questions accurately (altered/synthetic content, made for kids); decide "made for kids" with the user. Public descriptions are about the story, its sources and the music.
+- **Stick Tales is English only** (English description, one `captions-en.srt`, `language: english`). **Every other series is bilingual: English first, then the story's language** (channel About text, video descriptions, transcript, pinned comment), because the channel is for a global audience. Titles stay in the story's language; add an English line at the top of the description. Upload two subtitle tracks per video: the story's language (`captions-<lang>.srt`) and English (`captions-en.srt`), with the same cue timings.
 
 ### Channel branding
 Channel: **Doodle Story Tales**, `@DoodleStoryTalesOfficial`. The brand is code: the mark, banner (with Pinku, Gudiya and Dadi from the rig) and the animated
-sting are in `src/brand`; change a colour or a character there and run `npm run brand`. Palette: Midnight Ink `#17124A`, Saffron `#FF8A1F`,
+sting are in `src/brand`; the look is soft-3D "clay" (SVG lighting filters), aurora mesh gradient, glass pills and extruded lettering; change a colour or a character there and run `npm run brand`. Palette: Midnight Ink `#17124A`, Saffron `#FF8A1F`,
 Marigold `#FFC93C`, Teal `#2EC4B6`, Paper `#FFF4DE`; wordmark in a rounded bold face. Use `brand/logo-sting.mp4` (1080×1920, 4 s) at the start or end of
 a Short if wanted. Banner name and tagline stay inside YouTube's central safe area (about 1546×423 of 2560×1440).
+Channel texts, keywords, playlists and Studio settings (English · हिन्दी · Hinglish, global reach) live in `channel/settings.md`.
 
 ## Fixing problems
 
@@ -197,14 +201,13 @@ a Short if wanted. Banner name and tagline stay inside YouTube's central safe ar
 npm run new-story -- <slug> --title "..." --hook "..." --language hinglish --style paperCutout
 npm run timings -- voice/<slug>.mp3 --script stories/<slug>/voice.txt --language hi --out stories/<slug>/timings.json
 npm run storyboard -- <slug>                    # one still per scene -> out/<slug>-storyboard.jpg
-npm run storyboard -- RigTest 0 45 89           # stills of chosen frames of any composition
+npm run storyboard -- <CompositionId> 0 45 89   # stills of chosen frames of any composition
 npm run finish -- <slug> [--music music/x.mp3]  # render + mix + final.mp4 + qc.jpg + cover.jpg
 npm run edit -- raw-footage/<clip>.mp4 --hook "..."   # cut dead air + hook + captions + music -> exports/
 npm run refs -- <link-or-file> ...              # download/analyse reference videos into references/
 npm run youtube -- <slug>                       # YouTube title, description, hashtags, checklist -> stories/<slug>/youtube.md
-npm run brand [-- logo|banner|sting]            # re-render brand/: profile picture, banner, animated logo sting
+npm run brand [-- logo|banner|sting|watermark]  # re-render brand/: profile picture, banner, animated logo sting, 300x300 video watermark
 npm run studio                                  # live preview
-npm run render:test                             # 3 s rig-on-hills test
 npm run typecheck
 ```
 
@@ -215,6 +218,6 @@ PyAV breaks faster-whisper 1.2.1). Whisper models: `tiny/base/small` (default)/`
 
 - Animate from `useCurrentFrame()` only (no `Math.random()`, no CSS animations); use Remotion's `random(seed)` for variety.
 - Story-specific data lives in `stories/<slug>/`; shared things go in `src/rig`, `src/scenery`, `src/styles`.
-- A new style is one entry in `src/styles/index.tsx` (palette, look mapper, overlay, drawings per second).
+- A new style is one entry in `src/styles/index.tsx` (palette, look mapper, overlay, drawings per second). Presets now include `stickTales` (English series).
 - Keep important faces and subjects inside the safe zone; the ground and sky may extend to the edges.
 - `npm run typecheck` must pass (it also flags unused code).

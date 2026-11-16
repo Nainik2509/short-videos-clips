@@ -1,0 +1,175 @@
+{
+  "slug": "moon-follows-us",
+  "title": "Why does the moon follow us?",
+  "hook": "Why does the moon follow us when we walk?",
+  "language": "english",
+  "style": "flat",
+  "series": "Pinku and Dadi",
+  "part": 2,
+  "heroScene": 3,
+  "scenes": [
+    {
+      "id": "question",
+      "line": "Why does the moon follow us when we walk?",
+      "duration": 5,
+      "backdrop": {
+        "palette": "night",
+        "moon": {
+          "x": 800,
+          "y": 480,
+          "r": 100,
+          "phase": 0.0
+        },
+        "trees": [
+          8,
+          7,
+          4
+        ]
+      },
+      "cast": [
+        {
+          "look": "elder",
+          "x": 400,
+          "mood": "smile"
+        },
+        {
+          "look": "boy",
+          "x": 680,
+          "facing": -1,
+          "mood": "smile"
+        }
+      ],
+      "push": 1.08
+    },
+    {
+      "id": "walking",
+      "line": "Pinku and Dadi were walking home one night, and the moon walked with them.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "night",
+        "moon": {
+          "x": 800,
+          "y": 480,
+          "r": 100,
+          "phase": 0.0
+        },
+        "trees": [
+          8,
+          7,
+          4
+        ]
+      },
+      "cast": [
+        {
+          "look": "elder",
+          "x": 300,
+          "toX": 420,
+          "action": "walk"
+        },
+        {
+          "look": "boy",
+          "x": 520,
+          "toX": 640,
+          "action": "walk"
+        }
+      ]
+    },
+    {
+      "id": "trees",
+      "line": "Dadi pointed at the trees. They rushed past, one after another.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "night",
+        "moon": {
+          "x": 800,
+          "y": 480,
+          "r": 100,
+          "phase": 0.0
+        },
+        "trees": [
+          6,
+          10,
+          8
+        ]
+      },
+      "cast": [
+        {
+          "look": "elder",
+          "x": 300,
+          "toX": 400,
+          "action": "walk"
+        },
+        {
+          "look": "boy",
+          "x": 520,
+          "toX": 620,
+          "action": "walk"
+        }
+      ]
+    },
+    {
+      "id": "far",
+      "line": "But the moon is about 384,000 kilometres away, so it hardly seems to move.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "night",
+        "moon": {
+          "x": 800,
+          "y": 480,
+          "r": 140,
+          "phase": 0.0
+        },
+        "trees": [
+          6,
+          10,
+          8
+        ]
+      },
+      "cast": [
+        {
+          "look": "elder",
+          "x": 320,
+          "toX": 420,
+          "action": "walk"
+        },
+        {
+          "look": "boy",
+          "x": 540,
+          "toX": 640,
+          "action": "walk"
+        }
+      ],
+      "push": 1.04
+    },
+    {
+      "id": "end",
+      "line": "That is why it looks like it is walking with you. Tomorrow: why do stars twinkle?",
+      "duration": 5,
+      "backdrop": {
+        "palette": "night",
+        "moon": {
+          "x": 800,
+          "y": 480,
+          "r": 100,
+          "phase": 0.0
+        },
+        "sparks": true
+      },
+      "cast": [
+        {
+          "look": "elder",
+          "x": 420,
+          "mood": "smile"
+        },
+        {
+          "look": "boy",
+          "x": 680,
+          "facing": -1,
+          "mood": "smile",
+          "action": "wave"
+        }
+      ],
+      "push": 1.08
+    }
+  ]
+}

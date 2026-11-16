@@ -1,0 +1,177 @@
+{
+  "slug": "sailing-stones",
+  "title": "सेलिंग स्टोन्स",
+  "hook": "डेथ वैली के पत्थर अपने आप क्यों चलते थे?",
+  "language": "hindi",
+  "style": "flat",
+  "series": "अजीब सच",
+  "part": 1,
+  "heroScene": 3,
+  "scenes": [
+    {
+      "id": "question",
+      "line": "डेथ वैली के रेगिस्तान में पत्थर अपने आप क्यों चलते थे?",
+      "duration": 4,
+      "backdrop": {
+        "palette": "playaNight",
+        "moon": {
+          "x": 860,
+          "y": 650,
+          "r": 80,
+          "phase": 0.3
+        },
+        "clouds": 0,
+        "trees": [
+          0,
+          0,
+          0
+        ],
+        "rocks": [
+          {
+            "x": 700,
+            "size": 1.5,
+            "trailFrom": 160
+          }
+        ]
+      },
+      "push": 1.1
+    },
+    {
+      "id": "trails",
+      "line": "दशकों तक किसी ने इन्हें चलते नहीं देखा, सिर्फ़ ज़मीन पर लंबी लकीरें मिलती थीं।",
+      "duration": 6,
+      "backdrop": {
+        "palette": "playaNight",
+        "moon": {
+          "x": 250,
+          "y": 520,
+          "r": 70,
+          "phase": 0.5
+        },
+        "clouds": 0,
+        "trees": [
+          0,
+          0,
+          0
+        ],
+        "rocks": [
+          {
+            "x": 300,
+            "size": 1.0,
+            "trailFrom": 40
+          },
+          {
+            "x": 640,
+            "size": 1.5,
+            "trailFrom": 330
+          },
+          {
+            "x": 930,
+            "size": 1.1,
+            "trailFrom": 700
+          }
+        ]
+      },
+      "push": 1.14
+    },
+    {
+      "id": "gps",
+      "line": "वैज्ञानिकों ने पत्थरों में GPS लगाया।",
+      "duration": 2,
+      "backdrop": {
+        "palette": "playaNight",
+        "moon": {
+          "x": 840,
+          "y": 470,
+          "r": 80,
+          "phase": 0.3
+        },
+        "clouds": 0,
+        "trees": [
+          0,
+          0,
+          0
+        ],
+        "rocks": [
+          {
+            "x": 780,
+            "size": 1.5,
+            "trailFrom": 280,
+            "gps": true
+          }
+        ]
+      },
+      "cast": [
+        {
+          "look": "girl",
+          "x": 330,
+          "action": "idle",
+          "mood": "smile"
+        },
+        {
+          "look": "boy",
+          "x": 540,
+          "action": "idle",
+          "mood": "smile",
+          "blinkOffset": 40
+        }
+      ],
+      "push": 1.06
+    },
+    {
+      "id": "answer",
+      "line": "राज़ था तीन-छह मिलीमीटर पतली बर्फ़, जो टूटकर हल्की हवा से सरकती है और पत्थरों को धकेलती है।",
+      "duration": 8,
+      "backdrop": {
+        "palette": "playaDawn",
+        "sun": {
+          "x": 850,
+          "y": 470,
+          "r": 90
+        },
+        "clouds": 3,
+        "trees": [
+          0,
+          0,
+          0
+        ],
+        "sparks": true,
+        "ice": [
+          {
+            "x": 470,
+            "toX": 800
+          },
+          {
+            "x": 700,
+            "toX": 1030
+          }
+        ],
+        "rocks": [
+          {
+            "x": 560,
+            "toX": 880,
+            "size": 1.5,
+            "trailFrom": 210,
+            "gps": true
+          }
+        ]
+      },
+      "cast": [
+        {
+          "look": "boy",
+          "x": 130,
+          "action": "idle",
+          "mood": "smile"
+        },
+        {
+          "look": "girl",
+          "x": 360,
+          "action": "idle",
+          "mood": "smile",
+          "blinkOffset": 50
+        }
+      ],
+      "push": 1.08
+    }
+  ]
+}

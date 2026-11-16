@@ -1,9 +1,17 @@
 import {entry, type StoryEntry} from '../src/story/entry';
 // <stories:imports>
-import demoHindi from './demo-hindi/story.json';
-import demoHindiTimings from './demo-hindi/timings.json';
-import demoHinglish from './demo-hinglish/story.json';
-import demoHinglishTimings from './demo-hinglish/timings.json';
+import dancingPlague1518 from './dancing-plague-1518/story.json';
+import dancingPlague1518Timings from './dancing-plague-1518/timings.json';
+import moonFollowsUs from './moon-follows-us/story.json';
+import moonFollowsUsTimings from './moon-follows-us/timings.json';
+import birbalKiKhichdi from './birbal-ki-khichdi/story.json';
+import birbalKiKhichdiTimings from './birbal-ki-khichdi/timings.json';
+import insaanBinaSoye from './insaan-bina-soye/story.json';
+import insaanBinaSoyeTimings from './insaan-bina-soye/timings.json';
+import dadiKaDiya from './dadi-ka-diya/story.json';
+import dadiKaDiyaTimings from './dadi-ka-diya/timings.json';
+import sailingStones from './sailing-stones/story.json';
+import sailingStonesTimings from './sailing-stones/timings.json';
 
 /**
  * Every story that appears in Remotion. `npm run new-story` adds new ones between the markers.
@@ -11,6 +19,10 @@ import demoHinglishTimings from './demo-hinglish/timings.json';
  */
 export const stories: StoryEntry[] = [
   // <stories:list>
-  entry(demoHinglish, demoHinglishTimings),
-  entry(demoHindi, demoHindiTimings),
+  entry(dancingPlague1518, dancingPlague1518Timings),
+  entry(moonFollowsUs, moonFollowsUsTimings),
+  entry(birbalKiKhichdi, birbalKiKhichdiTimings),
+  entry(insaanBinaSoye, insaanBinaSoyeTimings),
+  entry(dadiKaDiya, dadiKaDiyaTimings),
+  entry(sailingStones, sailingStonesTimings),
 ];

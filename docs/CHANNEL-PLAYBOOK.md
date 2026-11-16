@@ -1,12 +1,13 @@
 # New YouTube Shorts channel: playbook and best practices
 
-A second channel, separate from your existing one, for three kinds of animated Shorts made in this studio:
+A second channel, separate from your existing one, for four kinds of animated Shorts made in this studio:
 
 | Series | What it is | Made with |
 |---|---|---|
 | **Facts** (Hindi mystery and unusual facts) | 15–25 s curiosity stories: strange history, inventions, science, real incidents | `story.json` + voice-over (style `flat` or `glowLine`) |
 | **Kahani** (mythology, folk tales, moral stories) | 45–60 s animated stories, Hinglish or Hindi, one question per reel | `story.json` + voice-over (style `paperCutout`, `madhubani`, ...) |
 | **Cartoon** (recurring characters, short comic and moral reels) | 20–40 s episodes with a fixed cast | `story.json` + rig characters |
+| **Stick Tales** (English stick-figure true stories and "why" explainers) | 25–45 s, English only, own cast (Sticky) | `story.json` (`language: english`); see `.claude/skills/stick-tales-short` |
 
 Details of each series: [channel/series.md](../channel/series.md). Topics ready to go: [channel/backlog.md](../channel/backlog.md).
 Weekly rhythm and the first 30 days: [channel/calendar.md](../channel/calendar.md).
@@ -18,8 +19,10 @@ channel, choosing the handle, uploading and answering YouTube's questions are do
 
 **Doodle Story Tales** · handle `@DoodleStoryTalesOfficial` · https://www.youtube.com/@DoodleStoryTalesOfficial
 A Brand Account channel, separate from the existing SlayArcade channel.
-**Done:** profile picture and banner (`brand/`, made with `npm run brand`), about text, upload defaults (Private, description footer), and the three playlists
+**Done:** profile picture and banner (`brand/`, made with `npm run brand`; re-made 2026-11-16 with the whole cast and the three language chips), about text, upload defaults (Private, description footer), and the three playlists
 (*Ajeeb Sach (Facts)*, *Dadi ki Kahaniyan (Kahani)*, *Pinku aur Dadi (Cartoon)*).
+**To add (yours, in YouTube Studio):** a fourth playlist **Stick Tales (English)**, an English-first line in the channel About text ("New: English Stick Tales, true stories and why-questions in 40 seconds"), and set each Stick Tales upload's video language to English. Stick Tales Shorts have English-only descriptions and a single `captions-en.srt`; the "English first, then story language" rule only matters for the Hindi series.
+**Global-reach pack (2026-11-16):** new About text, keywords, language lanes, playlist names, per-video recipe and Studio settings are in [channel/settings.md](../channel/settings.md); applied in Studio on 2026-11-16 (banner, picture, About text, four playlists, keywords, country, upload defaults).
 **Still yours:** contact email, links, the made-for-kids decision, and two-step verification on the Google account.
 
 ## 1. Set up the channel (about 30 minutes, you do this)
@@ -27,8 +30,8 @@ A Brand Account channel, separate from the existing SlayArcade channel.
 - [x] Create a **new Brand Account channel** (done: Doodle Story Tales).
 - [ ] **Name and handle.** Short, easy to say aloud, works in Hindi and English, not tied to one series. Check the handle is free and no one has a near-identical name.
       Ideas to test (availability not checked): *Kahani Kitab*, *Rahasya Rang*, *Kyun Kaise Kahani*, *Chhota Rahasya*, *Pinku ki Duniya*, *Dadi Dost*.
-- [x] **Profile picture and banner** (done: storybook + spark mark; banner with the cast, `Roz ek nayi kahani`).
-- [ ] **About:** 2 lines saying what viewers get ("Roz ek chhoti kahani aur ek ajeeb sach") + business email + language. Add `#` keywords naturally.
+- [x] **Profile picture and banner** (done: storybook + spark mark; banner with the cast, `Stories · Facts · Cartoons · Daily` and English / हिन्दी / Hinglish chips).
+- [ ] **About:** paste the text from `channel/settings.md` (English first, then हिन्दी and Hinglish), plus business email and keywords.
 - [x] Default upload visibility **Private** (done). [ ] Country India and default language Hindi (Studio → Settings → Channel / Upload defaults → Advanced).
 - [ ] **Audience setting (made for kids):** decide honestly per video. Cartoons are not automatically "made for kids". A general-audience family kahani is usually
       "not made for kids"; content directed at children must be marked, which limits comments and some features. Read YouTube's current guidance and be consistent.
@@ -55,7 +58,7 @@ A Brand Account channel, separate from the existing SlayArcade channel.
 
 - **Format:** vertical 1080×1920, 30 fps (this studio's default). Keep faces and key action inside the safe zone.
 - **Title:** the question itself, in the language of the audience, up to ~70 characters so it is not cut off. Example: "लक्ष्मण 14 साल सोए क्यों नहीं?". No clickbait the video does not deliver.
-- **Description:** line 1 = the question; 2 lines of story; series name + part; source line for facts; music credit; "AI-assisted animation" note.
+- **Description (English + Hindi):** line 1 = the question in English and Hindi; 2 lines of story; series name + part; source line for facts; music credit.
 - **Hashtags:** 3–5, relevant. YouTube shows the first three above the title and ignores a post that uses more than 15. `#Shorts` is optional.
 - **Playlist:** add every Short to its series playlist at upload.
 - **Pinned comment:** a question to the audience or the teaser for the next part.
@@ -71,8 +74,7 @@ A Brand Account channel, separate from the existing SlayArcade channel.
 - **Facts must be true.** Every facts Short needs 2 independent reliable sources noted in its `script.md` ("Sources"). Never present rumours as confirmed; say "माना जाता है" when it is a belief.
   Do not invent history or science. A wrong fact in a facts channel costs trust.
 - **Mythology with care.** Follow a well-known retelling; label a folk version as folk. Deities are always shown with calm, respectful faces (the studio enforces it with the `sacred` look). No jokes at a deity's expense.
-- **Disclose AI honestly.** In upload settings, answer the "altered or synthetic content" question truthfully. Clearly unrealistic cartoons usually do not need the label,
-  but a realistic cloned voice or realistic scenes do. When unsure, disclose. Add "AI-assisted animation" in the description.
+- **Answer content-label questions accurately.** In upload settings, answer the platform's "altered or synthetic content" question truthfully for each video, and check the platform's current guidance when unsure.
 - **Music and sounds:** only tracks you have the rights to, or YouTube's own Audio Library. Keep the credit in the description.
 - **Children:** if a video is directed at children, mark it as made for kids and keep content age-appropriate.
 - **Monetisation thresholds change.** Check *YouTube Studio → Earn* for the current requirements (they combine subscribers with public Shorts views or watch hours).

@@ -1,6 +1,7 @@
 import React from 'react';
 import {useCurrentFrame, useVideoConfig} from 'remotion';
 import type {CharacterLook, Sleeves} from './looks';
+import {StickFigure} from './StickFigure';
 
 /**
  * Reusable SVG character, drawn in parts: head, body, arms, legs, cloth.
@@ -66,6 +67,15 @@ export const Character: React.FC<CharacterProps> = (props) => {
   const ink = look.ink ?? '#160f2b';
   const mood = look.sacred ? 'calm' : props.mood ?? 'calm';
   const sleeves = look.sleeves ?? defaultSleeves(look.outfit);
+
+  if (look.stick) {
+    return (
+      <g transform={`translate(${x} ${y}) scale(${scale * facing} ${scale})`}>
+        {shadow && <ellipse cx={0} cy={4} rx={70} ry={12} fill="#000" opacity={0.18} />}
+        <StickFigure look={look} t={t} frame={frame} walk={walk} wave={wave} stepRate={stepRate} mood={mood} blinkOffset={props.blinkOffset ?? 0} />
+      </g>
+    );
+  }
 
   // ---- animation values ----
   const phase = t * stepRate * Math.PI * 2;

@@ -1,6 +1,6 @@
-# The three series
+# The four series
 
-One channel, three series. Each has its own look, length and promise, so viewers know what they will get.
+One channel, four series (Facts, Kahani and Cartoon in Hindi/Hinglish, plus **Stick Tales** in English). Each has its own look, length and promise, so viewers know what they will get.
 Keep them in separate **playlists** and give each its own **opening pattern**.
 
 ## 1. Facts: "Ajeeb Sach" (working title)
@@ -13,7 +13,7 @@ Keep them in separate **playlists** and give each its own **opening pattern**.
 | Style | `flat` for history and science, `glowLine` for dark mysteries |
 | Hook | A "Why?/How?/What happened?" question, then the reveal in the last 5 s |
 | Rules | 2 reliable sources per topic written in `script.md`; say "माना जाता है" for beliefs; never invent. No people shown unrealistically: use the generic cast |
-| Voice | AI voice or your own; short sentences, a pause before the twist |
+| Voice | Recorded or generated voice; short sentences, a pause before the twist |
 | Scenes | 4–5 scenes, one picture each: place, object, problem, twist, answer |
 
 Script shape (35–50 words): hook question → what happened (2 sentences) → the twist → one closing line.
@@ -54,7 +54,30 @@ Recurring cast (store these in each story as full look objects or reuse the pres
 
 Keep each character's colours fixed. A new character = `{...looks.boy, top: '...'}` saved once and reused.
 
-## What stays the same across all three
+## 4. Stick Tales (English, stick-figure explainers and true stories)
+
+Inspired by the channel @thesticktales3000 (checked 2026-11-16: English Shorts, ~1.6k subscribers, 23 videos, titles like
+"Why Are School Buses ALWAYS Yellow?", "He Forgot His Wallet and Changed How the World Pays", "The Town That Paid Silence as Tax").
+**Pattern only, never their topics, scripts, footage, character or layout.** Our version has its own cast, palette and topics.
+
+| | |
+|---|---|
+| Promise | One surprising true story or "why" answered in 25–45 s by a simple stick-figure narrator, in English |
+| Length | 25–45 s (65–110 spoken words), fast, one idea per sentence |
+| Language | **English only** (`language: english`, `--language en`); public text is English only for this series |
+| Style | Flat bright colour, thin black stick bodies, round white heads, big bold hook text. Preset `stickTales` and the `looks.sticky` stick figure (`src/rig/StickFigure.tsx`); see `.claude/skills/stick-tales-short/SKILL.md` |
+| Hook | A "Why/How/What happened" question or a one-line shock in the first 2 s, shown as big on-screen text AND spoken |
+| Cast | **Sticky** (blue beanie, orange vest: narrator and the everyday person), plus one-off stick figures per story. Keep Sticky's colours fixed (blue `#2F6BFF`, orange `#FF8A1F`), never copy another channel's mascot |
+| Topics | Everyday "why" (colour of things, rules, money), business and invention origins, odd history, "what if" science. India-and-world mix |
+| Rules | 2 reliable sources per script ("Sources and fact check"); no invented numbers; beliefs labelled; no real person shown realistically (stick figures plus name text only); no politics or religion jabs, no hate, no unsafe stunts, nothing sexual |
+| Visual rhythm | A new picture every 2–3 s (zoom, pop-in, labelled arrows, maps, simple props), captions 4 words at a time in the safe zone |
+| Last line | The answer, then a line that opens the next one ("Next: why ...") |
+| Music | Light, upbeat, quiet under the voice, rights-cleared only |
+
+Script shape (65–110 words): hook question → the setup (2 sentences) → the surprise → the real reason → one-line takeaway → next teaser.
+A Stick Tales Short is a *story with a reveal*, not a list of facts: keep one person, thing or place at the centre.
+
+## What stays the same across all four
 
 - 1080×1920, 30 fps, captions in the safe zone, 3–4 words at a time (the studio does this).
 - Question first, answer last, one line that opens the next one.

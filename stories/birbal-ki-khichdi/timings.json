@@ -1,0 +1,607 @@
+{
+  "audio": "voice/birbal-ki-khichdi.mp3",
+  "language": "hi",
+  "duration": 47.726,
+  "words": [
+    {
+      "word": "Kya",
+      "start": 0.0,
+      "end": 0.182
+    },
+    {
+      "word": "door",
+      "start": 0.182,
+      "end": 0.426
+    },
+    {
+      "word": "rakhi",
+      "start": 0.426,
+      "end": 0.729
+    },
+    {
+      "word": "aag",
+      "start": 0.729,
+      "end": 0.912
+    },
+    {
+      "word": "par",
+      "start": 0.912,
+      "end": 1.094
+    },
+    {
+      "word": "khichdi",
+      "start": 1.094,
+      "end": 1.52
+    },
+    {
+      "word": "pak",
+      "start": 1.52,
+      "end": 1.702
+    },
+    {
+      "word": "sakti",
+      "start": 1.702,
+      "end": 2.006
+    },
+    {
+      "word": "hai?",
+      "start": 2.006,
+      "end": 2.225
+    },
+    {
+      "word": "Sardi",
+      "start": 3.259,
+      "end": 3.402
+    },
+    {
+      "word": "ki",
+      "start": 3.402,
+      "end": 3.459
+    },
+    {
+      "word": "raat",
+      "start": 3.459,
+      "end": 3.574
+    },
+    {
+      "word": "thi.",
+      "start": 3.574,
+      "end": 3.677
+    },
+    {
+      "word": "Badshah",
+      "start": 3.677,
+      "end": 3.877
+    },
+    {
+      "word": "Akbar",
+      "start": 3.877,
+      "end": 4.02
+    },
+    {
+      "word": "ne",
+      "start": 4.02,
+      "end": 4.077
+    },
+    {
+      "word": "kaha:",
+      "start": 4.077,
+      "end": 4.208
+    },
+    {
+      "word": "jo",
+      "start": 4.208,
+      "end": 4.265
+    },
+    {
+      "word": "ek",
+      "start": 4.265,
+      "end": 4.856
+    },
+    {
+      "word": "raat",
+      "start": 4.856,
+      "end": 4.97
+    },
+    {
+      "word": "thande",
+      "start": 4.97,
+      "end": 5.141
+    },
+    {
+      "word": "paani",
+      "start": 5.141,
+      "end": 5.284
+    },
+    {
+      "word": "mein",
+      "start": 5.284,
+      "end": 5.399
+    },
+    {
+      "word": "khada",
+      "start": 5.399,
+      "end": 5.542
+    },
+    {
+      "word": "rahega,",
+      "start": 5.542,
+      "end": 5.73
+    },
+    {
+      "word": "use",
+      "start": 5.73,
+      "end": 5.816
+    },
+    {
+      "word": "inaam",
+      "start": 5.816,
+      "end": 5.959
+    },
+    {
+      "word": "milega.",
+      "start": 5.959,
+      "end": 6.148
+    },
+    {
+      "word": "Ek",
+      "start": 6.591,
+      "end": 6.68
+    },
+    {
+      "word": "gareeb",
+      "start": 6.68,
+      "end": 6.95
+    },
+    {
+      "word": "aadmi",
+      "start": 6.95,
+      "end": 7.175
+    },
+    {
+      "word": "raat",
+      "start": 7.175,
+      "end": 7.354
+    },
+    {
+      "word": "bhar",
+      "start": 7.354,
+      "end": 7.534
+    },
+    {
+      "word": "paani",
+      "start": 7.534,
+      "end": 7.759
+    },
+    {
+      "word": "mein",
+      "start": 7.759,
+      "end": 7.938
+    },
+    {
+      "word": "khada",
+      "start": 7.938,
+      "end": 8.163
+    },
+    {
+      "word": "raha,",
+      "start": 8.163,
+      "end": 8.37
+    },
+    {
+      "word": "aur",
+      "start": 8.37,
+      "end": 8.504
+    },
+    {
+      "word": "door",
+      "start": 8.504,
+      "end": 8.684
+    },
+    {
+      "word": "jalte",
+      "start": 8.684,
+      "end": 8.909
+    },
+    {
+      "word": "ek",
+      "start": 8.909,
+      "end": 8.999
+    },
+    {
+      "word": "diye",
+      "start": 8.999,
+      "end": 9.178
+    },
+    {
+      "word": "ko",
+      "start": 9.178,
+      "end": 9.268
+    },
+    {
+      "word": "dekhta",
+      "start": 9.268,
+      "end": 9.538
+    },
+    {
+      "word": "raha.",
+      "start": 9.538,
+      "end": 9.744
+    },
+    {
+      "word": "Subah",
+      "start": 10.769,
+      "end": 11.437
+    },
+    {
+      "word": "Akbar",
+      "start": 11.437,
+      "end": 12.105
+    },
+    {
+      "word": "ne",
+      "start": 12.105,
+      "end": 12.372
+    },
+    {
+      "word": "kaha:",
+      "start": 12.372,
+      "end": 12.987
+    },
+    {
+      "word": "us",
+      "start": 12.987,
+      "end": 13.683
+    },
+    {
+      "word": "diye",
+      "start": 13.683,
+      "end": 14.217
+    },
+    {
+      "word": "ki",
+      "start": 14.217,
+      "end": 14.484
+    },
+    {
+      "word": "garmi",
+      "start": 14.484,
+      "end": 15.152
+    },
+    {
+      "word": "ne",
+      "start": 15.152,
+      "end": 15.419
+    },
+    {
+      "word": "tumhe",
+      "start": 15.419,
+      "end": 17.145
+    },
+    {
+      "word": "bachaya,",
+      "start": 17.145,
+      "end": 18.16
+    },
+    {
+      "word": "isliye",
+      "start": 18.16,
+      "end": 18.962
+    },
+    {
+      "word": "inaam",
+      "start": 18.962,
+      "end": 19.629
+    },
+    {
+      "word": "nahi",
+      "start": 19.629,
+      "end": 20.516
+    },
+    {
+      "word": "milega.",
+      "start": 20.516,
+      "end": 21.398
+    },
+    {
+      "word": "Aadmi",
+      "start": 22.455,
+      "end": 22.804
+    },
+    {
+      "word": "Birbal",
+      "start": 22.804,
+      "end": 23.223
+    },
+    {
+      "word": "ke",
+      "start": 23.223,
+      "end": 23.362
+    },
+    {
+      "word": "paas",
+      "start": 23.362,
+      "end": 23.641
+    },
+    {
+      "word": "gaya.",
+      "start": 23.641,
+      "end": 24.489
+    },
+    {
+      "word": "Birbal",
+      "start": 24.489,
+      "end": 24.908
+    },
+    {
+      "word": "ne",
+      "start": 24.908,
+      "end": 25.047
+    },
+    {
+      "word": "ek",
+      "start": 25.047,
+      "end": 25.187
+    },
+    {
+      "word": "handi",
+      "start": 25.187,
+      "end": 25.536
+    },
+    {
+      "word": "aag",
+      "start": 25.536,
+      "end": 25.745
+    },
+    {
+      "word": "se",
+      "start": 25.745,
+      "end": 25.885
+    },
+    {
+      "word": "kaafi",
+      "start": 25.885,
+      "end": 26.234
+    },
+    {
+      "word": "upar",
+      "start": 26.234,
+      "end": 26.513
+    },
+    {
+      "word": "tangi,",
+      "start": 26.513,
+      "end": 26.904
+    },
+    {
+      "word": "aur",
+      "start": 26.904,
+      "end": 27.113
+    },
+    {
+      "word": "neeche",
+      "start": 27.113,
+      "end": 27.862
+    },
+    {
+      "word": "chhoti",
+      "start": 27.862,
+      "end": 28.281
+    },
+    {
+      "word": "si",
+      "start": 28.281,
+      "end": 28.42
+    },
+    {
+      "word": "aag",
+      "start": 28.42,
+      "end": 28.629
+    },
+    {
+      "word": "jalayi.",
+      "start": 28.629,
+      "end": 29.09
+    },
+    {
+      "word": "Der",
+      "start": 30.121,
+      "end": 30.179
+    },
+    {
+      "word": "tak",
+      "start": 30.179,
+      "end": 30.238
+    },
+    {
+      "word": "khichdi",
+      "start": 30.238,
+      "end": 30.375
+    },
+    {
+      "word": "nahi",
+      "start": 30.375,
+      "end": 30.454
+    },
+    {
+      "word": "pakki.",
+      "start": 30.454,
+      "end": 30.563
+    },
+    {
+      "word": "Akbar",
+      "start": 30.563,
+      "end": 30.661
+    },
+    {
+      "word": "hanse:",
+      "start": 30.661,
+      "end": 30.771
+    },
+    {
+      "word": "itni",
+      "start": 30.771,
+      "end": 30.849
+    },
+    {
+      "word": "door",
+      "start": 30.849,
+      "end": 30.927
+    },
+    {
+      "word": "aag",
+      "start": 30.927,
+      "end": 30.986
+    },
+    {
+      "word": "se",
+      "start": 30.986,
+      "end": 31.025
+    },
+    {
+      "word": "khichdi",
+      "start": 31.025,
+      "end": 31.162
+    },
+    {
+      "word": "kaise",
+      "start": 31.162,
+      "end": 31.26
+    },
+    {
+      "word": "pakegi?",
+      "start": 31.26,
+      "end": 31.389
+    },
+    {
+      "word": "Birbal",
+      "start": 32.016,
+      "end": 32.329
+    },
+    {
+      "word": "bole:",
+      "start": 32.329,
+      "end": 32.57
+    },
+    {
+      "word": "jahanpanah,",
+      "start": 32.57,
+      "end": 33.583
+    },
+    {
+      "word": "toh",
+      "start": 33.583,
+      "end": 33.74
+    },
+    {
+      "word": "door",
+      "start": 33.74,
+      "end": 33.949
+    },
+    {
+      "word": "ke",
+      "start": 33.949,
+      "end": 34.054
+    },
+    {
+      "word": "diye",
+      "start": 34.054,
+      "end": 34.263
+    },
+    {
+      "word": "se",
+      "start": 34.263,
+      "end": 34.367
+    },
+    {
+      "word": "garmi",
+      "start": 34.367,
+      "end": 34.629
+    },
+    {
+      "word": "kaise",
+      "start": 34.629,
+      "end": 34.89
+    },
+    {
+      "word": "mili?",
+      "start": 34.89,
+      "end": 35.13
+    },
+    {
+      "word": "Akbar",
+      "start": 36.148,
+      "end": 36.715
+    },
+    {
+      "word": "samajh",
+      "start": 36.715,
+      "end": 37.655
+    },
+    {
+      "word": "gaye,",
+      "start": 37.655,
+      "end": 38.177
+    },
+    {
+      "word": "aur",
+      "start": 38.177,
+      "end": 38.517
+    },
+    {
+      "word": "gareeb",
+      "start": 38.517,
+      "end": 39.198
+    },
+    {
+      "word": "ko",
+      "start": 39.198,
+      "end": 39.425
+    },
+    {
+      "word": "inaam",
+      "start": 39.425,
+      "end": 41.281
+    },
+    {
+      "word": "diya.",
+      "start": 41.281,
+      "end": 42.209
+    },
+    {
+      "word": "Kal",
+      "start": 42.209,
+      "end": 42.549
+    },
+    {
+      "word": "sunaiye:",
+      "start": 42.549,
+      "end": 44.432
+    },
+    {
+      "word": "Birbal",
+      "start": 44.432,
+      "end": 45.763
+    },
+    {
+      "word": "ki",
+      "start": 45.763,
+      "end": 45.99
+    },
+    {
+      "word": "ek",
+      "start": 45.99,
+      "end": 46.217
+    },
+    {
+      "word": "aur",
+      "start": 46.217,
+      "end": 46.558
+    },
+    {
+      "word": "kahani.",
+      "start": 46.558,
+      "end": 47.307
+    }
+  ]
+}
