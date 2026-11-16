@@ -10,7 +10,8 @@ Two ways to make a reel, same studio:
 2. **Edit your own footage**: drop a clip in `raw-footage/`, Claude cuts the dead air, adds a hook, captions and music
    (see "Editing your own footage").
 
-Human guides: [docs/KAHANI-GUIDE.md](docs/KAHANI-GUIDE.md) (stories), [docs/EDIT-YOUR-FOOTAGE.md](docs/EDIT-YOUR-FOOTAGE.md) (footage).
+Human guides: [docs/KAHANI-GUIDE.md](docs/KAHANI-GUIDE.md) (stories), [docs/EDIT-YOUR-FOOTAGE.md](docs/EDIT-YOUR-FOOTAGE.md) (footage),
+[docs/CHANNEL-PLAYBOOK.md](docs/CHANNEL-PLAYBOOK.md) (the YouTube Shorts channel: setup, best practices, policies).
 
 ## The rules (read first)
 
@@ -65,7 +66,8 @@ src/
   story/      StoryReel (the generic reel), timeline (scenes follow the voice), types, entry (validation)
   compositions/  RigTest (3 s demo)
 tools/        new_story.py, timings.py, storyboard.mjs, finish.mjs
-docs/         KAHANI-GUIDE.md, EDIT-YOUR-FOOTAGE.md
+docs/         KAHANI-GUIDE.md, EDIT-YOUR-FOOTAGE.md, CHANNEL-PLAYBOOK.md
+channel/      series.md (Facts, Kahani, Cartoon), backlog.md (topics + status), calendar.md (weekly rhythm, first 30 days)
 raw-footage/  your original clips (never modified or deleted by Claude; git-ignored)
 references/   downloaded reference videos + STYLE.md (git-ignored)
 exports/      finished edits: <name>-final.mp4, -qc.jpg (git-ignored)
@@ -149,6 +151,25 @@ tool, installed: `npx hyperframes`; use it when a graphic is easier as HTML/CSS)
 ### My edit style
 _Not set yet. Add the 3–5 reference links, run `npm run refs`, and fill in `references/STYLE.md`; then summarise it here._
 
+## The YouTube Shorts channel (three series)
+
+The new channel runs **Facts** (Hindi, 15–25 s), **Kahani** (Hinglish/Hindi, 40–60 s) and **Cartoon** (recurring cast, 20–40 s).
+Read `channel/series.md` before making any reel: each series has its own length, style and rules; keep one look per series.
+Pick topics from `channel/backlog.md` and update their status. Follow `docs/CHANNEL-PLAYBOOK.md`.
+
+- **Facts must be true.** Put 2 reliable, independent sources in the story's `script.md` ("Sources and fact check") before scripting.
+  Never invent history or science; say "माना जाता है" for beliefs. If sources cannot be found, do not script it; pick another topic.
+- **When the user picks a facts topic and asks only for the script**: output only the clean Hindi (Devanagari) narration, 35–50 words,
+  starting with a curiosity hook, a reveal or twist, simple conversational Hindi, one idea per sentence. No headings, scene notes or commentary.
+  When asked for 20 topics, give 20 new, verifiable, Hindi (Devanagari) topics each with one curiosity line; never repeat earlier ones.
+- **Original, never mass-produced.** Every reel gets its own script, voice, scenes and hook. Do not reuse a structure with only words swapped.
+  Do not copy another channel's topics, scripts or footage.
+- After `npm run finish`, run `npm run youtube -- <slug>` to write `stories/<slug>/youtube.md` (title, description, hashtags, playlist,
+  pinned comment, checklist). Fill its placeholders (story lines, sources, music credit).
+- **Never create the channel, post, upload or comment for the user** unless they ask for that exact action in this chat; the channel is theirs
+  (their Google account). Prepare everything, then hand over.
+- Disclose AI honestly (YouTube's altered/synthetic question and "AI-assisted animation" in the description); decide "made for kids" with the user.
+
 ## Fixing problems
 
 | Problem | Do |
@@ -172,6 +193,7 @@ npm run storyboard -- RigTest 0 45 89           # stills of chosen frames of any
 npm run finish -- <slug> [--music music/x.mp3]  # render + mix + final.mp4 + qc.jpg + cover.jpg
 npm run edit -- raw-footage/<clip>.mp4 --hook "..."   # cut dead air + hook + captions + music -> exports/
 npm run refs -- <link-or-file> ...              # download/analyse reference videos into references/
+npm run youtube -- <slug>                       # YouTube title, description, hashtags, checklist -> stories/<slug>/youtube.md
 npm run studio                                  # live preview
 npm run render:test                             # 3 s rig-on-hills test
 npm run typecheck

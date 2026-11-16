@@ -9,6 +9,7 @@
     "timings": "\"$HOME/.venvs/whisper/bin/python\" tools/timings.py",
     "storyboard": "node tools/storyboard.mjs",
     "finish": "node tools/finish.mjs",
+    "youtube": "node tools/youtube-pack.mjs",
     "edit": "node tools/edit.mjs",
     "refs": "node tools/refs.mjs",
     "render:test": "remotion render src/index.ts RigTest out/rig-test.mp4",

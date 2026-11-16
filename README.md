@@ -26,6 +26,12 @@ dead air is cut, a hook, captions and music are added, and the sound is set to a
 quieter music) by re-running with a flag; the cut and transcript are reused. Pull reference videos you love with
 `npm run refs -- <link>` ("inspired by, not a copy"). Guide: [docs/EDIT-YOUR-FOOTAGE.md](docs/EDIT-YOUR-FOOTAGE.md).
 
+## Run a YouTube Shorts channel with it
+
+Three series (Facts, Kahani, Cartoon), a topic backlog, a weekly calendar and upload best practices:
+[docs/CHANNEL-PLAYBOOK.md](docs/CHANNEL-PLAYBOOK.md) · [channel/series.md](channel/series.md) · [channel/backlog.md](channel/backlog.md) · [channel/calendar.md](channel/calendar.md).
+`npm run youtube -- <slug>` writes the title, description, hashtags and checklist for each upload.
+
 ## Requirements
 
 | Tool | Version | Used for |
@@ -65,6 +71,7 @@ Two working examples are included: `demo-hinglish` (paper cut-out) and `demo-hin
 | `npm run timings -- <voice> --script <voice.txt> --out <timings.json>` | Voice-over → every word with start/end time (captions use your script's words) |
 | `npm run storyboard -- <slug>` | One still per scene, tiled into a sheet; the check before any full render |
 | `npm run finish -- <slug> [--music file]` | Render, mix voice + music, export final, QC sheet and cover |
+| `npm run youtube -- <slug>` | YouTube title, description, hashtags and pre-publish checklist |
 | `npm run edit -- raw-footage/<clip> ...` | Your footage: cut dead air, hook, captions, music, export |
 | `npm run refs -- <link>` | Download and analyse reference videos |
 | `npm run studio` | Live preview |
@@ -79,8 +86,8 @@ stories/registry.ts  stories shown in Remotion      stories/_template/  what new
 voice/ music/ sfx/   audio inputs (git-ignored)     out/  renders and sheets (git-ignored)
 raw-footage/ references/ exports/   your clips, reference videos, finished edits (git-ignored)
 src/  lib (size, safe zone, languages, captions) · rig (character) · scenery · styles · story (the reel engine)
-tools/  new_story.py · timings.py · storyboard.mjs · finish.mjs · edit.mjs · refs.mjs
-docs/   KAHANI-GUIDE.md · EDIT-YOUR-FOOTAGE.md          archive/  the earlier three.js kit (reference only)
+tools/  new_story.py · timings.py · storyboard.mjs · finish.mjs · edit.mjs · refs.mjs · youtube-pack.mjs
+channel/  series, backlog, calendar        docs/   KAHANI-GUIDE · EDIT-YOUR-FOOTAGE · CHANNEL-PLAYBOOK          archive/  the earlier three.js kit (reference only)
 ```
 
 ## Licence
