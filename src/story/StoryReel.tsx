@@ -6,7 +6,7 @@ import {PaletteProvider, palettes} from '../lib/palettes';
 import {SvgLayer} from '../lib/SvgLayer';
 import {FPS, SAFE, WIDTH} from '../lib/theme';
 import {Character, looks, walkSpeedPxPerSec, type CharacterLook} from '../rig';
-import {Clouds, DiyaTrail, GpsBeacon, HillLayer, IcePanel, Moon, Petals, Rock, RockTrail, Sky, Sparks, groundY} from '../scenery';
+import {Clouds, DiyaTrail, StageItems, GpsBeacon, HillLayer, IcePanel, Moon, Petals, Rock, RockTrail, Sky, Sparks, groundY} from '../scenery';
 import {styles, type StyleSpec} from '../styles';
 import {resolveTimeline} from './timeline';
 import type {CastMember, SceneSpec, StorySpec} from './types';
@@ -26,6 +26,8 @@ export type StoryReelProps = {
 const FADE = 6; // frames a scene cross-fades in over the one before it
 const STEP_RATE = 1.1;
 const DEFAULT_SCALE = 1.15;
+/** ground line of explainer scenes that set backdrop.bare */
+const BARE_FLOOR = 1500;
 
 const clamp01 = (n: number) => Math.min(1, Math.max(0, n));
 const walks = (c: CastMember) => c.action === 'walk' || c.action === 'walkWave';
@@ -57,10 +59,25 @@ const SceneView: React.FC<{spec: SceneSpec; index: number; frames: number; lead:
         <AbsoluteFill style={{transform: `scale(${zoom})`, transformOrigin: '50% 72%'}}>
           <Sky sun={backdrop.sun} seed={spec.id} />
           {backdrop.moon && <Moon {...backdrop.moon} />}
-          {(backdrop.clouds ?? 5) > 0 && <Clouds count={backdrop.clouds ?? 5} scroll={scroll} seed={spec.id} />}
-          <HillLayer layer={0} scroll={scroll} trees={trees[0]} seed={spec.id} />
-          <HillLayer layer={1} scroll={scroll} trees={trees[1]} seed={spec.id} />
-          <HillLayer layer={2} scroll={scroll} trees={trees[2]} seed={spec.id} />
+          {!backdrop.bare && (backdrop.clouds ?? 5) > 0 && <Clouds count={backdrop.clouds ?? 5} scroll={scroll} seed={spec.id} />}
+          {!backdrop.bare && (
+            <>
+              <HillLayer layer={0} scroll={scroll} trees={trees[0]} seed={spec.id} />
+              <HillLayer layer={1} scroll={scroll} trees={trees[1]} seed={spec.id} />
+              <HillLayer layer={2} scroll={scroll} trees={trees[2]} seed={spec.id} />
+            </>
+          )}
+          {backdrop.bare && (
+            <SvgLayer>
+              <rect x={0} y={BARE_FLOOR} width={WIDTH} height={1920 - BARE_FLOOR} fill={palette.hills[2]} />
+              <rect x={0} y={BARE_FLOOR - 4} width={WIDTH} height={8} fill={palette.ink} />
+            </SvgLayer>
+          )}
+          {spec.stage && (
+            <SvgLayer>
+              <StageItems items={spec.stage} frame={sceneFrame} fps={FPS} />
+            </SvgLayer>
+          )}
           {backdrop.diyas && <DiyaTrail scroll={scroll} />}
           {(backdrop.rocks || backdrop.ice) && (
             <SvgLayer style={{filter: style.charFilter}}>
@@ -92,7 +109,7 @@ const SceneView: React.FC<{spec: SceneSpec; index: number; frames: number; lead:
                   key={i}
                   look={look}
                   x={x}
-                  y={groundY(x, scroll)}
+                  y={backdrop.bare ? BARE_FLOOR : groundY(x, scroll)}
                   scale={c.scale ?? DEFAULT_SCALE}
                   facing={c.facing ?? 1}
                   walk={walks(c) ? 1 : 0}
@@ -104,6 +121,11 @@ const SceneView: React.FC<{spec: SceneSpec; index: number; frames: number; lead:
               );
             })}
           </SvgLayer>
+          {spec.front && (
+            <SvgLayer>
+              <StageItems items={spec.front} frame={sceneFrame} fps={FPS} />
+            </SvgLayer>
+          )}
           {backdrop.sparks && cast[0] && <Sparks x={cast[0].x + 140} y={groundY(cast[0].x, scroll) - 30} seed={spec.id} />}
           {backdrop.petals && <Petals seed={spec.id} />}
         </AbsoluteFill>

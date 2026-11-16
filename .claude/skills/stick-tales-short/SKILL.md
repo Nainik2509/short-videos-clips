@@ -29,6 +29,9 @@ Series rules live in `channel/series.md` (section 4); topics in `channel/backlog
 - Style `stickTales` (`src/styles/index.tsx`): flat teal sky, yellow/orange hills, black ink. Choose it with `--style stickTales`.
 - Checked with a storyboard still (idle, walk, wave); not yet used in a full reel. Props, arrows and big hook text come from scenery/overlays; add new ones to `src/scenery` rather than one-off drawings.
 
+## Explainer props (built)
+`backdrop: {"palette":"day","bare":true,"clouds":0}` gives a flat teal sky and floor. Put diagrams in `stage` and labels/arrows in `front` (`src/scenery/Stage.tsx`): `panes`, `arrows`, `label`, `fog`, each with `at` (seconds). First used in `stories/airplane-window-hole`. Add new props (map pin, bar, clock, money) to `Stage.tsx` as new item types when a script needs them. Do not use `walk` in `bare` scenes (the floor does not scroll).
+
 ## Honest limits
 - Only walk and wave poses exist so far (plus idle). Add poses (point, shrug, surprised) to `StickFigure.tsx` when a script needs them.
 - Facts must be true: say "is believed to" for beliefs, never invent numbers, quotes or dates.

@@ -65,7 +65,7 @@ Same rules: a topic needs **2 reliable sources** before scripting. These are sta
 
 | # | Topic | Hook | Status | Sources to check |
 |---|---|---|---|---|
-| 1 | Why airplane windows have a tiny hole | Why is there a tiny hole in every airplane window? | ☐ | |
+| 1 | Why airplane windows have a tiny hole | Why is there a tiny hole in every airplane window? | ✎ approved, scenes drafted (stories/airplane-window-hole) | |
 | 2 | Why the Indian rupee note has a blind-friendly mark | How do blind people tell a ₹500 note from a ₹100? | ☐ | RBI |
 | 3 | The man who invented the barcode on a beach | A drawing in the sand became the barcode | ☐ | |
 | 4 | Why ships have a red bottom | Why are ship bottoms painted red? | ☐ | |

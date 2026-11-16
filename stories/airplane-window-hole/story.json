@@ -1,0 +1,345 @@
+{
+ "slug": "airplane-window-hole",
+ "title": "Why does your airplane window have a tiny hole?",
+ "hook": "Why does your airplane window have a tiny hole?",
+ "language": "english",
+ "style": "stickTales",
+ "series": "Doodle Whys",
+ "part": 1,
+ "heroScene": 0,
+ "scenes": [
+  {
+   "id": "question",
+   "line": "Why does your airplane window have a tiny hole?",
+   "duration": 3,
+   "backdrop": {
+    "palette": "day",
+    "bare": true,
+    "clouds": 0
+   },
+   "cast": [
+    {
+     "look": "sticky",
+     "x": 300,
+     "scale": 0.8,
+     "action": "idle",
+     "mood": "smile"
+    }
+   ],
+   "stage": [
+    {
+     "type": "panes",
+     "x": 650,
+     "y": 980,
+     "hole": true,
+     "highlight": "hole",
+     "at": 0.6
+    }
+   ],
+   "front": [
+    {
+     "type": "label",
+     "text": "Why the hole?",
+     "x": 540,
+     "y": 620,
+     "at": 1.2,
+     "size": 50
+    }
+   ]
+  },
+  {
+   "id": "layers",
+   "line": "Look closely. Each window has three layers, and the middle one has a hole.",
+   "duration": 5,
+   "backdrop": {
+    "palette": "day",
+    "bare": true,
+    "clouds": 0
+   },
+   "cast": [
+    {
+     "look": "sticky",
+     "x": 250,
+     "scale": 0.8,
+     "action": "wave",
+     "mood": "smile"
+    }
+   ],
+   "stage": [
+    {
+     "type": "panes",
+     "x": 650,
+     "y": 980,
+     "hole": true,
+     "sides": true,
+     "at": 0.2
+    }
+   ],
+   "front": [
+    {
+     "type": "label",
+     "text": "Outer",
+     "x": 460,
+     "y": 1340,
+     "size": 34,
+     "at": 0.8
+    },
+    {
+     "type": "label",
+     "text": "Middle",
+     "x": 650,
+     "y": 1340,
+     "size": 34,
+     "at": 1.6
+    },
+    {
+     "type": "label",
+     "text": "Inner",
+     "x": 840,
+     "y": 1340,
+     "size": 34,
+     "at": 2.4
+    },
+    {
+     "type": "label",
+     "text": "Tiny hole!",
+     "x": 540,
+     "y": 620,
+     "color": "#ff7a8a",
+     "at": 3.2,
+     "size": 50
+    }
+   ]
+  },
+  {
+   "id": "pressure",
+   "line": "Up high, the cabin is pressurised, so the air inside pushes hard on the glass.",
+   "duration": 5,
+   "backdrop": {
+    "palette": "day",
+    "bare": true,
+    "clouds": 0
+   },
+   "cast": [
+    {
+     "look": "sticky",
+     "x": 250,
+     "scale": 0.8,
+     "action": "idle"
+    }
+   ],
+   "stage": [
+    {
+     "type": "panes",
+     "x": 650,
+     "y": 980,
+     "hole": true,
+     "sides": true,
+     "at": 0
+    }
+   ],
+   "front": [
+    {
+     "type": "arrows",
+     "x": 800,
+     "y": 980,
+     "angle": 180,
+     "count": 3,
+     "size": 0.8,
+     "at": 1.2
+    },
+    {
+     "type": "label",
+     "text": "Cabin pressure",
+     "x": 540,
+     "y": 620,
+     "color": "#ffb347",
+     "at": 0.6,
+     "size": 50
+    },
+    {
+     "type": "label",
+     "text": "Thin air",
+     "x": 460,
+     "y": 1340,
+     "size": 36,
+     "color": "#9ad8ff",
+     "at": 2.4
+    }
+   ]
+  },
+  {
+   "id": "outer-pane",
+   "line": "The hole lets that pressure reach the outer pane, so the outer pane carries the load.",
+   "duration": 5,
+   "backdrop": {
+    "palette": "day",
+    "bare": true,
+    "clouds": 0
+   },
+   "cast": [
+    {
+     "look": "sticky",
+     "x": 250,
+     "scale": 0.8,
+     "action": "idle",
+     "mood": "smile"
+    }
+   ],
+   "stage": [
+    {
+     "type": "panes",
+     "x": 650,
+     "y": 980,
+     "hole": true,
+     "highlight": "outer",
+     "sides": true,
+     "at": 0
+    }
+   ],
+   "front": [
+    {
+     "type": "label",
+     "text": "Outer pane takes the load",
+     "x": 540,
+     "y": 620,
+     "size": 44,
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "safe",
+   "line": "That way, if a pane ever fails, it is the outer one, not the one next to you.",
+   "duration": 5,
+   "backdrop": {
+    "palette": "day",
+    "bare": true,
+    "clouds": 0
+   },
+   "cast": [
+    {
+     "look": "sticky",
+     "x": 250,
+     "scale": 0.8,
+     "action": "idle"
+    }
+   ],
+   "stage": [
+    {
+     "type": "panes",
+     "x": 650,
+     "y": 980,
+     "hole": true,
+     "crack": "outer",
+     "highlight": "inner",
+     "sides": true,
+     "at": 0
+    }
+   ],
+   "front": [
+    {
+     "type": "label",
+     "text": "If one fails: the outer one",
+     "x": 540,
+     "y": 620,
+     "size": 44,
+     "at": 0.6
+    }
+   ]
+  },
+  {
+   "id": "fog",
+   "line": "The hole also lets moisture escape, so your window stays clear.",
+   "duration": 4,
+   "backdrop": {
+    "palette": "day",
+    "bare": true,
+    "clouds": 0
+   },
+   "cast": [
+    {
+     "look": "sticky",
+     "x": 250,
+     "scale": 0.8,
+     "action": "idle",
+     "mood": "smile"
+    }
+   ],
+   "stage": [
+    {
+     "type": "panes",
+     "x": 650,
+     "y": 980,
+     "hole": true,
+     "at": 0
+    },
+    {
+     "type": "fog",
+     "x": 650,
+     "y": 980,
+     "w": 380,
+     "h": 420,
+     "at": 0.4,
+     "clearOver": 2.4
+    }
+   ],
+   "front": [
+    {
+     "type": "label",
+     "text": "Moisture escapes",
+     "x": 540,
+     "y": 620,
+     "size": 46,
+     "at": 0.6
+    },
+    {
+     "type": "label",
+     "text": "No fog!",
+     "x": 540,
+     "y": 1340,
+     "at": 2.4,
+     "color": "#9ef0b0"
+    }
+   ]
+  },
+  {
+   "id": "next",
+   "line": "Tiny hole, big job. Next: why are airplane windows round?",
+   "duration": 5,
+   "backdrop": {
+    "palette": "day",
+    "bare": true,
+    "clouds": 0
+   },
+   "cast": [
+    {
+     "look": "sticky",
+     "x": 300,
+     "scale": 0.8,
+     "action": "wave",
+     "mood": "smile"
+    }
+   ],
+   "stage": [
+    {
+     "type": "panes",
+     "x": 650,
+     "y": 980,
+     "hole": true,
+     "at": 0
+    }
+   ],
+   "front": [
+    {
+     "type": "label",
+     "text": "Next: why round?",
+     "x": 540,
+     "y": 620,
+     "at": 1.2,
+     "size": 50
+    }
+   ]
+  }
+ ]
+}

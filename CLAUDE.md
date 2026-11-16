@@ -116,6 +116,7 @@ Live preview of any story: `npm run studio`.
 
 - **backdrop**: `palette` (dusk/night/dawn/day/playaNight/playaDawn), `sun`, `moon`, `clouds`, `trees` `[back, middle, front]`, `diyas`, `sparks`, `petals`,
   `rocks` (`x`, `toX`, `size`, `trailFrom`, `gps`: a rock that slides and leaves a trail), `ice` (floating ice panels, `x`, `toX`), `scrollSpeed`, `offset`. A walking character sets the ground speed automatically so feet do not slide.
+- **explainer props** (Stick Tales): `backdrop.bare: true` = flat sky and floor, no hills; per scene `stage` (behind characters) and `front` (in front) hold items from `src/scenery/Stage.tsx`: `panes` (airplane-window cross-section: `hole`, `highlight`, `crack`, `sides`), `arrows` (`angle`, `count`), `label` (`text`, `size`, `color`), `fog` (`clearOver`); each has `at` = seconds into the scene to pop in. Keep labels at x 540 or inside x 160–920 and y ≥ 560 (below the opening hook).
 - **cast**: `look` (preset name or a full look object), `x`, `toX` (moves during the scene), `scale`, `facing` (1 or -1),
   `action` (idle / walk / wave / walkWave), `mood` (calm / smile), `blinkOffset`.
 - **scene**: `id`, `line`, `start` (seconds; overrides `line`), `duration` (only used before timings exist), `push` (end zoom, default 1.05).

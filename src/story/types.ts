@@ -1,6 +1,7 @@
 import type {Language} from '../lib/languages';
 import type {PaletteName} from '../lib/palettes';
 import type {CharacterLook, LookName} from '../rig';
+import type {StageItem} from '../scenery';
 import type {StyleName} from '../styles';
 
 /** One character on screen in a scene. x / toX are screen pixels (0–1080); the feet follow the ground. */
@@ -46,6 +47,8 @@ export type Backdrop = {
   scrollSpeed?: number;
   /** shifts which part of the hills this scene shows */
   offset?: number;
+  /** explainer scenes: no hills, trees or clouds, just the sky colour (Stick Tales) */
+  bare?: boolean;
 };
 
 export type SceneSpec = {
@@ -58,6 +61,10 @@ export type SceneSpec = {
   duration?: number;
   backdrop: Backdrop;
   cast?: CastMember[];
+  /** explainer props drawn behind the characters: panes, arrows, labels, fog (see src/scenery/Stage.tsx) */
+  stage?: StageItem[];
+  /** labels and arrows drawn in front of the characters */
+  front?: StageItem[];
   /** slow push-in: end zoom, 1 = none (default 1.05) */
   push?: number;
 };
