@@ -8,7 +8,7 @@ cuts and exports, **Whisper** makes captions, **yt-dlp** pulls reference videos.
 
 Pick 3–5 videos you love and give Claude the links:
 
-> Download these references and study them: <link 1> <link 2> <link 3>. Fill in references/STYLE.md and add my edit style to CLAUDE.md.
+> Download these references and study them: <link 1> <link 2> <link 3>. Fill in docs/research/STYLE.md and add my edit style to CLAUDE.md.
 > Inspired by, not a copy: borrow the pattern (hook type, pacing, captions, music mood), never their script, footage, voice or layout.
 
 Claude runs `npm run refs -- <links>`, looks at each video's frames and transcript, and writes your style down.

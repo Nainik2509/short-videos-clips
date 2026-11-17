@@ -6,7 +6,7 @@
 // Nothing is uploaded. You (or the Claude extension, with your OK) paste it into YouTube Studio.
 import fs from 'node:fs';
 import path from 'node:path';
-import {ROOT, die} from './lib.mjs';
+import {ROOT, die} from '../shared/lib.mjs';
 
 const slug = process.argv[2];
 if (!slug) die('usage: npm run youtube -- <story-slug>');

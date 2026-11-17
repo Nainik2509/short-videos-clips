@@ -70,12 +70,17 @@ src/
   brand/      ClayMark (soft-3D storybook + spark mark, aurora background, clay lighting filters), BrandComps (LogoStill = composition `LogoMark`, LogoSting 4 s animated logo, ChannelBanner)
   toon3d/     3D engine (three.js in Remotion): ink outlines, depth blur, grade, two-tone light (stage.ts, lights.ts), stick-figure cards (figures.ts, cards.ts), effect icons (icons.ts), world kit (kit.ts: shops, cars, signs), camera moves (camera.ts)
   videos/     one folder per 3D reel (sets.ts, cast.ts, shots.ts, index.ts); index.ts maps story slug -> reel
-tools/        new_story.py, timings.py, storyboard.mjs, finish.mjs, still3d.mjs (debug stills of a 3D story)
+tools/        scripts, grouped by job (each reads shared helpers from tools/shared/lib.mjs):
+  story/      new_story.py, timings.py, storyboard.mjs, finish.mjs, still3d.mjs (debug stills of a 3D story)
+  footage/    edit.mjs (cut your clips), refs.mjs (download + analyse reference videos)
+  publish/    youtube-pack.mjs (title, description), brand.mjs (logo, banner, sting)
+  shared/     lib.mjs (ROOT, bundling, ffmpeg helpers)
 docs/         KAHANI-GUIDE.md, EDIT-YOUR-FOOTAGE.md, CHANNEL-PLAYBOOK.md
+  research/   STYLE.md (channel studies, house style), STYLES-LIBRARY.md, STYLE.template.md (tracked in git)
 brand/        logo-icon.png (profile picture), channel-banner.png, logo-sting.mp4 (animated logo), made by `npm run brand`
 channel/      series.md (Facts, Kahani, Cartoon), backlog.md (topics + status), calendar.md (weekly rhythm, first 30 days)
 raw-footage/  your original clips (never modified or deleted by Claude; git-ignored)
-references/   downloaded reference videos + STYLE.md (git-ignored)
+references/   downloaded reference videos only: frames, transcripts (git-ignored; the notes live in docs/research/)
 exports/      finished edits: <name>-final.mp4, -qc.jpg (git-ignored)
 work/<name>/  edit.json (settings), cut.mp4, timings.json for an edit (git-ignored)
 .claude/skills/  cartoon-3d-short (the template the toon3d engine was adapted from), stick-tales-short (English stick-figure Shorts)
@@ -137,10 +142,10 @@ Styles recolour looks automatically (e.g. glowLine turns everyone black with a c
 
 The 5 tools: **Remotion** (`src/edit/EditReel.tsx`, builds video and graphics from code), **Hyperframes** (HeyGen's HTML-to-video
 tool, installed: `npx hyperframes`; use it when a graphic is easier as HTML/CSS), **FFmpeg** (cuts and exports), **Whisper**
-(`tools/timings.py`, captions), **yt-dlp** (`npm run refs`, pulls reference videos).
+(`tools/story/timings.py`, captions), **yt-dlp** (`npm run refs`, pulls reference videos).
 
 1. **Learn the style.** The user gives 3–5 links of videos they love: `npm run refs -- <link> <link> ...` downloads each into
-   `references/<id>/` with a contact sheet (`frames.jpg`) and a transcript. Look at them, fill in `references/STYLE.md`, then write the
+   `references/<id>/` with a contact sheet (`frames.jpg`) and a transcript. Look at them, fill in `docs/research/STYLE.md`, then write the
    resulting style (hook type, pacing, caption look, music mood) into this file under "My edit style". **Inspired by, not a copy:**
    borrow patterns only, never another creator's script, footage, characters, voice or layout.
 2. **Film and drop the file** into `raw-footage/`. Never edit, move or delete originals there.
@@ -163,16 +168,26 @@ The player, world and label overlay are shared (`src/toon3d/Reel3D.tsx`, `world.
 Rules learned: cut about every 2.5 s (2-3 shots per scene); looking along +z, world +x is on the LEFT of the picture; keep trees, cars and poles out of
 camera lines (check stills); labels and badges are `tag()` / `badge()` (pinned to the picture, drawn as a 2D overlay), icons next to the action are
 world cards (`fx()`); people stand behind a counter by standing between the counter and the shop wall. Debug with
-`node tools/still3d.mjs <slug> <frame,frame> [--post '{"ink":false}'] [--scale 0.5]`. Rendering is fast (about 30 s for 64 s) because the tools use GPU (ANGLE).
+`node tools/story/still3d.mjs <slug> <frame,frame> [--post '{"ink":false}'] [--scale 0.5]`. Rendering is fast (about 30 s for 64 s) because the tools use GPU (ANGLE).
 Never ship someone else's sets, characters or script: our cast is Sticky plus one-off stick figures.
 
 ### My edit style
-**3D Stick Tales** (from the @thesticktales3000 study, full notes in `references/STYLE.md`): 2D bean-head stick characters standing in a
+**3D Stick Tales** (from the @thesticktales3000 study, full notes in `docs/research/STYLE.md`): 2D bean-head stick characters standing in a
 painted 3D set (three.js, `src/toon3d`, see `.claude/skills/cartoon-3d-short`), ink outlines, warm gold for home/good and cool navy for
 strict/foreign, a cut every ~2 s with a constantly moving camera, one prop per idea (price tag, gauge, crowd, relief map, red X / green tick),
 pop-in labels for numbers, places and years, 1–3 word bold captions with the key word in Marigold. Hook is a question or bold claim in line 1;
 shapes: numbered list, contrast twist, myth-bust, scale shock, quiz close. 12–40 s, ~3 words/s. Our own cast (Sticky + one-off figures), sets,
 palette and wording; never their characters, sets, scripts or voice; no caricatures of real people.
+
+**Cinematic mechanism explainer** (from @RicksClips3000, studied 2026-11-17, notes in `docs/research/STYLE.md`): a lit 3D world with one colour script per
+scene, small stick-bean characters, a new shot every 1.5 to 2 s (35 to 45 shots in 65 s), extreme close-ups and top-down cutaways of the mechanism,
+depth blur and glow, 1 to 2 word mid-frame captions matching the picture, a scale-reveal last shot. Titles: 4 to 8 words that state a mechanism
+(`How <small thing> <big result>`, `Why <thing> <odd behaviour>`). Their comic voice-over Shorts use another artist's work: never copy that.
+
+**Serialized story pattern** (from @BeanieSurvives, studied 2026-11-17, full notes in `docs/research/STYLE.md`): painted-style landscape band in the vertical
+frame, "PART N" header with a gold series line, a day counter, off-white info cards for numbers and rules, slow pans (3 to 6 s holds), quiet music with
+on-screen text, and a cliffhanger title ending every part. Use it for multi-part Kahani / Cartoon runs; use the fast list style for one-off facts.
+Single-hit lists do not build followers (one Short had 1.16M views but the channel has 1.7k subs); serials do.
 
 ## The YouTube Shorts channel (four series)
 

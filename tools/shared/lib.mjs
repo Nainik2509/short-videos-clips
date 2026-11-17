@@ -1,11 +1,11 @@
-// Shared helpers for the studio tools (storyboard.mjs, finish.mjs).
+// Shared helpers for the studio tools (every script under tools/).
 import {bundle} from '@remotion/bundler';
 import {selectComposition} from '@remotion/renderer';
 import {spawnSync} from 'node:child_process';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 
-export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 
 /** Chrome options for every render: ANGLE gives the 3D pictures (src/videos) real GPU speed; the SVG stories do not mind. */
 export const CHROMIUM = {gl: 'angle'};

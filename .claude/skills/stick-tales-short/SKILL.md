@@ -20,7 +20,13 @@ Series rules live in `channel/series.md` (section 4); topics in `channel/backlog
 8. `npm run youtube -- <slug>`; for this series write the description, hashtags and `captions-en.srt` in **English only**. Upload playlist: *Stick Tales (English)*. Post at 21:30 IST.
 
 ## 3D direction (decided 2026-11-16)
-New Stick Tales reels use the **3D look**: stick characters in a painted 3D set via `src/toon3d` and `.claude/skills/cartoon-3d-short`. Follow "3D Stick Tales" in `references/STYLE.md` (rhythm checklist, script shapes, cast, sets, palette). For this series the 3D skill's "no captions or labels" rule is overridden: use 1-3 word captions plus pop-in labels. The flat SVG look below is only for quick tests.
+New Stick Tales reels use the **3D look**: stick characters in a painted 3D set via `src/toon3d` and `.claude/skills/cartoon-3d-short`. Follow "3D Stick Tales" in `docs/research/STYLE.md` (rhythm checklist, script shapes, cast, sets, palette). For this series the 3D skill's "no captions or labels" rule is overridden: use 1-3 word captions plus pop-in labels. The flat SVG look below is only for quick tests.
+
+## Serialized parts (added 2026-11-17)
+For a multi-part run, add a "PART N" header with a gold series line in the first second, a day or step counter, status cards for numbers, and end every part on a cliffhanger title. Details and the two pacing modes (fast list, slow story): "Combined takeaways" in `docs/research/STYLE.md`; sub-style 9 in `docs/research/STYLES-LIBRARY.md`.
+
+## Cinematic mode (added 2026-11-17)
+For a 45-65 s "how / why" explainer use the "Cinematic checklist" in `docs/research/STYLE.md` (colour script per scene, extreme close-up plus top-down cutaway, a shot every 1.5-2 s, mid-frame 1-2 word captions, scale-reveal ending). Title pattern: `How <small thing> <big result>` or `Why <thing> <odd behaviour>`.
 
 ## Look (flat SVG fallback)
 - Flat bright background colour per scene (teal, yellow, sky blue), thin black stick bodies, big round white heads, simple faces, thick caption/hook text in a heavy sans face with one highlighted word.

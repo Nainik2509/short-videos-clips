@@ -59,6 +59,7 @@ Keep each character's colours fixed. A new character = `{...looks.boy, top: '...
 Inspired by the channel @thesticktales3000 (checked 2026-11-16: English Shorts, ~1.6k subscribers, 23 videos, titles like
 "Why Are School Buses ALWAYS Yellow?", "He Forgot His Wallet and Changed How the World Pays", "The Town That Paid Silence as Tax").
 **Pattern only, never their topics, scripts, footage, character or layout.** Our version has its own cast, palette and topics.
+Live numbers (2026-11-17): 1.67k subs, one Short at 1.16M views, the rest 1.4k to 94k. A serialized channel, @BeanieSurvives (about 112k subs in 2 months, part-numbered story with a day counter and cliffhangers), shows the better way to build followers: for Kahani and Cartoon runs use "Part N", a day counter and a next-part hook. See `docs/research/STYLE.md`.
 
 | | |
 |---|---|

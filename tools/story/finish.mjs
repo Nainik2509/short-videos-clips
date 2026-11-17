@@ -10,7 +10,7 @@ import {renderMedia, renderStill} from '@remotion/renderer';
 import {spawnSync} from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
-import {CHROMIUM, FRAME_TIMEOUT_MS, ROOT, bundleProject, die, pickComposition, run} from './lib.mjs';
+import {CHROMIUM, FRAME_TIMEOUT_MS, ROOT, bundleProject, die, pickComposition, run} from '../shared/lib.mjs';
 
 const args = process.argv.slice(2);
 const slug = args.find((a) => !a.startsWith('--'));
