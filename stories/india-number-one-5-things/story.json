@@ -1,0 +1,218 @@
+{
+  "slug": "india-number-one-5-things",
+  "title": "5 Things India Is #1 In",
+  "coverTitle": "5 THINGS INDIA IS",
+  "hook": "Did you know India ranks number one in these five things?",
+  "language": "english",
+  "style": "stickTales",
+  "renderer": "toon3d",
+  "series": "Doodle Whys",
+  "part": 4,
+  "heroScene": 0,
+  "scenes": [
+    {
+      "id": "hook",
+      "line": "Did you know India ranks number one in the world in these five things?",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "milk",
+      "line": "Number one. India produces nearly a quarter of the world's milk.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "milk-eu",
+      "line": "That's more than the entire European Union combined.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "post",
+      "line": "Number two. With about 165,000 post offices, India has the largest postal network on Earth.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "post-lake",
+      "line": "One of them even floats, on Dal Lake in Kashmir.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "spice",
+      "line": "Number three. India is the spice capital of the world, the biggest grower and exporter of spices.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "spice-food",
+      "line": "No wonder Indian food is so delicious.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "films",
+      "line": "Number four. India makes more films than any other country, over 1,500 a year, in more than 20 languages.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "films-hits",
+      "line": "Its biggest hits include Dangal, RRR and Jawan.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "antilia",
+      "line": "And number five. India is home to Antilia, often called the world's most expensive private home.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "antilia-facts",
+      "line": "Valued at around two billion dollars, this Mumbai tower has 27 floors, 3 helipads and a reported staff of 600.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "line": "Which one surprised you the most? Follow for five more.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:03,702
+Can a person stay awake for 11 days?
+
+2
+00:00:03,752 --> 00:00:12,623
+In 1964, Randy Gardner of San Diego stayed awake for 264 hours.
+
+3
+00:00:12,673 --> 00:00:18,404
+Stanford sleep scientist Dr. William Dement kept watch over him.
+
+4
+00:00:18,454 --> 00:00:22,441
+The record was broken about two weeks later, and Guinness stopped tracking it, because it is dangerous.
