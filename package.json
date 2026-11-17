@@ -5,16 +5,16 @@
   "description": "Vertical (1080x1920, 30fps) animated story studio built on Remotion.",
   "scripts": {
     "studio": "remotion studio src/index.ts",
-    "new-story": "python3 tools/new_story.py",
-    "timings": "\"$HOME/.venvs/whisper/bin/python\" tools/timings.py",
-    "storyboard": "node tools/storyboard.mjs",
-    "finish": "node tools/finish.mjs",
-    "youtube": "node tools/youtube-pack.mjs",
-    "edit": "node tools/edit.mjs",
-    "refs": "node tools/refs.mjs",
+    "new-story": "python3 tools/story/new_story.py",
+    "timings": "\"$HOME/.venvs/whisper/bin/python\" tools/story/timings.py",
+    "storyboard": "node tools/story/storyboard.mjs",
+    "finish": "node tools/story/finish.mjs",
+    "youtube": "node tools/publish/youtube-pack.mjs",
+    "edit": "node tools/footage/edit.mjs",
+    "refs": "node tools/footage/refs.mjs",
     "typecheck": "tsc --noEmit",
-    "check": "tsc --noEmit && for f in tools/*.mjs; do node --check \"$f\" || exit 1; done && python3 -m py_compile tools/new_story.py tools/timings.py",
-    "brand": "node tools/brand.mjs"
+    "check": "tsc --noEmit && for f in tools/*/*.mjs; do node --check \"$f\" || exit 1; done && python3 -m py_compile tools/story/new_story.py tools/story/timings.py",
+    "brand": "node tools/publish/brand.mjs"
   },
   "dependencies": {
     "@react-three/fiber": "9.8.2",

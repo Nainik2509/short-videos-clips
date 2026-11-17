@@ -174,7 +174,7 @@ def main() -> int:
         from faster_whisper import WhisperModel
     except ImportError:
         print("error: faster-whisper missing. Run via `npm run timings -- ...` "
-              "or ~/.venvs/whisper/bin/python tools/timings.py ...", file=sys.stderr)
+              "or ~/.venvs/whisper/bin/python tools/story/timings.py ...", file=sys.stderr)
         return 1
 
     model = WhisperModel(args.model, device="cpu", compute_type="int8")

@@ -10,7 +10,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 TEMPLATE = ROOT / "stories" / "_template"
 REGISTRY = ROOT / "stories" / "registry.ts"
 LANGUAGES = ["hinglish", "hindi", "english", "other"]

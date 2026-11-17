@@ -6,7 +6,7 @@
 import {renderMedia, renderStill} from '@remotion/renderer';
 import fs from 'node:fs';
 import path from 'node:path';
-import {ROOT, bundleProject, die, pickComposition, run} from './lib.mjs';
+import {ROOT, bundleProject, die, pickComposition, run} from '../shared/lib.mjs';
 
 const only = process.argv[2];
 if (only && !['logo', 'banner', 'sting', 'watermark'].includes(only)) die('usage: npm run brand [-- logo|banner|sting|watermark]');

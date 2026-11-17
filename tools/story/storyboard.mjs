@@ -6,7 +6,7 @@
 import {renderStill} from '@remotion/renderer';
 import fs from 'node:fs';
 import path from 'node:path';
-import {CHROMIUM, FRAME_TIMEOUT_MS, ROOT, bundleProject, die, pickComposition, run} from './lib.mjs';
+import {CHROMIUM, FRAME_TIMEOUT_MS, ROOT, bundleProject, die, pickComposition, run} from '../shared/lib.mjs';
 
 const [id, ...frameArgs] = process.argv.slice(2);
 if (!id) die('usage: npm run storyboard -- <story-slug>   or   npm run storyboard -- <CompositionId> <frame> [<frame> ...]');

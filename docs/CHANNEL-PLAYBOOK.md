@@ -58,6 +58,7 @@ A Brand Account channel, separate from the existing SlayArcade channel.
 
 - **Format:** vertical 1080×1920, 30 fps (this studio's default). Keep faces and key action inside the safe zone.
 - **Title:** the question itself, in the language of the audience, up to ~70 characters so it is not cut off. Example: "लक्ष्मण 14 साल सोए क्यों नहीं?". No clickbait the video does not deliver.
+- **Title patterns that scale** (seen on a 191k-sub explainer channel, studied 2026-11-17, see `docs/research/STYLE.md`): `Why <thing> <odd behaviour>`, `How <small thing> <big result>`, `The <noun> That <odd verb>`. 4 to 8 words, one idea, no emoji spam, promise a *mechanism or consequence* the video shows. Hold one length band and one look so viewers know what they get.
 - **Description (English + Hindi):** line 1 = the question in English and Hindi; 2 lines of story; series name + part; source line for facts; music credit.
 - **Hashtags:** 3–5, relevant. YouTube shows the first three above the title and ignores a post that uses more than 15. `#Shorts` is optional.
 - **Playlist:** add every Short to its series playlist at upload.

@@ -5,13 +5,13 @@
 //   npm run refs -- references/my-video.mp4  analyse a file you already have
 //
 // For each video you get: the video, a contact sheet (a frame every 2 seconds) and a transcript, so Claude can
-// read the pacing, hook, captions and mood. Then fill in references/STYLE.md (copy STYLE.template.md).
+// read the pacing, hook, captions and mood. Then fill in docs/research/STYLE.md (copy STYLE.template.md).
 // Use references to learn a *pattern*. Never copy another creator's script, footage, characters or voice.
 import {spawnSync} from 'node:child_process';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import {ROOT, die, probeSeconds, run} from './lib.mjs';
+import {ROOT, die, probeSeconds, run} from '../shared/lib.mjs';
 
 const inputs = process.argv.slice(2);
 if (inputs.length === 0) die('usage: npm run refs -- <video link or file> [...]');
@@ -28,7 +28,7 @@ const analyse = (file, dir) => {
   run('ffmpeg', ['-v', 'error', '-y', '-i', file, '-vf', `fps=1/2,scale=216:-1,tile=${cols}x${Math.ceil(count / cols)}:padding=6:color=0x111111`, '-frames:v', '1', '-update', '1', sheet]);
   const transcript = path.join(dir, 'transcript.json');
   if (fs.existsSync(python)) {
-    spawnSync(python, [path.join(ROOT, 'tools/timings.py'), file, '--out', transcript, '--model', 'base'], {stdio: 'inherit', cwd: ROOT});
+    spawnSync(python, [path.join(ROOT, 'tools/story/timings.py'), file, '--out', transcript, '--model', 'base'], {stdio: 'inherit', cwd: ROOT});
   }
   console.log(`  ${path.relative(ROOT, dir)}/: ${seconds.toFixed(0)}s, frames.jpg${fs.existsSync(transcript) ? ', transcript.json' : ''}`);
 };
@@ -52,7 +52,7 @@ for (const input of inputs) {
     analyse(file, dir);
   }
 }
-const template = path.join(refsDir, 'STYLE.template.md');
-const style = path.join(refsDir, 'STYLE.md');
+const template = path.join(ROOT, 'docs/research/STYLE.template.md');
+const style = path.join(ROOT, 'docs/research/STYLE.md');
 if (!fs.existsSync(style) && fs.existsSync(template)) fs.copyFileSync(template, style);
-console.log('\nNext: ask Claude to "read references/ and fill in references/STYLE.md: inspired by, not a copy".');
+console.log('\nNext: ask Claude to "read references/ and fill in docs/research/STYLE.md: inspired by, not a copy".');

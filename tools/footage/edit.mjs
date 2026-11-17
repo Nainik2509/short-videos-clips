@@ -15,7 +15,7 @@ import {spawnSync} from 'node:child_process';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import {ROOT, bundleProject, die, hasAudio, normalizeLoudness, pickComposition, probeSeconds, run} from './lib.mjs';
+import {ROOT, bundleProject, die, hasAudio, normalizeLoudness, pickComposition, probeSeconds, run} from '../shared/lib.mjs';
 
 const argv = process.argv.slice(2);
 const VALUE_FLAGS = new Set(['hook', 'hook-size', 'hook-seconds', 'language', 'whisper-language', 'script', 'music', 'music-volume', 'caption-size', 'silence-db', 'min-silence', 'model']);
@@ -126,7 +126,7 @@ const timingsKey = JSON.stringify([cutKey, spec.model, spec.whisperLanguage, spe
 if (spec.captions && stale(timingsFile, timingsKey)) {
   const python = path.join(os.homedir(), '.venvs/whisper/bin/python');
   if (!fs.existsSync(python)) die('word timings need the whisper environment: see README ("Requirements").');
-  const args = [path.join(ROOT, 'tools/timings.py'), cutFile, '--out', timingsFile, '--model', spec.model];
+  const args = [path.join(ROOT, 'tools/story/timings.py'), cutFile, '--out', timingsFile, '--model', spec.model];
   const wl = spec.whisperLanguage || {hi: 'hi', hindi: 'hi', hinglish: 'hi', english: 'en', en: 'en'}[spec.language];
   if (wl) args.push('--language', wl);
   if (spec.script) args.push('--script', path.resolve(ROOT, spec.script));
