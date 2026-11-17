@@ -6,7 +6,7 @@
 import {renderStill} from '@remotion/renderer';
 import fs from 'node:fs';
 import path from 'node:path';
-import {ROOT, bundleProject, die, pickComposition, run} from './lib.mjs';
+import {CHROMIUM, FRAME_TIMEOUT_MS, ROOT, bundleProject, die, pickComposition, run} from './lib.mjs';
 
 const [id, ...frameArgs] = process.argv.slice(2);
 if (!id) die('usage: npm run storyboard -- <story-slug>   or   npm run storyboard -- <CompositionId> <frame> [<frame> ...]');
@@ -30,7 +30,7 @@ const files = [];
 for (const [i, frame] of frames.entries()) {
   const name = perScene ? `${id}-s${String(i + 1).padStart(2, '0')}.png` : `${id}-${frame}.png`;
   const output = path.join(outDir, name);
-  await renderStill({composition, serveUrl, output, frame, inputProps});
+  await renderStill({composition, serveUrl, output, frame, inputProps, chromiumOptions: CHROMIUM, timeoutInMilliseconds: FRAME_TIMEOUT_MS});
   files.push(output);
   console.log(`still ${i + 1}/${frames.length}: frame ${frame}`);
 }

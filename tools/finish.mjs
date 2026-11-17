@@ -10,7 +10,7 @@ import {renderMedia, renderStill} from '@remotion/renderer';
 import {spawnSync} from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
-import {ROOT, bundleProject, die, pickComposition, run} from './lib.mjs';
+import {CHROMIUM, FRAME_TIMEOUT_MS, ROOT, bundleProject, die, pickComposition, run} from './lib.mjs';
 
 const args = process.argv.slice(2);
 const slug = args.find((a) => !a.startsWith('--'));
@@ -53,6 +53,8 @@ await renderMedia({
   codec: 'h264',
   imageFormat: 'jpeg',
   videoBitrate: '16M',
+  chromiumOptions: CHROMIUM,
+  timeoutInMilliseconds: FRAME_TIMEOUT_MS,
   outputLocation: silent,
   onProgress: ({progress}) => {
     const pct = Math.floor(progress * 10) * 10;
@@ -114,7 +116,7 @@ run('ffmpeg', ['-v', 'error', '-y', '-i', final, '-vf', `fps=1/2.5,scale=216:-1,
 const coverProps = {cover: true};
 const coverComposition = await pickComposition(serveUrl, slug, coverProps);
 const cover = path.join(ROOT, `out/${slug}-cover.jpg`);
-await renderStill({composition: coverComposition, serveUrl, output: cover, frame: coverComposition.props.heroFrame, imageFormat: 'jpeg', inputProps: coverProps});
+await renderStill({composition: coverComposition, serveUrl, output: cover, frame: coverComposition.props.heroFrame, imageFormat: 'jpeg', inputProps: coverProps, chromiumOptions: CHROMIUM, timeoutInMilliseconds: FRAME_TIMEOUT_MS});
 
 const probe = spawnSync('ffprobe', ['-v', 'error', '-show_entries', 'stream=codec_name,width,height,r_frame_rate', '-of', 'compact', final], {encoding: 'utf8'});
 console.log(`\n${probe.stdout.trim()}`);

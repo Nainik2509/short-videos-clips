@@ -7,6 +7,11 @@ import {fileURLToPath} from 'node:url';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
+/** Chrome options for every render: ANGLE gives the 3D pictures (src/videos) real GPU speed; the SVG stories do not mind. */
+export const CHROMIUM = {gl: 'angle'};
+/** 3D frames can take a while to draw: wait up to 3 minutes for one. */
+export const FRAME_TIMEOUT_MS = 180000;
+
 export const die = (message) => {
   console.error(`error: ${message}`);
   process.exit(1);
@@ -23,7 +28,7 @@ export const bundleProject = async () => {
 /** Looks up a composition; its `props` include sceneFrames and heroFrame worked out from the voice timings. */
 export const pickComposition = async (serveUrl, id, inputProps = {}) => {
   try {
-    return await selectComposition({serveUrl, id, inputProps});
+    return await selectComposition({serveUrl, id, inputProps, chromiumOptions: CHROMIUM, timeoutInMilliseconds: FRAME_TIMEOUT_MS});
   } catch (error) {
     die(`could not open composition "${id}". Is the story registered in stories/registry.ts? (${error.message.split('\n')[0]})`);
   }

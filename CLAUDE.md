@@ -68,7 +68,9 @@ src/
   story/      StoryReel (the generic reel), timeline (scenes follow the voice), types, entry (validation)
   edit/       EditReel (your own footage + hook, captions, music)
   brand/      ClayMark (soft-3D storybook + spark mark, aurora background, clay lighting filters), BrandComps (LogoStill = composition `LogoMark`, LogoSting 4 s animated logo, ChannelBanner)
-tools/        new_story.py, timings.py, storyboard.mjs, finish.mjs
+  toon3d/     3D engine (three.js in Remotion): ink outlines, depth blur, grade, two-tone light (stage.ts, lights.ts), stick-figure cards (figures.ts, cards.ts), effect icons (icons.ts), world kit (kit.ts: shops, cars, signs), camera moves (camera.ts)
+  videos/     one folder per 3D reel (sets.ts, cast.ts, shots.ts, index.ts); index.ts maps story slug -> reel
+tools/        new_story.py, timings.py, storyboard.mjs, finish.mjs, still3d.mjs (debug stills of a 3D story)
 docs/         KAHANI-GUIDE.md, EDIT-YOUR-FOOTAGE.md, CHANNEL-PLAYBOOK.md
 brand/        logo-icon.png (profile picture), channel-banner.png, logo-sting.mp4 (animated logo), made by `npm run brand`
 channel/      series.md (Facts, Kahani, Cartoon), backlog.md (topics + status), calendar.md (weekly rhythm, first 30 days)
@@ -76,7 +78,7 @@ raw-footage/  your original clips (never modified or deleted by Claude; git-igno
 references/   downloaded reference videos + STYLE.md (git-ignored)
 exports/      finished edits: <name>-final.mp4, -qc.jpg (git-ignored)
 work/<name>/  edit.json (settings), cut.mp4, timings.json for an edit (git-ignored)
-.claude/skills/  cartoon-3d-short (three.js style; not set up in this repo yet), stick-tales-short (English stick-figure Shorts)
+.claude/skills/  cartoon-3d-short (the template the toon3d engine was adapted from), stick-tales-short (English stick-figure Shorts)
 ```
 
 ## How a reel is made (always in this order)
@@ -152,8 +154,25 @@ tool, installed: `npx hyperframes`; use it when a graphic is easier as HTML/CSS)
    Hinglish footage: Whisper writes Hindi speech in Devanagari; for Roman captions pass `--script` with the exact words.
 5. Same safe-zone rule as stories: captions and hook stay inside the safe zone. Ask the user to watch it once on their phone.
 
+### 3D reels (`"renderer": "toon3d"`)
+A story keeps its normal `story.json`, `voice.txt`, timings, captions and `npm run finish`; only the picture changes. Set `"renderer": "toon3d"`
+in story.json and register the reel in `src/videos/index.ts` (slug -> reel). Per reel, write only its data in `src/videos/<name>/`:
+`sets.ts` (the places, built from `src/toon3d/kit.ts`; one set shows at a time), `cast.ts` (looks), `shots.ts`
+(per scene id: shots with `at` seconds, a camera `from` -> `to`, `people(t)`, `effects(t)`) and `index.ts` (`defineReel({sets, looks, shots})`).
+The player, world and label overlay are shared (`src/toon3d/Reel3D.tsx`, `world.ts`, `PinnedEffects.tsx`, types and helpers in `reel.ts`); never copy them into a reel.
+Rules learned: cut about every 2.5 s (2-3 shots per scene); looking along +z, world +x is on the LEFT of the picture; keep trees, cars and poles out of
+camera lines (check stills); labels and badges are `tag()` / `badge()` (pinned to the picture, drawn as a 2D overlay), icons next to the action are
+world cards (`fx()`); people stand behind a counter by standing between the counter and the shop wall. Debug with
+`node tools/still3d.mjs <slug> <frame,frame> [--post '{"ink":false}'] [--scale 0.5]`. Rendering is fast (about 30 s for 64 s) because the tools use GPU (ANGLE).
+Never ship someone else's sets, characters or script: our cast is Sticky plus one-off stick figures.
+
 ### My edit style
-_Not set yet. Add the 3–5 reference links, run `npm run refs`, and fill in `references/STYLE.md`; then summarise it here._
+**3D Stick Tales** (from the @thesticktales3000 study, full notes in `references/STYLE.md`): 2D bean-head stick characters standing in a
+painted 3D set (three.js, `src/toon3d`, see `.claude/skills/cartoon-3d-short`), ink outlines, warm gold for home/good and cool navy for
+strict/foreign, a cut every ~2 s with a constantly moving camera, one prop per idea (price tag, gauge, crowd, relief map, red X / green tick),
+pop-in labels for numbers, places and years, 1–3 word bold captions with the key word in Marigold. Hook is a question or bold claim in line 1;
+shapes: numbered list, contrast twist, myth-bust, scale shock, quiz close. 12–40 s, ~3 words/s. Our own cast (Sticky + one-off figures), sets,
+palette and wording; never their characters, sets, scripts or voice; no caricatures of real people.
 
 ## The YouTube Shorts channel (four series)
 
