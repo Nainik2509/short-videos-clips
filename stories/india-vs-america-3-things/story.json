@@ -1,0 +1,142 @@
+{
+  "slug": "india-vs-america-3-things",
+  "title": "3 Things India Does Better Than America",
+  "hook": "Three things that are normal in India, but hard to find in America.",
+  "language": "english",
+  "style": "stickTales",
+  "renderer": "toon3d",
+  "series": "Doodle Whys",
+  "part": 3,
+  "heroScene": 1,
+  "scenes": [
+    {
+      "id": "hook",
+      "line": "Three things that are normal in India, but hard to find in America. Stick around for number three.",
+      "duration": 6,
+      "backdrop": {"palette": "day", "bare": true, "clouds": 0},
+      "cast": [{"look": "sticky", "x": 540, "scale": 0.8, "action": "wave", "mood": "smile"}],
+      "stage": [{"type": "tracker", "x": 540, "y": 900, "active": 1, "hint": true, "at": 0.4}],
+      "front": [
+        {"type": "label", "text": "INDIA", "x": 330, "y": 700, "color": "#ffb347", "size": 56, "at": 0.8},
+        {"type": "label", "text": "USA", "x": 750, "y": 700, "color": "#9ad8ff", "size": 56, "at": 1.4}
+      ]
+    },
+    {
+      "id": "upi",
+      "line": "One: UPI. From luxury stores to chai stalls, you just scan and pay. Chai, scan, done.",
+      "duration": 5.5,
+      "backdrop": {"palette": "day", "bare": true, "clouds": 0},
+      "cast": [{"look": "sticky", "x": 230, "scale": 0.8, "action": "wave", "mood": "smile"}],
+      "stage": [
+        {"type": "tracker", "x": 540, "y": 600, "scale": 0.45, "active": 1, "hint": true},
+        {"type": "phone", "x": 720, "y": 1000, "screen": "qr", "at": 0.3}
+      ],
+      "front": [
+        {"type": "label", "text": "UPI: scan and pay", "x": 540, "y": 720, "color": "#ffb347", "size": 52, "at": 0.6},
+        {"type": "label", "text": "23.2 billion payments, May 2026", "x": 650, "y": 1340, "size": 32, "at": 3}
+      ]
+    },
+    {
+      "id": "cards",
+      "line": "America still leans on cards, and banks collected about 66 billion dollars in swipe fees last year. That is a lot of swiping.",
+      "duration": 6.5,
+      "backdrop": {"palette": "day", "bare": true, "clouds": 0},
+      "cast": [{"look": "sticky", "x": 150, "scale": 0.7, "action": "idle"}],
+      "stage": [
+        {"type": "tracker", "x": 540, "y": 600, "scale": 0.45, "active": 1, "hint": true},
+        {"type": "bankcard", "x": 760, "y": 1040, "scale": 0.8, "at": 0.3},
+        {"type": "house", "x": 400, "y": 1120, "scale": 0.7, "sign": "BANK", "at": 1.2},
+        {"type": "coins", "x": 700, "y": 900, "toX": 420, "toY": 940, "symbol": "$", "at": 2}
+      ],
+      "front": [
+        {"type": "label", "text": "Cards in the USA", "x": 540, "y": 720, "color": "#9ad8ff", "size": 50, "at": 0.4},
+        {"type": "label", "text": "$66B swipe fees, 2025", "x": 540, "y": 1340, "size": 38, "at": 3}
+      ]
+    },
+    {
+      "id": "data-india",
+      "line": "Two: mobile data. Indian plans with unlimited 5G start at a few hundred rupees a month. Scroll more, pay less.",
+      "duration": 6,
+      "backdrop": {"palette": "day", "bare": true, "clouds": 0},
+      "cast": [{"look": "sticky", "x": 230, "scale": 0.8, "action": "idle", "mood": "smile"}],
+      "stage": [
+        {"type": "tracker", "x": 540, "y": 600, "scale": 0.45, "active": 2, "hint": true},
+        {"type": "phone", "x": 720, "y": 1000, "screen": "signal", "at": 0.3}
+      ],
+      "front": [
+        {"type": "label", "text": "India: unlimited 5G", "x": 540, "y": 720, "color": "#ffb347", "size": 50, "at": 0.6},
+        {"type": "label", "text": "from ₹198", "x": 540, "y": 1340, "size": 44, "color": "#9ef0b0", "at": 3}
+      ]
+    },
+    {
+      "id": "data-usa",
+      "line": "In America, one line on a big carrier starts around 45 dollars.",
+      "duration": 4,
+      "backdrop": {"palette": "day", "bare": true, "clouds": 0},
+      "cast": [{"look": "sticky", "x": 230, "scale": 0.8, "action": "idle"}],
+      "stage": [
+        {"type": "tracker", "x": 540, "y": 600, "scale": 0.45, "active": 2, "hint": true},
+        {"type": "phone", "x": 720, "y": 1000, "screen": "price", "text": "$45+", "at": 0.3}
+      ],
+      "front": [
+        {"type": "label", "text": "USA: one line, big carrier", "x": 540, "y": 720, "color": "#9ad8ff", "size": 44, "at": 0.5}
+      ]
+    },
+    {
+      "id": "medicine-india",
+      "line": "Now, number three: medicine. Many Indian pharmacies sell common medicines with no doctor visit.",
+      "duration": 6,
+      "backdrop": {"palette": "day", "bare": true, "clouds": 0},
+      "cast": [{"look": "sticky", "x": 190, "scale": 0.7, "action": "wave", "mood": "smile"}],
+      "stage": [
+        {"type": "tracker", "x": 540, "y": 600, "scale": 0.45, "active": 3},
+        {"type": "house", "x": 720, "y": 1090, "sign": "PHARMACY", "at": 0.4},
+        {"type": "pills", "x": 720, "y": 1320, "scale": 0.8, "at": 1.4}
+      ],
+      "front": [
+        {"type": "label", "text": "India: no appointment", "x": 540, "y": 720, "color": "#ffb347", "size": 48, "at": 0.8}
+      ]
+    },
+    {
+      "id": "medicine-usa",
+      "line": "In America, many need a prescription, and an uninsured visit averages about 170 dollars.",
+      "duration": 5.5,
+      "backdrop": {"palette": "day", "bare": true, "clouds": 0},
+      "cast": [{"look": "sticky", "x": 230, "scale": 0.8, "action": "idle"}],
+      "stage": [
+        {"type": "tracker", "x": 540, "y": 600, "scale": 0.45, "active": 3},
+        {"type": "pills", "x": 720, "y": 1000, "rx": true, "at": 0.3}
+      ],
+      "front": [
+        {"type": "label", "text": "USA: prescription first", "x": 540, "y": 720, "color": "#9ad8ff", "size": 48, "at": 0.6},
+        {"type": "label", "text": "~$170 uninsured visit", "x": 540, "y": 1340, "size": 38, "at": 2.8}
+      ]
+    },
+    {
+      "id": "catch",
+      "line": "One catch: antibiotics need a prescription in India too. Health first, always.",
+      "duration": 5,
+      "backdrop": {"palette": "day", "bare": true, "clouds": 0},
+      "cast": [{"look": "sticky", "x": 230, "scale": 0.8, "action": "idle", "mood": "smile"}],
+      "stage": [
+        {"type": "tracker", "x": 540, "y": 600, "scale": 0.45, "active": 3},
+        {"type": "pills", "x": 720, "y": 1000, "scale": 1.2, "rx": true, "at": 0.3}
+      ],
+      "front": [
+        {"type": "label", "text": "Antibiotics need an Rx", "x": 540, "y": 720, "color": "#ff7a8a", "size": 46, "at": 0.5}
+      ]
+    },
+    {
+      "id": "next",
+      "line": "Which one wins for you? Comment one, two or three, and follow. Next: three things America does better.",
+      "duration": 7,
+      "backdrop": {"palette": "day", "bare": true, "clouds": 0},
+      "cast": [{"look": "sticky", "x": 540, "scale": 0.8, "action": "wave", "mood": "smile"}],
+      "stage": [{"type": "tracker", "x": 540, "y": 900, "active": 3, "at": 0.4}],
+      "front": [
+        {"type": "label", "text": "Which one wins?", "x": 540, "y": 700, "size": 56, "at": 0.6},
+        {"type": "label", "text": "Next: 3 things America does better", "x": 540, "y": 1030, "size": 36, "color": "#9ad8ff", "at": 4}
+      ]
+    }
+  ]
+}

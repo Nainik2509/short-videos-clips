@@ -3,6 +3,7 @@ import {languages} from '../lib/languages';
 import {palettes} from '../lib/palettes';
 import {looks} from '../rig';
 import {styles} from '../styles';
+import {videos3d} from '../videos';
 import {hasTimings} from './timeline';
 import type {StorySpec} from './types';
 
@@ -19,6 +20,7 @@ export const validateStory = (story: StorySpec): StorySpec => {
   if (!story.hook) fail(s, '"hook" is missing: the question the reel opens with.');
   if (!(story.language in languages)) fail(s, `"language" must be one of: ${Object.keys(languages).join(', ')}.`);
   if (!(story.style in styles)) fail(s, `"style" must be one of: ${Object.keys(styles).join(', ')}.`);
+  if (story.renderer === 'toon3d' && !(story.slug in videos3d)) fail(s, `"renderer": "toon3d" needs a 3D picture registered for this slug in src/videos/index.ts.`);
   if (!Array.isArray(story.scenes) || story.scenes.length === 0) fail(s, '"scenes" needs at least one scene.');
   story.scenes.forEach((scene) => {
     if (!(scene.backdrop?.palette in palettes)) fail(s, `scene "${scene.id}": palette must be one of: ${Object.keys(palettes).join(', ')}.`);

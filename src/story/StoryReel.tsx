@@ -8,7 +8,9 @@ import {FPS, SAFE, WIDTH} from '../lib/theme';
 import {Character, looks, walkSpeedPxPerSec, type CharacterLook} from '../rig';
 import {Clouds, DiyaTrail, StageItems, GpsBeacon, HillLayer, IcePanel, Moon, Petals, Rock, RockTrail, Sky, Sparks, groundY} from '../scenery';
 import {styles, type StyleSpec} from '../styles';
-import {resolveTimeline} from './timeline';
+import {Reel3D} from '../toon3d/Reel3D';
+import {videos3d} from '../videos';
+import {resolveTimeline, type Timeline} from './timeline';
 import type {CastMember, SceneSpec, StorySpec} from './types';
 
 export type StoryReelProps = {
@@ -153,31 +155,40 @@ const Opening: React.FC<{story: StorySpec; big?: boolean}> = ({story, big = fals
   );
 };
 
-/** The whole reel: scenes cross-fade in step with the voice; captions and opening sit on top. */
-export const StoryReel: React.FC<StoryReelProps> = ({story, timings, guides, cover}) => {
+/** The picture of an SVG story: scenes cross-fade in step with the voice, drawn in the story's style. */
+const SvgPicture: React.FC<{story: StorySpec; timeline: Timeline}> = ({story, timeline}) => {
   const frame = useCurrentFrame();
   const style = styles[story.style];
-  const timeline = React.useMemo(() => resolveTimeline(story, timings), [story, timings]);
 
   // stop-motion styles redraw every N frames
   const hold = style.drawingsPerSec ? FPS / style.drawingsPerSec : 1;
   const held = Math.min(frame, Math.round(Math.floor(frame / hold) * hold));
 
   return (
+    <Freeze frame={held}>
+      <AbsoluteFill style={{filter: style.filter}}>
+        {timeline.scenes.map((s, i) => {
+          const lead = i === 0 ? 0 : FADE;
+          return (
+            <Sequence key={s.spec.id} from={s.from - lead} durationInFrames={s.frames + lead}>
+              <SceneView spec={s.spec} index={i} frames={s.frames} lead={lead} style={style} />
+            </Sequence>
+          );
+        })}
+      </AbsoluteFill>
+      {style.Overlay && <style.Overlay />}
+    </Freeze>
+  );
+};
+
+/** The whole reel: the picture (SVG scenes, or the story's 3D reel) follows the voice; captions and opening sit on top. */
+export const StoryReel: React.FC<StoryReelProps> = ({story, timings, guides, cover}) => {
+  const timeline = React.useMemo(() => resolveTimeline(story, timings), [story, timings]);
+  const reel3d = story.renderer === 'toon3d' ? videos3d[story.slug] : undefined;
+
+  return (
     <AbsoluteFill style={{background: '#000'}}>
-      <Freeze frame={held}>
-        <AbsoluteFill style={{filter: style.filter}}>
-          {timeline.scenes.map((s, i) => {
-            const lead = i === 0 ? 0 : FADE;
-            return (
-              <Sequence key={s.spec.id} from={s.from - lead} durationInFrames={s.frames + lead}>
-                <SceneView spec={s.spec} index={i} frames={s.frames} lead={lead} style={style} />
-              </Sequence>
-            );
-          })}
-        </AbsoluteFill>
-        {style.Overlay && <style.Overlay />}
-      </Freeze>
+      {reel3d ? <Reel3D reel={reel3d} timeline={timeline} cover={cover} /> : <SvgPicture story={story} timeline={timeline} />}
       {cover ? <Opening story={story} big /> : <Opening story={story} />}
       {!cover && timings && <Captions words={timings.words} language={story.language} />}
       {guides && <SafeZoneGuide />}
