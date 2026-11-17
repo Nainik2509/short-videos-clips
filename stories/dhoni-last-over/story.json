@@ -1,0 +1,235 @@
+{
+  "slug": "dhoni-last-over",
+  "title": "The Last Over: MS Dhoni's Story",
+  "coverTitle": "THE LAST OVER",
+  "hook": "How did a goalkeeper from Ranchi become the man India trusts with the last over?",
+  "language": "english",
+  "style": "stickTales",
+  "renderer": "toon3d",
+  "series": "Doodle Whys",
+  "part": 5,
+  "heroScene": 0,
+  "scenes": [
+    {
+      "id": "hook",
+      "line": "How did a goalkeeper from Ranchi become the man India trusts with the last over? Stay till the end.",
+      "duration": 6.5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "ranchi",
+      "line": "Ranchi, 1981. Young Dhoni stood in goal. Hitting sixes was not even on the list.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "train",
+      "line": "Then a train ticket examiner's job at Kharagpur. Platform by day, dream on the side.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "t20",
+      "line": "2007. A new captain lifted the very first T20 World Cup.",
+      "duration": 3.6,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "loop",
+      "line": "But the moment India still replays was four years away.",
+      "duration": 3.6,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "final",
+      "line": "April 2011, Mumbai. World Cup final. Ninety-one not out, and he finished it with a six. A billion people exhaled.",
+      "duration": 7,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "champions",
+      "line": "World champions again, after twenty-eight years.",
+      "duration": 3,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "three",
+      "line": "In 2013, the Champions Trophy made him the only captain to win all three major ICC white-ball trophies.",
+      "duration": 6,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "csk",
+      "line": "Then came the yellow army. Five IPL titles with Chennai. They called him Captain Cool.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "retire",
+      "line": "Today, after eighteen years, he retired from the IPL.",
+      "duration": 3.3,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "mentor",
+      "line": "But hold on. He is not leaving. Chennai named him team mentor for 2027.",
+      "duration": 4.5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "answer",
+      "line": "So how did he do it? By staying calm when everyone else could not. Some players finish matches. He finished doubts.",
+      "duration": 7,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "line": "Next: the 2011 final, ball by ball. Follow, so you do not miss it.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    }
+  ]
+}

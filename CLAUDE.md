@@ -168,7 +168,7 @@ The player, world and label overlay are shared (`src/toon3d/Reel3D.tsx`, `world.
 Rules learned: cut about every 2.5 s (2-3 shots per scene); looking along +z, world +x is on the LEFT of the picture; keep trees, cars and poles out of
 camera lines (check stills); labels and badges are `tag()` / `badge()` (pinned to the picture, drawn as a 2D overlay), icons next to the action are
 world cards (`fx()`); people stand behind a counter by standing between the counter and the shop wall. Debug with
-`node tools/story/still3d.mjs <slug> <frame,frame> [--post '{"ink":false}'] [--scale 0.5]`. Rendering is fast (about 30 s for 64 s) because the tools use GPU (ANGLE).
+`npm run still3d -- <slug> <frame,frame> [--post '{"ink":false}'] [--scale 0.5]`. An English and a Hinglish version of one story share one reel: register the same reel under both slugs in `src/videos/index.ts` (see `dhoni-last-over`). Rendering is fast (about 30 s for 64 s) because the tools use GPU (ANGLE).
 Never ship someone else's sets, characters or script: our cast is Sticky plus one-off stick figures.
 
 ### My edit style
@@ -237,6 +237,7 @@ npm run new-story -- <slug> --title "..." --hook "..." --language hinglish --sty
 npm run timings -- voice/<slug>.mp3 --script stories/<slug>/voice.txt --language hi --out stories/<slug>/timings.json
 npm run storyboard -- <slug>                    # one still per scene -> out/<slug>-storyboard.jpg
 npm run storyboard -- <CompositionId> 0 45 89   # stills of chosen frames of any composition
+npm run still3d -- <slug> 27,108,171 [--scale 0.4]   # debug stills of a 3D story (writes out/storyboard/)
 npm run finish -- <slug> [--music music/x.mp3]  # render + mix + final.mp4 + qc.jpg + cover.jpg
 npm run edit -- raw-footage/<clip>.mp4 --hook "..."   # cut dead air + hook + captions + music -> exports/
 npm run refs -- <link-or-file> ...              # download/analyse reference videos into references/

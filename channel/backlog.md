@@ -76,5 +76,6 @@ Same rules: a topic needs **2 reliable sources** before scripting. These are sta
 | 9 | The Tulip craze | When one flower cost a house | ☐ | |
 | 10 | What if the Moon disappeared tomorrow? | What would change first? | ☐ | NASA |
 | 11 | 5 things India is #1 in (milk, post offices, spices, films, Antilia) | Did you know India ranks number one in these five things? | ✔ scheduled: public 18 Nov 2026, 21:30 IST (stories/india-number-one-5-things) | India Post, APEDA, CBFC, Guinness |
+| 12 | MS Dhoni: from a Ranchi goalkeeper to the last over | How did a goalkeeper from Ranchi become the man India trusts with the last over? | ✔ published 17 Nov 2026, English and Hinglish (stories/dhoni-last-over, stories/dhoni-last-over-hinglish) | The Week, ETV Bharat, Wikipedia, ESPNcricinfo |
 
 Format of a Stick Tales row in `stories/<slug>/script.md`: hook, 6–9 numbered lines (one picture each), "Sources and fact check", spelling list for names.

@@ -1,0 +1,235 @@
+{
+  "slug": "dhoni-last-over-hinglish",
+  "title": "The Last Over: MS Dhoni ki Kahani",
+  "coverTitle": "THE LAST OVER",
+  "hook": "Ranchi ka ek goalkeeper, last over ka sabse bharosemand khiladi kaise ban gaya?",
+  "language": "hinglish",
+  "style": "stickTales",
+  "renderer": "toon3d",
+  "series": "Doodle Whys Hinglish",
+  "part": 5,
+  "heroScene": 0,
+  "scenes": [
+    {
+      "id": "hook",
+      "line": "Ranchi ka ek goalkeeper, last over ka sabse bharosemand khiladi kaise ban gaya? Video ke end tak ruko.",
+      "duration": 6.5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "ranchi",
+      "line": "Ranchi, 1981. Chhote Dhoni goal mein khade rehte the. Chhakke maarna to list mein tha hi nahi.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "train",
+      "line": "Phir Kharagpur station par train ticket examiner ki naukri. Din mein platform, sapna saath mein.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "t20",
+      "line": "2007. Ek naye captain ne pehla T20 World Cup utha liya.",
+      "duration": 3.6,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "loop",
+      "line": "Lekin jis pal ko India aaj bhi baar baar dekhta hai, woh chaar saal door tha.",
+      "duration": 3.6,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "final",
+      "line": "April 2011, Mumbai. World Cup final. 91 not out, aur chhakke se match khatam. Karodon dilon ne ek saath saans li.",
+      "duration": 7,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "champions",
+      "line": "Atthaaees saal baad, India phir world champion.",
+      "duration": 3,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "three",
+      "line": "2013 mein Champions Trophy ne unhe banaya aisa akela captain, jisne teeno bade ICC white-ball trophy jeete.",
+      "duration": 6,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "csk",
+      "line": "Phir aayi yellow army. Chennai ke saath paanch IPL titles. Log unhe Captain Cool kehte the.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "retire",
+      "line": "Aaj, atharah saal baad, unhone IPL se retirement le li.",
+      "duration": 3.3,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "mentor",
+      "line": "Lekin ruko. Woh ja nahi rahe. Chennai ne unhe 2027 ke liye team mentor banaya hai.",
+      "duration": 4.5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "answer",
+      "line": "To unhone yeh kaise kiya? Shaant rehkar, jab baaki sab ghabra jaate the. Kuch khiladi match khatam karte hain. Unhone shak khatam kiye.",
+      "duration": 7,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "line": "Agla part: 2011 final, ball by ball. Follow karo, taaki miss na ho.",
+      "duration": 5,
+      "backdrop": {
+        "palette": "day",
+        "bare": true,
+        "clouds": 0
+      },
+      "cast": [
+        {
+          "look": "sticky",
+          "x": 540,
+          "scale": 0.8
+        }
+      ]
+    }
+  ]
+}

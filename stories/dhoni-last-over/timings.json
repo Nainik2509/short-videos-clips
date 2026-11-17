@@ -1,0 +1,942 @@
+{
+  "audio": "voice/dhoni-last-over.mp3",
+  "language": "en",
+  "duration": 79.073,
+  "words": [
+    {
+      "word": "How",
+      "start": 0.0,
+      "end": 0.197
+    },
+    {
+      "word": "did",
+      "start": 0.197,
+      "end": 0.394
+    },
+    {
+      "word": "a",
+      "start": 0.394,
+      "end": 0.46
+    },
+    {
+      "word": "goalkeeper",
+      "start": 0.46,
+      "end": 1.118
+    },
+    {
+      "word": "from",
+      "start": 1.118,
+      "end": 1.381
+    },
+    {
+      "word": "Ranchi",
+      "start": 1.381,
+      "end": 1.775
+    },
+    {
+      "word": "become",
+      "start": 1.775,
+      "end": 2.17
+    },
+    {
+      "word": "the",
+      "start": 2.17,
+      "end": 2.367
+    },
+    {
+      "word": "man",
+      "start": 2.367,
+      "end": 2.564
+    },
+    {
+      "word": "India",
+      "start": 2.564,
+      "end": 2.893
+    },
+    {
+      "word": "trusts",
+      "start": 2.893,
+      "end": 3.287
+    },
+    {
+      "word": "with",
+      "start": 3.287,
+      "end": 3.55
+    },
+    {
+      "word": "the",
+      "start": 3.55,
+      "end": 3.747
+    },
+    {
+      "word": "last",
+      "start": 3.747,
+      "end": 4.01
+    },
+    {
+      "word": "over?",
+      "start": 4.01,
+      "end": 4.313
+    },
+    {
+      "word": "Stay",
+      "start": 4.313,
+      "end": 5.129
+    },
+    {
+      "word": "till",
+      "start": 5.129,
+      "end": 5.392
+    },
+    {
+      "word": "the",
+      "start": 5.392,
+      "end": 5.589
+    },
+    {
+      "word": "end.",
+      "start": 5.589,
+      "end": 5.825
+    },
+    {
+      "word": "Ranchi,",
+      "start": 6.554,
+      "end": 7.453
+    },
+    {
+      "word": "1981.",
+      "start": 7.453,
+      "end": 7.823
+    },
+    {
+      "word": "Young",
+      "start": 7.823,
+      "end": 8.225
+    },
+    {
+      "word": "Dhoni",
+      "start": 8.225,
+      "end": 9.102
+    },
+    {
+      "word": "stood",
+      "start": 9.102,
+      "end": 9.504
+    },
+    {
+      "word": "in",
+      "start": 9.504,
+      "end": 9.665
+    },
+    {
+      "word": "goal.",
+      "start": 9.665,
+      "end": 10.035
+    },
+    {
+      "word": "Hitting",
+      "start": 10.035,
+      "end": 11.162
+    },
+    {
+      "word": "sixes",
+      "start": 11.162,
+      "end": 11.564
+    },
+    {
+      "word": "was",
+      "start": 11.564,
+      "end": 11.805
+    },
+    {
+      "word": "not",
+      "start": 11.805,
+      "end": 12.046
+    },
+    {
+      "word": "even",
+      "start": 12.046,
+      "end": 12.368
+    },
+    {
+      "word": "on",
+      "start": 12.368,
+      "end": 12.529
+    },
+    {
+      "word": "the",
+      "start": 12.529,
+      "end": 12.77
+    },
+    {
+      "word": "list.",
+      "start": 12.77,
+      "end": 13.14
+    },
+    {
+      "word": "Then",
+      "start": 13.658,
+      "end": 13.946
+    },
+    {
+      "word": "a",
+      "start": 13.946,
+      "end": 14.018
+    },
+    {
+      "word": "train",
+      "start": 14.018,
+      "end": 14.378
+    },
+    {
+      "word": "ticket",
+      "start": 14.378,
+      "end": 14.81
+    },
+    {
+      "word": "examiner's",
+      "start": 14.81,
+      "end": 15.458
+    },
+    {
+      "word": "job",
+      "start": 15.458,
+      "end": 15.674
+    },
+    {
+      "word": "at",
+      "start": 15.674,
+      "end": 15.818
+    },
+    {
+      "word": "Kharagpur.",
+      "start": 15.818,
+      "end": 17.06
+    },
+    {
+      "word": "Platform",
+      "start": 17.06,
+      "end": 17.636
+    },
+    {
+      "word": "by",
+      "start": 17.636,
+      "end": 17.78
+    },
+    {
+      "word": "day,",
+      "start": 17.78,
+      "end": 18.321
+    },
+    {
+      "word": "dream",
+      "start": 18.321,
+      "end": 18.681
+    },
+    {
+      "word": "on",
+      "start": 18.681,
+      "end": 18.825
+    },
+    {
+      "word": "the",
+      "start": 18.825,
+      "end": 19.041
+    },
+    {
+      "word": "side.",
+      "start": 19.041,
+      "end": 19.372
+    },
+    {
+      "word": "2007.",
+      "start": 20.002,
+      "end": 20.406
+    },
+    {
+      "word": "A",
+      "start": 20.406,
+      "end": 20.494
+    },
+    {
+      "word": "new",
+      "start": 20.494,
+      "end": 20.757
+    },
+    {
+      "word": "captain",
+      "start": 20.757,
+      "end": 21.864
+    },
+    {
+      "word": "lifted",
+      "start": 21.864,
+      "end": 22.39
+    },
+    {
+      "word": "the",
+      "start": 22.39,
+      "end": 22.654
+    },
+    {
+      "word": "very",
+      "start": 22.654,
+      "end": 23.005
+    },
+    {
+      "word": "first",
+      "start": 23.005,
+      "end": 23.444
+    },
+    {
+      "word": "T20",
+      "start": 23.444,
+      "end": 23.707
+    },
+    {
+      "word": "World",
+      "start": 23.707,
+      "end": 24.146
+    },
+    {
+      "word": "Cup.",
+      "start": 24.146,
+      "end": 24.462
+    },
+    {
+      "word": "But",
+      "start": 25.034,
+      "end": 25.24
+    },
+    {
+      "word": "the",
+      "start": 25.24,
+      "end": 25.447
+    },
+    {
+      "word": "moment",
+      "start": 25.447,
+      "end": 25.86
+    },
+    {
+      "word": "India",
+      "start": 25.86,
+      "end": 26.204
+    },
+    {
+      "word": "still",
+      "start": 26.204,
+      "end": 26.549
+    },
+    {
+      "word": "replays",
+      "start": 26.549,
+      "end": 27.031
+    },
+    {
+      "word": "was",
+      "start": 27.031,
+      "end": 27.237
+    },
+    {
+      "word": "four",
+      "start": 27.237,
+      "end": 27.513
+    },
+    {
+      "word": "years",
+      "start": 27.513,
+      "end": 27.857
+    },
+    {
+      "word": "away.",
+      "start": 27.857,
+      "end": 28.174
+    },
+    {
+      "word": "April",
+      "start": 28.815,
+      "end": 29.2
+    },
+    {
+      "word": "2011,",
+      "start": 29.2,
+      "end": 29.555
+    },
+    {
+      "word": "Mumbai.",
+      "start": 29.555,
+      "end": 30.474
+    },
+    {
+      "word": "World",
+      "start": 30.474,
+      "end": 31.304
+    },
+    {
+      "word": "Cup",
+      "start": 31.304,
+      "end": 31.535
+    },
+    {
+      "word": "final.",
+      "start": 31.535,
+      "end": 31.967
+    },
+    {
+      "word": "Ninety-one",
+      "start": 31.967,
+      "end": 33.165
+    },
+    {
+      "word": "not",
+      "start": 33.165,
+      "end": 33.396
+    },
+    {
+      "word": "out,",
+      "start": 33.396,
+      "end": 33.674
+    },
+    {
+      "word": "and",
+      "start": 33.674,
+      "end": 34.159
+    },
+    {
+      "word": "he",
+      "start": 34.159,
+      "end": 34.313
+    },
+    {
+      "word": "finished",
+      "start": 34.313,
+      "end": 34.93
+    },
+    {
+      "word": "it",
+      "start": 34.93,
+      "end": 35.084
+    },
+    {
+      "word": "with",
+      "start": 35.084,
+      "end": 35.392
+    },
+    {
+      "word": "a",
+      "start": 35.392,
+      "end": 35.469
+    },
+    {
+      "word": "six.",
+      "start": 35.469,
+      "end": 36.228
+    },
+    {
+      "word": "A",
+      "start": 36.228,
+      "end": 36.305
+    },
+    {
+      "word": "billion",
+      "start": 36.305,
+      "end": 36.845
+    },
+    {
+      "word": "people",
+      "start": 36.845,
+      "end": 37.307
+    },
+    {
+      "word": "exhaled.",
+      "start": 37.307,
+      "end": 37.893
+    },
+    {
+      "word": "World",
+      "start": 38.39,
+      "end": 38.748
+    },
+    {
+      "word": "champions",
+      "start": 38.748,
+      "end": 39.393
+    },
+    {
+      "word": "again,",
+      "start": 39.393,
+      "end": 40.172
+    },
+    {
+      "word": "after",
+      "start": 40.172,
+      "end": 40.53
+    },
+    {
+      "word": "twenty-eight",
+      "start": 40.53,
+      "end": 41.318
+    },
+    {
+      "word": "years.",
+      "start": 41.318,
+      "end": 41.719
+    },
+    {
+      "word": "In",
+      "start": 42.302,
+      "end": 42.459
+    },
+    {
+      "word": "2013,",
+      "start": 42.459,
+      "end": 42.822
+    },
+    {
+      "word": "the",
+      "start": 42.822,
+      "end": 43.059
+    },
+    {
+      "word": "Champions",
+      "start": 43.059,
+      "end": 43.769
+    },
+    {
+      "word": "Trophy",
+      "start": 43.769,
+      "end": 44.243
+    },
+    {
+      "word": "made",
+      "start": 44.243,
+      "end": 44.558
+    },
+    {
+      "word": "him",
+      "start": 44.558,
+      "end": 44.795
+    },
+    {
+      "word": "the",
+      "start": 44.795,
+      "end": 45.032
+    },
+    {
+      "word": "only",
+      "start": 45.032,
+      "end": 45.347
+    },
+    {
+      "word": "captain",
+      "start": 45.347,
+      "end": 45.9
+    },
+    {
+      "word": "to",
+      "start": 45.9,
+      "end": 46.058
+    },
+    {
+      "word": "win",
+      "start": 46.058,
+      "end": 46.294
+    },
+    {
+      "word": "all",
+      "start": 46.294,
+      "end": 46.531
+    },
+    {
+      "word": "three",
+      "start": 46.531,
+      "end": 46.926
+    },
+    {
+      "word": "major",
+      "start": 46.926,
+      "end": 47.32
+    },
+    {
+      "word": "ICC",
+      "start": 47.32,
+      "end": 47.557
+    },
+    {
+      "word": "white-ball",
+      "start": 47.557,
+      "end": 48.267
+    },
+    {
+      "word": "trophies.",
+      "start": 48.267,
+      "end": 48.946
+    },
+    {
+      "word": "Then",
+      "start": 49.415,
+      "end": 49.691
+    },
+    {
+      "word": "came",
+      "start": 49.691,
+      "end": 49.966
+    },
+    {
+      "word": "the",
+      "start": 49.966,
+      "end": 50.173
+    },
+    {
+      "word": "yellow",
+      "start": 50.173,
+      "end": 50.586
+    },
+    {
+      "word": "army.",
+      "start": 50.586,
+      "end": 50.904
+    },
+    {
+      "word": "Five",
+      "start": 50.904,
+      "end": 51.663
+    },
+    {
+      "word": "IPL",
+      "start": 51.663,
+      "end": 51.87
+    },
+    {
+      "word": "titles",
+      "start": 51.87,
+      "end": 52.283
+    },
+    {
+      "word": "with",
+      "start": 52.283,
+      "end": 52.559
+    },
+    {
+      "word": "Chennai.",
+      "start": 52.559,
+      "end": 53.083
+    },
+    {
+      "word": "They",
+      "start": 53.083,
+      "end": 53.858
+    },
+    {
+      "word": "called",
+      "start": 53.858,
+      "end": 54.272
+    },
+    {
+      "word": "him",
+      "start": 54.272,
+      "end": 54.479
+    },
+    {
+      "word": "Captain",
+      "start": 54.479,
+      "end": 54.961
+    },
+    {
+      "word": "Cool.",
+      "start": 54.961,
+      "end": 55.278
+    },
+    {
+      "word": "Today,",
+      "start": 55.78,
+      "end": 56.217
+    },
+    {
+      "word": "after",
+      "start": 56.217,
+      "end": 56.608
+    },
+    {
+      "word": "eighteen",
+      "start": 56.608,
+      "end": 57.232
+    },
+    {
+      "word": "years,",
+      "start": 57.232,
+      "end": 57.669
+    },
+    {
+      "word": "he",
+      "start": 57.669,
+      "end": 57.826
+    },
+    {
+      "word": "retired",
+      "start": 57.826,
+      "end": 58.372
+    },
+    {
+      "word": "from",
+      "start": 58.372,
+      "end": 58.684
+    },
+    {
+      "word": "the",
+      "start": 58.684,
+      "end": 58.919
+    },
+    {
+      "word": "IPL.",
+      "start": 58.919,
+      "end": 59.2
+    },
+    {
+      "word": "But",
+      "start": 59.674,
+      "end": 59.896
+    },
+    {
+      "word": "hold",
+      "start": 59.896,
+      "end": 60.192
+    },
+    {
+      "word": "on.",
+      "start": 60.192,
+      "end": 60.385
+    },
+    {
+      "word": "He",
+      "start": 60.385,
+      "end": 60.925
+    },
+    {
+      "word": "is",
+      "start": 60.925,
+      "end": 61.074
+    },
+    {
+      "word": "not",
+      "start": 61.074,
+      "end": 61.296
+    },
+    {
+      "word": "leaving.",
+      "start": 61.296,
+      "end": 62.348
+    },
+    {
+      "word": "Chennai",
+      "start": 62.348,
+      "end": 62.867
+    },
+    {
+      "word": "named",
+      "start": 62.867,
+      "end": 63.237
+    },
+    {
+      "word": "him",
+      "start": 63.237,
+      "end": 63.459
+    },
+    {
+      "word": "team",
+      "start": 63.459,
+      "end": 63.756
+    },
+    {
+      "word": "mentor",
+      "start": 63.756,
+      "end": 64.2
+    },
+    {
+      "word": "for",
+      "start": 64.2,
+      "end": 64.423
+    },
+    {
+      "word": "2027.",
+      "start": 64.423,
+      "end": 64.764
+    },
+    {
+      "word": "So",
+      "start": 65.325,
+      "end": 65.467
+    },
+    {
+      "word": "how",
+      "start": 65.467,
+      "end": 65.681
+    },
+    {
+      "word": "did",
+      "start": 65.681,
+      "end": 65.895
+    },
+    {
+      "word": "he",
+      "start": 65.895,
+      "end": 66.037
+    },
+    {
+      "word": "do",
+      "start": 66.037,
+      "end": 66.18
+    },
+    {
+      "word": "it?",
+      "start": 66.18,
+      "end": 66.365
+    },
+    {
+      "word": "By",
+      "start": 66.365,
+      "end": 66.508
+    },
+    {
+      "word": "staying",
+      "start": 66.508,
+      "end": 67.481
+    },
+    {
+      "word": "calm",
+      "start": 67.481,
+      "end": 67.766
+    },
+    {
+      "word": "when",
+      "start": 67.766,
+      "end": 68.051
+    },
+    {
+      "word": "everyone",
+      "start": 68.051,
+      "end": 68.621
+    },
+    {
+      "word": "else",
+      "start": 68.621,
+      "end": 68.906
+    },
+    {
+      "word": "could",
+      "start": 68.906,
+      "end": 69.262
+    },
+    {
+      "word": "not.",
+      "start": 69.262,
+      "end": 70.056
+    },
+    {
+      "word": "Some",
+      "start": 70.056,
+      "end": 70.341
+    },
+    {
+      "word": "players",
+      "start": 70.341,
+      "end": 70.839
+    },
+    {
+      "word": "finish",
+      "start": 70.839,
+      "end": 71.267
+    },
+    {
+      "word": "matches.",
+      "start": 71.267,
+      "end": 72.227
+    },
+    {
+      "word": "He",
+      "start": 72.227,
+      "end": 72.369
+    },
+    {
+      "word": "finished",
+      "start": 72.369,
+      "end": 72.939
+    },
+    {
+      "word": "doubts.",
+      "start": 72.939,
+      "end": 73.41
+    },
+    {
+      "word": "Next:",
+      "start": 73.946,
+      "end": 74.279
+    },
+    {
+      "word": "the",
+      "start": 74.279,
+      "end": 74.798
+    },
+    {
+      "word": "2011",
+      "start": 74.798,
+      "end": 75.088
+    },
+    {
+      "word": "final,",
+      "start": 75.088,
+      "end": 75.493
+    },
+    {
+      "word": "ball",
+      "start": 75.493,
+      "end": 76.141
+    },
+    {
+      "word": "by",
+      "start": 76.141,
+      "end": 76.285
+    },
+    {
+      "word": "ball.",
+      "start": 76.285,
+      "end": 76.618
+    },
+    {
+      "word": "Follow,",
+      "start": 76.618,
+      "end": 77.597
+    },
+    {
+      "word": "so",
+      "start": 77.597,
+      "end": 77.742
+    },
+    {
+      "word": "you",
+      "start": 77.742,
+      "end": 77.959
+    },
+    {
+      "word": "do",
+      "start": 77.959,
+      "end": 78.104
+    },
+    {
+      "word": "not",
+      "start": 78.104,
+      "end": 78.321
+    },
+    {
+      "word": "miss",
+      "start": 78.321,
+      "end": 78.611
+    },
+    {
+      "word": "it.",
+      "start": 78.611,
+      "end": 78.799
+    }
+  ]
+}

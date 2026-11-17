@@ -8,6 +8,7 @@
     "new-story": "python3 tools/story/new_story.py",
     "timings": "\"$HOME/.venvs/whisper/bin/python\" tools/story/timings.py",
     "storyboard": "node tools/story/storyboard.mjs",
+    "still3d": "node tools/story/still3d.mjs",
     "finish": "node tools/story/finish.mjs",
     "youtube": "node tools/publish/youtube-pack.mjs",
     "edit": "node tools/footage/edit.mjs",

@@ -1,5 +1,9 @@
 import {entry, type StoryEntry} from '../src/story/entry';
 // <stories:imports>
+import dhoniLastOverHinglish from './dhoni-last-over-hinglish/story.json';
+import dhoniLastOverHinglishTimings from './dhoni-last-over-hinglish/timings.json';
+import dhoniLastOver from './dhoni-last-over/story.json';
+import dhoniLastOverTimings from './dhoni-last-over/timings.json';
 import indiaNumberOne5Things from './india-number-one-5-things/story.json';
 import indiaNumberOne5ThingsTimings from './india-number-one-5-things/timings.json';
 import indiaVsAmerica3Things from './india-vs-america-3-things/story.json';
@@ -27,6 +31,8 @@ import sailingStonesTimings from './sailing-stones/timings.json';
  */
 export const stories: StoryEntry[] = [
   // <stories:list>
+  entry(dhoniLastOverHinglish, dhoniLastOverHinglishTimings),
+  entry(dhoniLastOver, dhoniLastOverTimings),
   entry(indiaNumberOne5Things, indiaNumberOne5ThingsTimings),
   entry(indiaVsAmerica3Things, indiaVsAmerica3ThingsTimings),
   entry(whyCalledShampoo, whyCalledShampooTimings),

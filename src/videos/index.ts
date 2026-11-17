@@ -1,4 +1,5 @@
 import type {Reel} from '../toon3d/reel';
+import {dhoniLastOver} from './dhoni-last-over';
 import {indiaNumberOne} from './india-number-one';
 import {indiaVsAmerica} from './india-vs-america';
 
@@ -8,6 +9,8 @@ import {indiaVsAmerica} from './india-vs-america';
  * (played by src/toon3d/Reel3D.tsx).
  */
 export const videos3d: Record<string, Reel> = {
+  'dhoni-last-over': dhoniLastOver,
+  'dhoni-last-over-hinglish': dhoniLastOver,
   'india-number-one-5-things': indiaNumberOne,
   'india-vs-america-3-things': indiaVsAmerica,
 };

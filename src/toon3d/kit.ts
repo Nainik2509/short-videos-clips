@@ -45,7 +45,8 @@ type MatLike = string | THREE.Material;
 const mat = (m: MatLike) => (typeof m === "string" ? solid(m) : m);
 
 // ---------------- primitives ----------------
-const shadowed = <T extends THREE.Object3D>(o: T) => {
+/** turn on shadow casting and receiving for an object and its children */
+export const shadowed = <T extends THREE.Object3D>(o: T) => {
   o.traverse((c) => {
     c.castShadow = true;
     c.receiveShadow = true;
