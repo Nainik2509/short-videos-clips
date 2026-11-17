@@ -142,6 +142,9 @@ const Opening: React.FC<{story: StorySpec; big?: boolean}> = ({story, big = fals
   const lang = languages[story.language];
   const opacity = big ? 1 : interpolate(frame, [0, 6, 78, 96], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   if (opacity <= 0) return null;
+  // the cover shows the short title when the story has one, and it can be much bigger than a full question
+  const title = big ? story.coverTitle ?? story.hook : story.hook;
+  const size = !big ? 64 : story.coverTitle ? 150 : 92;
   const badge = story.series ? `${story.series}${story.part ? ` · ${lang.part} ${story.part}` : ''}` : story.part ? `${lang.part} ${story.part}` : '';
   return (
     <AbsoluteFill style={{opacity, pointerEvents: 'none'}}>
@@ -149,7 +152,7 @@ const Opening: React.FC<{story: StorySpec; big?: boolean}> = ({story, big = fals
         {badge && (
           <div style={{...textStyle(story.language, 40), WebkitTextStroke: 0, background: '#ffd45e', color: '#1a1030', padding: '8px 30px', borderRadius: 40, textShadow: 'none'}}>{badge}</div>
         )}
-        <div style={textStyle(story.language, big ? 92 : 64)}>{story.hook}</div>
+        <div style={textStyle(story.language, size)}>{title}</div>
       </div>
     </AbsoluteFill>
   );

@@ -12,15 +12,18 @@ export const hasTimings = (t: TimingsFile | null | undefined): t is TimingsFile 
 /** lower-case, no punctuation: so "Kyun?" matches "kyun" */
 const norm = (w: string) => w.toLowerCase().replace(/[^\p{L}\p{M}\p{N}]+/gu, '');
 
+/** how many opening words of a line must match: enough to tell "Number one. India..." from "...ranks number one in..." */
+const MATCH_WORDS = 4;
+
 /** Index of the word where a spoken line starts, searching forward from `cursor`. */
 const findLineStart = (line: string, words: Word[], cursor: number): number => {
-  const tokens = line.split(/\s+/).map(norm).filter(Boolean);
+  const tokens = line.split(/\s+/).map(norm).filter(Boolean).slice(0, MATCH_WORDS);
   if (tokens.length === 0) return -1;
-  for (let i = cursor; i < words.length; i++) {
-    if (norm(words[i].word) !== tokens[0]) continue;
-    if (tokens.length < 2 || norm(words[i + 1]?.word ?? '') === tokens[1]) return i;
+  const matchesAt = (i: number, count: number) => tokens.slice(0, count).every((token, k) => norm(words[i + k]?.word ?? '') === token);
+  // the longest opening that matches anywhere wins, so a short repeat earlier in the voice is not mistaken for the line
+  for (let count = tokens.length; count >= 1; count--) {
+    for (let i = cursor; i < words.length; i++) if (matchesAt(i, count)) return i;
   }
-  for (let i = cursor; i < words.length; i++) if (norm(words[i].word) === tokens[0]) return i;
   return -1;
 };
 

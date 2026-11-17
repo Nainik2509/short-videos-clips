@@ -19,7 +19,10 @@ Series rules live in `channel/series.md` (section 4); topics in `channel/backlog
 7. **Storyboard** (`npm run storyboard -- <slug>`), apply notes, then `npm run finish -- <slug> --music music/<track>.mp3`.
 8. `npm run youtube -- <slug>`; for this series write the description, hashtags and `captions-en.srt` in **English only**. Upload playlist: *Stick Tales (English)*. Post at 21:30 IST.
 
-## Look
+## 3D direction (decided 2026-11-16)
+New Stick Tales reels use the **3D look**: stick characters in a painted 3D set via `src/toon3d` and `.claude/skills/cartoon-3d-short`. Follow "3D Stick Tales" in `references/STYLE.md` (rhythm checklist, script shapes, cast, sets, palette). For this series the 3D skill's "no captions or labels" rule is overridden: use 1-3 word captions plus pop-in labels. The flat SVG look below is only for quick tests.
+
+## Look (flat SVG fallback)
 - Flat bright background colour per scene (teal, yellow, sky blue), thin black stick bodies, big round white heads, simple faces, thick caption/hook text in a heavy sans face with one highlighted word.
 - Sticky is always `#2F6BFF` beanie + `#FF8A1F` vest. Other characters are one-off stick figures with a name label, never realistic likenesses of real people.
 - Stay inside the safe zone (SAFE in `src/lib/theme.ts`); captions via `<Captions>`.

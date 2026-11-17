@@ -82,6 +82,8 @@ export type StorySpec = {
   part?: number;
   /** how the picture is drawn: the SVG studio (default) or a 3D world from src/videos (by slug) */
   renderer?: 'svg' | 'toon3d';
+  /** short title for the cover image (default: the hook) */
+  coverTitle?: string;
   /** index of the scene used for the cover image (default 0) */
   heroScene?: number;
   /** seconds of picture after the last word (default 1) */

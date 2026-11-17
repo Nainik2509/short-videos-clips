@@ -13,6 +13,7 @@
     "edit": "node tools/edit.mjs",
     "refs": "node tools/refs.mjs",
     "typecheck": "tsc --noEmit",
+    "check": "tsc --noEmit && for f in tools/*.mjs; do node --check \"$f\" || exit 1; done && python3 -m py_compile tools/new_story.py tools/timings.py",
     "brand": "node tools/brand.mjs"
   },
   "dependencies": {

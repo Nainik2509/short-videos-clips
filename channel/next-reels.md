@@ -1,4 +1,4 @@
-# Next 5 reels (DRAFT, awaiting approval)
+# Next 5 reels (approved, uploaded and scheduled 2026-11-16)
 
 Status: scripts drafted 2026-11-16. Do not build scenes until approved. Voices: ElevenLabs (the user's logged-in account), same voice for all.
 
@@ -68,3 +68,7 @@ Checked: motion parallax; the Moon is about 384,000 km (about 239,000 miles) awa
 Sources: National Geographic, "The dancing plague of 1518, Strasbourg" , https://www.nationalgeographic.com/history/article/dancing-plague-of-1518-strasbourg-choreomania ·
 History Revealed, "The medieval dancing plague", https://historyrevealed.com/period/medieval/the-medieval-dance-of-death
 Checked: July 1518, Strasbourg, Frau Troffea began dancing, spread to hundreds over about a month, some dancers collapsed or died, cause still debated (mass psychogenic illness is the leading modern view, not proven).
+
+## Status
+All five rendered and uploaded as scheduled public videos (times above). Not made for kids; altered-content answer: No. Subtitle tracks (English + Hindi where applicable) come from `captions-*.srt` in each story folder. Part 2 of Pinku aur Dadi (moon) is English-only by design.
+Re-check "When your viewers are on YouTube" after about a month and adjust times.

@@ -1,38 +1,38 @@
-# YouTube upload pack: Why does the moon follow us?
+# YouTube upload pack: moon-follows-us
 
-> Generated from story.json. Edit freely. Check facts and sources before you publish.
+> Every public text is English first (English-only reel).
 
-## Title (41 characters)
+
+## Title
 Why does the moon follow us when we walk?
+
 
 ## Description
+
 Why does the moon follow us when we walk?
 
-<Line 1 of the story>
-<Line 2 of the story>
+Pinku and Dadi walk home under the moon, and Dadi explains it with the trees. The moon is about 384,000 km away, so it hardly seems to move.
 
-Pinku and Dadi · Part 2
-Sources: <for facts: 2 reliable sources>
-Music: <track name, artist, where it is licensed from>
+Pinku & Dadi (Cartoon) · Part 2
+Doodle Story Tales: a new story every day.
 
-#PinkuandDadi #English #Kahani #Shorts
+Transcript:
+Why does the moon follow us when we walk?
+Pinku and Dadi were walking home one night, and the moon walked with them.
+Dadi pointed at the trees. They rushed past, one after another.
+But the moon is about 384,000 kilometres away, so it hardly seems to move.
+That is why it looks like it is walking with you. Tomorrow: why do stars twinkle?
+
+Sources:
+1. Caltech/IPAC Cool Cosmos, "Why does the Moon follow me when I move?" - https://coolcosmos.ipac.caltech.edu/ask/177-Why-does-the-Moon-follow-me-when-I-move-
+2. EarthSky, "Moon and stars distance and appearance" - https://earthsky.org/astronomy-essentials/moon-and-stars-distance-appearance/
+
+Music: none
+
+#MoonFacts #Science #KidsLearning #Shorts #DoodleStoryTales
 
 ## Settings
-- Playlist: Pinku and Dadi
+- Playlist: Pinku & Dadi | पिंकू और दादी
 - Video language: English
-- Visibility: Private first, then Scheduled (same time every day)
-- Audience: decide honestly: made for kids or not (a cartoon is not automatically made for kids)
-- Content-label questions (altered or synthetic content, made for kids): answer accurately for this video
-- Tags (optional, low impact): Why, does, the, moon
-
-## Pinned comment
-Kal: Part 3. Aap kya sochte hain: <ask a question about this story>?
-
-## Before you publish
-- [ ] Watched on a phone, with sound and without
-- [ ] The question is on screen and spoken in the first 2 seconds
-- [ ] Names and places spelled right in the captions
-- [ ] Facts match the sources listed in script.md (facts channel) or a well-known retelling (kahani)
-- [ ] Deities (if any) shown calm and respectful
-- [ ] Music is licensed; credit is in the description
-- [ ] Added to the series playlist; next 5 Shorts already scheduled
+- Not made for kids (decide with the user); altered/synthetic content: No (cartoon, no real people)
+- Subtitles: captions-en.srt

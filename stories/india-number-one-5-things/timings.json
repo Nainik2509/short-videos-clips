@@ -1,0 +1,782 @@
+{
+  "audio": "voice/india-number-one-5-things.mp3",
+  "language": "en",
+  "duration": 64.209,
+  "words": [
+    {
+      "word": "Did",
+      "start": 0.0,
+      "end": 0.228
+    },
+    {
+      "word": "you",
+      "start": 0.228,
+      "end": 0.456
+    },
+    {
+      "word": "know",
+      "start": 0.456,
+      "end": 0.76
+    },
+    {
+      "word": "India",
+      "start": 0.76,
+      "end": 1.139
+    },
+    {
+      "word": "ranks",
+      "start": 1.139,
+      "end": 1.519
+    },
+    {
+      "word": "number",
+      "start": 1.519,
+      "end": 1.975
+    },
+    {
+      "word": "one",
+      "start": 1.975,
+      "end": 2.203
+    },
+    {
+      "word": "in",
+      "start": 2.203,
+      "end": 2.355
+    },
+    {
+      "word": "the",
+      "start": 2.355,
+      "end": 2.582
+    },
+    {
+      "word": "world",
+      "start": 2.582,
+      "end": 2.962
+    },
+    {
+      "word": "in",
+      "start": 2.962,
+      "end": 3.114
+    },
+    {
+      "word": "these",
+      "start": 3.114,
+      "end": 3.494
+    },
+    {
+      "word": "five",
+      "start": 3.494,
+      "end": 3.798
+    },
+    {
+      "word": "things?",
+      "start": 3.798,
+      "end": 4.299
+    },
+    {
+      "word": "Number",
+      "start": 4.814,
+      "end": 5.205
+    },
+    {
+      "word": "one.",
+      "start": 5.205,
+      "end": 5.877
+    },
+    {
+      "word": "India",
+      "start": 5.877,
+      "end": 6.203
+    },
+    {
+      "word": "produces",
+      "start": 6.203,
+      "end": 6.723
+    },
+    {
+      "word": "nearly",
+      "start": 6.723,
+      "end": 7.114
+    },
+    {
+      "word": "a",
+      "start": 7.114,
+      "end": 7.179
+    },
+    {
+      "word": "quarter",
+      "start": 7.179,
+      "end": 7.635
+    },
+    {
+      "word": "of",
+      "start": 7.635,
+      "end": 7.765
+    },
+    {
+      "word": "the",
+      "start": 7.765,
+      "end": 7.961
+    },
+    {
+      "word": "world's",
+      "start": 7.961,
+      "end": 8.352
+    },
+    {
+      "word": "milk.",
+      "start": 8.352,
+      "end": 8.651
+    },
+    {
+      "word": "That's",
+      "start": 9.14,
+      "end": 9.49
+    },
+    {
+      "word": "more",
+      "start": 9.49,
+      "end": 9.77
+    },
+    {
+      "word": "than",
+      "start": 9.77,
+      "end": 10.05
+    },
+    {
+      "word": "the",
+      "start": 10.05,
+      "end": 10.26
+    },
+    {
+      "word": "entire",
+      "start": 10.26,
+      "end": 10.68
+    },
+    {
+      "word": "European",
+      "start": 10.68,
+      "end": 11.24
+    },
+    {
+      "word": "Union",
+      "start": 11.24,
+      "end": 11.59
+    },
+    {
+      "word": "combined.",
+      "start": 11.59,
+      "end": 12.192
+    },
+    {
+      "word": "Number",
+      "start": 12.797,
+      "end": 13.311
+    },
+    {
+      "word": "two.",
+      "start": 13.311,
+      "end": 14.082
+    },
+    {
+      "word": "With",
+      "start": 14.082,
+      "end": 14.424
+    },
+    {
+      "word": "about",
+      "start": 14.424,
+      "end": 14.853
+    },
+    {
+      "word": "165,000",
+      "start": 14.853,
+      "end": 15.418
+    },
+    {
+      "word": "post",
+      "start": 15.418,
+      "end": 15.76
+    },
+    {
+      "word": "offices,",
+      "start": 15.76,
+      "end": 16.411
+    },
+    {
+      "word": "India",
+      "start": 16.411,
+      "end": 16.839
+    },
+    {
+      "word": "has",
+      "start": 16.839,
+      "end": 17.426
+    },
+    {
+      "word": "the",
+      "start": 17.426,
+      "end": 17.682
+    },
+    {
+      "word": "largest",
+      "start": 17.682,
+      "end": 18.282
+    },
+    {
+      "word": "postal",
+      "start": 18.282,
+      "end": 18.796
+    },
+    {
+      "word": "network",
+      "start": 18.796,
+      "end": 19.395
+    },
+    {
+      "word": "on",
+      "start": 19.395,
+      "end": 19.566
+    },
+    {
+      "word": "Earth.",
+      "start": 19.566,
+      "end": 20.046
+    },
+    {
+      "word": "One",
+      "start": 20.636,
+      "end": 20.849
+    },
+    {
+      "word": "of",
+      "start": 20.849,
+      "end": 20.991
+    },
+    {
+      "word": "them",
+      "start": 20.991,
+      "end": 21.274
+    },
+    {
+      "word": "even",
+      "start": 21.274,
+      "end": 21.558
+    },
+    {
+      "word": "floats,",
+      "start": 21.558,
+      "end": 22.281
+    },
+    {
+      "word": "on",
+      "start": 22.281,
+      "end": 22.423
+    },
+    {
+      "word": "Dal",
+      "start": 22.423,
+      "end": 22.635
+    },
+    {
+      "word": "Lake",
+      "start": 22.635,
+      "end": 22.919
+    },
+    {
+      "word": "in",
+      "start": 22.919,
+      "end": 23.061
+    },
+    {
+      "word": "Kashmir.",
+      "start": 23.061,
+      "end": 23.6
+    },
+    {
+      "word": "Number",
+      "start": 24.157,
+      "end": 24.561
+    },
+    {
+      "word": "three.",
+      "start": 24.561,
+      "end": 25.374
+    },
+    {
+      "word": "India",
+      "start": 25.374,
+      "end": 25.711
+    },
+    {
+      "word": "is",
+      "start": 25.711,
+      "end": 25.846
+    },
+    {
+      "word": "the",
+      "start": 25.846,
+      "end": 26.048
+    },
+    {
+      "word": "spice",
+      "start": 26.048,
+      "end": 26.384
+    },
+    {
+      "word": "capital",
+      "start": 26.384,
+      "end": 26.856
+    },
+    {
+      "word": "of",
+      "start": 26.856,
+      "end": 26.99
+    },
+    {
+      "word": "the",
+      "start": 26.99,
+      "end": 27.192
+    },
+    {
+      "word": "world,",
+      "start": 27.192,
+      "end": 27.898
+    },
+    {
+      "word": "the",
+      "start": 27.898,
+      "end": 28.1
+    },
+    {
+      "word": "biggest",
+      "start": 28.1,
+      "end": 28.572
+    },
+    {
+      "word": "grower",
+      "start": 28.572,
+      "end": 28.976
+    },
+    {
+      "word": "and",
+      "start": 28.976,
+      "end": 29.178
+    },
+    {
+      "word": "exporter",
+      "start": 29.178,
+      "end": 29.716
+    },
+    {
+      "word": "of",
+      "start": 29.716,
+      "end": 29.851
+    },
+    {
+      "word": "spices.",
+      "start": 29.851,
+      "end": 30.295
+    },
+    {
+      "word": "No",
+      "start": 30.72,
+      "end": 30.849
+    },
+    {
+      "word": "wonder",
+      "start": 30.849,
+      "end": 31.237
+    },
+    {
+      "word": "Indian",
+      "start": 31.237,
+      "end": 31.625
+    },
+    {
+      "word": "food",
+      "start": 31.625,
+      "end": 31.884
+    },
+    {
+      "word": "is",
+      "start": 31.884,
+      "end": 32.014
+    },
+    {
+      "word": "so",
+      "start": 32.014,
+      "end": 32.143
+    },
+    {
+      "word": "delicious.",
+      "start": 32.143,
+      "end": 32.764
+    },
+    {
+      "word": "Number",
+      "start": 33.27,
+      "end": 33.745
+    },
+    {
+      "word": "four.",
+      "start": 33.745,
+      "end": 34.563
+    },
+    {
+      "word": "India",
+      "start": 34.563,
+      "end": 34.959
+    },
+    {
+      "word": "makes",
+      "start": 34.959,
+      "end": 35.355
+    },
+    {
+      "word": "more",
+      "start": 35.355,
+      "end": 35.671
+    },
+    {
+      "word": "films",
+      "start": 35.671,
+      "end": 36.066
+    },
+    {
+      "word": "than",
+      "start": 36.066,
+      "end": 36.383
+    },
+    {
+      "word": "any",
+      "start": 36.383,
+      "end": 36.62
+    },
+    {
+      "word": "other",
+      "start": 36.62,
+      "end": 37.294
+    },
+    {
+      "word": "country,",
+      "start": 37.294,
+      "end": 37.895
+    },
+    {
+      "word": "over",
+      "start": 37.895,
+      "end": 38.212
+    },
+    {
+      "word": "1,500",
+      "start": 38.212,
+      "end": 38.576
+    },
+    {
+      "word": "a",
+      "start": 38.576,
+      "end": 38.655
+    },
+    {
+      "word": "year,",
+      "start": 38.655,
+      "end": 39.018
+    },
+    {
+      "word": "in",
+      "start": 39.018,
+      "end": 39.177
+    },
+    {
+      "word": "more",
+      "start": 39.177,
+      "end": 39.772
+    },
+    {
+      "word": "than",
+      "start": 39.772,
+      "end": 40.088
+    },
+    {
+      "word": "20",
+      "start": 40.088,
+      "end": 40.246
+    },
+    {
+      "word": "languages.",
+      "start": 40.246,
+      "end": 41.006
+    },
+    {
+      "word": "Its",
+      "start": 41.504,
+      "end": 41.748
+    },
+    {
+      "word": "biggest",
+      "start": 41.748,
+      "end": 42.319
+    },
+    {
+      "word": "hits",
+      "start": 42.319,
+      "end": 42.645
+    },
+    {
+      "word": "include",
+      "start": 42.645,
+      "end": 43.566
+    },
+    {
+      "word": "Dangal,",
+      "start": 43.566,
+      "end": 44.104
+    },
+    {
+      "word": "RRR",
+      "start": 44.104,
+      "end": 44.348
+    },
+    {
+      "word": "and",
+      "start": 44.348,
+      "end": 44.593
+    },
+    {
+      "word": "Jawan.",
+      "start": 44.593,
+      "end": 45.049
+    },
+    {
+      "word": "And",
+      "start": 45.574,
+      "end": 45.778
+    },
+    {
+      "word": "number",
+      "start": 45.778,
+      "end": 46.186
+    },
+    {
+      "word": "five.",
+      "start": 46.186,
+      "end": 46.499
+    },
+    {
+      "word": "India",
+      "start": 46.499,
+      "end": 47.312
+    },
+    {
+      "word": "is",
+      "start": 47.312,
+      "end": 47.448
+    },
+    {
+      "word": "home",
+      "start": 47.448,
+      "end": 47.72
+    },
+    {
+      "word": "to",
+      "start": 47.72,
+      "end": 47.856
+    },
+    {
+      "word": "Antilia,",
+      "start": 47.856,
+      "end": 48.373
+    },
+    {
+      "word": "often",
+      "start": 48.373,
+      "end": 49.066
+    },
+    {
+      "word": "called",
+      "start": 49.066,
+      "end": 49.474
+    },
+    {
+      "word": "the",
+      "start": 49.474,
+      "end": 49.678
+    },
+    {
+      "word": "world's",
+      "start": 49.678,
+      "end": 50.086
+    },
+    {
+      "word": "most",
+      "start": 50.086,
+      "end": 50.358
+    },
+    {
+      "word": "expensive",
+      "start": 50.358,
+      "end": 50.97
+    },
+    {
+      "word": "private",
+      "start": 50.97,
+      "end": 51.446
+    },
+    {
+      "word": "home.",
+      "start": 51.446,
+      "end": 51.759
+    },
+    {
+      "word": "Valued",
+      "start": 52.217,
+      "end": 52.737
+    },
+    {
+      "word": "at",
+      "start": 52.737,
+      "end": 52.911
+    },
+    {
+      "word": "around",
+      "start": 52.911,
+      "end": 53.431
+    },
+    {
+      "word": "two",
+      "start": 53.431,
+      "end": 53.691
+    },
+    {
+      "word": "billion",
+      "start": 53.691,
+      "end": 54.298
+    },
+    {
+      "word": "dollars,",
+      "start": 54.298,
+      "end": 55.223
+    },
+    {
+      "word": "this",
+      "start": 55.223,
+      "end": 55.57
+    },
+    {
+      "word": "Mumbai",
+      "start": 55.57,
+      "end": 56.09
+    },
+    {
+      "word": "tower",
+      "start": 56.09,
+      "end": 56.524
+    },
+    {
+      "word": "has",
+      "start": 56.524,
+      "end": 56.784
+    },
+    {
+      "word": "27",
+      "start": 56.784,
+      "end": 56.957
+    },
+    {
+      "word": "floors,",
+      "start": 56.957,
+      "end": 57.845
+    },
+    {
+      "word": "3",
+      "start": 57.845,
+      "end": 57.932
+    },
+    {
+      "word": "helipads",
+      "start": 57.932,
+      "end": 58.626
+    },
+    {
+      "word": "and",
+      "start": 58.626,
+      "end": 58.886
+    },
+    {
+      "word": "a",
+      "start": 58.886,
+      "end": 58.973
+    },
+    {
+      "word": "reported",
+      "start": 58.973,
+      "end": 59.666
+    },
+    {
+      "word": "staff",
+      "start": 59.666,
+      "end": 60.1
+    },
+    {
+      "word": "of",
+      "start": 60.1,
+      "end": 60.273
+    },
+    {
+      "word": "600.",
+      "start": 60.273,
+      "end": 60.586
+    },
+    {
+      "word": "Which",
+      "start": 61.042,
+      "end": 61.314
+    },
+    {
+      "word": "one",
+      "start": 61.314,
+      "end": 61.477
+    },
+    {
+      "word": "surprised",
+      "start": 61.477,
+      "end": 61.965
+    },
+    {
+      "word": "you",
+      "start": 61.965,
+      "end": 62.128
+    },
+    {
+      "word": "the",
+      "start": 62.128,
+      "end": 62.291
+    },
+    {
+      "word": "most?",
+      "start": 62.291,
+      "end": 62.973
+    },
+    {
+      "word": "Follow",
+      "start": 62.973,
+      "end": 63.298
+    },
+    {
+      "word": "for",
+      "start": 63.298,
+      "end": 63.461
+    },
+    {
+      "word": "five",
+      "start": 63.461,
+      "end": 63.679
+    },
+    {
+      "word": "more.",
+      "start": 63.679,
+      "end": 63.928
+    }
+  ]
+}

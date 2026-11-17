@@ -10,7 +10,7 @@ Details here are only a starting point: confirm every fact from sources before s
 |---|---|---|---|---|
 | 1 | रेडियम गर्ल्स | घड़ी चमकाने वाली लड़कियों की हड्डियाँ क्यों गलने लगीं? | ☐ | |
 | 2 | ग्रेट एमू वॉर (1932) | जब एक देश की सेना पक्षियों से जंग हारने लगी | ☐ | |
-| 3 | 1518 का डांसिंग प्लेग | वो शहर जहाँ लोग बिना रुके नाचते रहे | ☐ | |
+| 3 | 1518 का डांसिंग प्लेग | वो शहर जहाँ लोग बिना रुके नाचते रहे | ⬆ scheduled 23 Nov 2026, 21:30 IST (English only) | |
 | 4 | ऑपरेशन एकॉस्टिक किटी | CIA ने बिल्ली को जासूस क्यों बनाया? | ☐ | |
 | 5 | चमगादड़ बम (WWII) | जब चमगादड़ों को बम बना दिया गया | ☐ | |
 | 6 | प्रोजेक्ट पिजन (B.F. स्किनर) | कबूतर जो मिसाइल चलाते | ☐ | |
@@ -25,7 +25,7 @@ Details here are only a starting point: confirm every fact from sources before s
 | 15 | ग्रीक फ़ायर | पानी पर जलने वाली आग का नुस्ख़ा कहाँ खो गया? | ☐ | |
 | 16 | रोमन कंक्रीट | 2000 साल पुरानी इमारतें आज भी क्यों खड़ी हैं? | ☐ | |
 | 17 | वेस्ना वुलोविच | 10,000 मीटर से गिरकर कैसे बची? | ☐ | |
-| 18 | रैंडी गार्डनर (1964) | 11 दिन न सोने पर क्या हुआ? | ☐ | |
+| 18 | रैंडी गार्डनर (1964) | 11 दिन न सोने पर क्या हुआ? | ⬆ scheduled 19 Nov 2026, 19:00 IST | |
 | 19 | डेथ वैली के सेलिंग स्टोन्स | पत्थर अपने आप क्यों चलते थे? | ⬆ scheduled: public 17 Nov 2026, 19:00 IST (https://youtube.com/shorts/80XUSzJPNTw) | Norris et al. 2014 (PLoS ONE); Scripps/UCSD news |
 | 20 | मैकेनिकल टर्क | शतरंज की "मशीन" के अंदर कौन छुपा था? | ☐ | |
 
@@ -41,7 +41,7 @@ More ideas for later (confirm first): अमर जेलीफ़िश (Turrit
 | 4 | Kumbhakaran ki neend | Kumbhakaran 6 mahine kyun sota tha? | glowLine | ☐ |
 | 5 | Ekalavya | Ekalavya ne angootha kyun diya? | madhubani | ☐ |
 | 6 | Bhishma ki pratigya | Bhishma ne kabhi shaadi kyun nahi ki? | paperCutout | ☐ |
-| 7 | Birbal ki khichdi | Khichdi itni door se kaise pakti? | madhubani | ☐ |
+| 7 | Birbal ki khichdi | Khichdi itni door se kaise pakti? | madhubani | ⬆ scheduled 20 Nov 2026, 19:00 IST (folk tale) |
 | 8 | Bandar aur magarmach (Panchatantra) | Bandar ne kaha "mera dil ped par hai". Kyun? | paperCutout | ☐ |
 | 9 | Sher aur khargosh (Panchatantra) | Ek chhote khargosh ne sher ko kaise haraya? | madhubani | ☐ |
 | 10 | Raja Harishchandra | Ek raja ne sach ke liye sab kuch kyun diya? | paperCutout | ☐ |
@@ -50,7 +50,7 @@ More ideas for later (confirm first): अमर जेलीफ़िश (Turrit
 
 | # | Episode | Hook | Last line | Status |
 |---|---|---|---|---|
-| 1 | Dadi ka diya | Dadi roz sham ko diya kyun jalati thi? | Ek chhota diya bhi raasta dikha deta hai | ✎ (demo story exists) |
+| 1 | Dadi ka diya | Dadi roz sham ko diya kyun jalati thi? | Ek chhota diya bhi raasta dikha deta hai | ⬆ scheduled 18 Nov 2026, 19:00 IST |
 | 2 | Pinku ka homework | Pinku ka homework roz kaun kha jata hai? | Kal ka kaam aaj hi karo | ☐ |
 | 3 | Gudiya ka jugaad | Gudiya ne baarish mein cricket kaise khela? | Jahan chaah, wahan raah | ☐ |
 | 4 | Chacha ka aam ka ped | Chacha ke aam kaun le jata tha? | Baant kar khao | ☐ |
@@ -75,5 +75,6 @@ Same rules: a topic needs **2 reliable sources** before scripting. These are sta
 | 8 | Why Indian trains have those coloured stripes | What do the stripes on a coach mean? | ☐ | Indian Railways |
 | 9 | The Tulip craze | When one flower cost a house | ☐ | |
 | 10 | What if the Moon disappeared tomorrow? | What would change first? | ☐ | NASA |
+| 11 | 5 things India is #1 in (milk, post offices, spices, films, Antilia) | Did you know India ranks number one in these five things? | ✔ scheduled: public 18 Nov 2026, 21:30 IST (stories/india-number-one-5-things) | India Post, APEDA, CBFC, Guinness |
 
 Format of a Stick Tales row in `stories/<slug>/script.md`: hook, 6–9 numbered lines (one picture each), "Sources and fact check", spelling list for names.
